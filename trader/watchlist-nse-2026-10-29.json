@@ -1,0 +1,3392 @@
+{
+  "created_by": "trader-scanner (NSE wrapper)",
+  "mode": "daily",
+  "market": "NSE",
+  "as_of": "2026-10-29 close",
+  "universe": 806,
+  "scanned": 746,
+  "failed": 35,
+  "source": "NSE bhavcopy + Yahoo .NS",
+  "note": "A scan is a list of charts that match a rule, not a list of stocks to buy.",
+  "hits": [
+    {
+      "symbol": "BSOFT",
+      "name": "BIRLASOFT LIMITED",
+      "close": 342.5,
+      "turnover_cr": 2160.390435365,
+      "rsi": 70.40571099482698,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 323.0,
+      "next_chg_pct": -5.693430656934306
+    },
+    {
+      "symbol": "KOTAKBANK",
+      "name": "KOTAK MAHINDRA BANK LTD",
+      "close": 459.0,
+      "turnover_cr": 2114.36760418,
+      "rsi": 68.0128507591713,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 461.6,
+      "next_chg_pct": 0.5664488017429248
+    },
+    {
+      "symbol": "AEROFLEX",
+      "name": "AEROFLEX INDUSTRIES LTD",
+      "close": 538.35,
+      "turnover_cr": 1990.036138475,
+      "rsi": 55.12779002732573,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 536.4,
+      "next_chg_pct": -0.3622178879910898
+    },
+    {
+      "symbol": "INFY",
+      "name": "INFOSYS LIMITED",
+      "close": 1146.5,
+      "turnover_cr": 1597.11456349,
+      "rsi": 59.08430208472977,
+      "setups": [
+        "bull_flag"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1185.0,
+      "next_chg_pct": 3.3580462276493694
+    },
+    {
+      "symbol": "ADANIPORTS",
+      "name": "ADANI PORT & SEZ LTD",
+      "close": 1872.0,
+      "turnover_cr": 1431.4527755,
+      "rsi": 64.83126029535025,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1850.0,
+      "next_chg_pct": -1.175213675213671
+    },
+    {
+      "symbol": "ACUTAAS",
+      "name": "ACUTAAS CHEMICALS LIMITED",
+      "close": 3976.7,
+      "turnover_cr": 1158.08754084,
+      "rsi": 72.31903392286404,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 4003.6,
+      "next_chg_pct": 0.6764402645409451
+    },
+    {
+      "symbol": "ETERNAL",
+      "name": "ETERNAL LIMITED",
+      "close": 337.85,
+      "turnover_cr": 992.40920948,
+      "rsi": 59.3569025884089,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 343.65,
+      "next_chg_pct": 1.716738197424883
+    },
+    {
+      "symbol": "BSE",
+      "name": "BSE LIMITED",
+      "close": 3502.0,
+      "turnover_cr": 984.56845685,
+      "rsi": 60.860942098985554,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 3510.4,
+      "next_chg_pct": 0.23986293546545134
+    },
+    {
+      "symbol": "POONAWALLA",
+      "name": "POONAWALLA FINCORP LTD",
+      "close": 441.5,
+      "turnover_cr": 925.6345114049999,
+      "rsi": 51.29516081952848,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 461.7,
+      "next_chg_pct": 4.575311438278584
+    },
+    {
+      "symbol": "TCS",
+      "name": "TATA CONSULTANCY SERV LT",
+      "close": 2478.0,
+      "turnover_cr": 849.94156395,
+      "rsi": 65.39803808661671,
+      "setups": [
+        "bull_flag"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 2502.6,
+      "next_chg_pct": 0.9927360774818261
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "name": "TVS MOTOR COMPANY  LTD",
+      "close": 4280.0,
+      "turnover_cr": 830.08008824,
+      "rsi": 65.37483581361647,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 4195.2,
+      "next_chg_pct": -1.9813084112149548
+    },
+    {
+      "symbol": "VGUARD",
+      "name": "V-GUARD IND LTD.",
+      "close": 284.85,
+      "turnover_cr": 767.400443365,
+      "rsi": 45.878424864018406,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 280.2,
+      "next_chg_pct": -1.6324381253291276
+    },
+    {
+      "symbol": "SBIN",
+      "name": "STATE BANK OF INDIA",
+      "close": 971.9,
+      "turnover_cr": 756.95909735,
+      "rsi": 51.08874229147961,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 961.85,
+      "next_chg_pct": -1.0340570017491446
+    },
+    {
+      "symbol": "JSWENERGY",
+      "name": "JSW ENERGY LIMITED",
+      "close": 510.0,
+      "turnover_cr": 754.193998185,
+      "rsi": 58.36714983258691,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 500.35,
+      "next_chg_pct": -1.892156862745098
+    },
+    {
+      "symbol": "CHOLAFIN",
+      "name": "CHOLAMANDALAM IN & FIN CO",
+      "close": 1604.2,
+      "turnover_cr": 742.50812162,
+      "rsi": 50.68327436402748,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1586.0,
+      "next_chg_pct": -1.1345218800648316
+    },
+    {
+      "symbol": "LT",
+      "name": "LARSEN & TOUBRO LTD.",
+      "close": 3837.1,
+      "turnover_cr": 669.31789356,
+      "rsi": 58.97360379119854,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 3871.7,
+      "next_chg_pct": 0.9017226551301771
+    },
+    {
+      "symbol": "SGMART",
+      "name": "SG MART LIMITED",
+      "close": 864.55,
+      "turnover_cr": 657.6732488399999,
+      "rsi": 69.20467638390609,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 856.35,
+      "next_chg_pct": -0.948470302469484
+    },
+    {
+      "symbol": "LAURUSLABS",
+      "name": "LAURUS LABS LIMITED",
+      "close": 2244.0,
+      "turnover_cr": 638.7247965399999,
+      "rsi": 71.52905980416742,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 2405.5,
+      "next_chg_pct": 7.196969696969702
+    },
+    {
+      "symbol": "ITC",
+      "name": "ITC LTD",
+      "close": 265.0,
+      "turnover_cr": 615.10340134,
+      "rsi": 52.45335802064554,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 265.6,
+      "next_chg_pct": 0.22641509433962703
+    },
+    {
+      "symbol": "JWL",
+      "name": "JUPITER WAGONS LIMITED",
+      "close": 193.11,
+      "turnover_cr": 595.447844852,
+      "rsi": 40.43111929466573,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 181.78,
+      "next_chg_pct": -5.8671223654911735
+    },
+    {
+      "symbol": "PAYTM",
+      "name": "ONE 97 COMMUNICATIONS LTD",
+      "close": 1686.5,
+      "turnover_cr": 554.55724999,
+      "rsi": 51.82003158791244,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1634.3,
+      "next_chg_pct": -3.0951675066706263
+    },
+    {
+      "symbol": "TECHM",
+      "name": "TECH MAHINDRA LIMITED",
+      "close": 1769.6,
+      "turnover_cr": 494.86448737,
+      "rsi": 63.80898649240599,
+      "setups": [
+        "bull_flag"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1790.8,
+      "next_chg_pct": 1.198010849909581
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "name": "HINDUSTAN UNILEVER LTD.",
+      "close": 1858.2,
+      "turnover_cr": 491.58966076999997,
+      "rsi": 46.85340017369393,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1864.6,
+      "next_chg_pct": 0.34441933053492857
+    },
+    {
+      "symbol": "SYRMA",
+      "name": "SYRMA SGS TECHNOLOGY LTD",
+      "close": 1669.0,
+      "turnover_cr": 485.086016,
+      "rsi": 55.55212478836113,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1625.3,
+      "next_chg_pct": -2.6183343319352903
+    },
+    {
+      "symbol": "SILVERBEES",
+      "name": "NIPPONAMC - NETFSILVER",
+      "close": 179.81,
+      "turnover_cr": 472.282803233,
+      "rsi": 24.68957308729229,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 173.34,
+      "next_chg_pct": -3.598242589399925
+    },
+    {
+      "symbol": "ZENSARTECH",
+      "name": "ZENSAR TECHNOLOGIES  LTD",
+      "close": 537.3,
+      "turnover_cr": 463.139048075,
+      "rsi": 70.70476770976735,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 535.5,
+      "next_chg_pct": -0.3350083752093669
+    },
+    {
+      "symbol": "SWIGGY",
+      "name": "SWIGGY LIMITED",
+      "close": 185.25,
+      "turnover_cr": 461.52651073999994,
+      "rsi": 26.069938340348543,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 176.6,
+      "next_chg_pct": -4.669365721997309
+    },
+    {
+      "symbol": "TATACAP",
+      "name": "TATA CAPITAL LIMITED",
+      "close": 326.35,
+      "turnover_cr": 455.4990712,
+      "rsi": 52.17029540268228,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 319.9,
+      "next_chg_pct": -1.9764056994024948
+    },
+    {
+      "symbol": "MCX",
+      "name": "MULTI COMMODITY EXCHANGE",
+      "close": 3231.0,
+      "turnover_cr": 453.9368356,
+      "rsi": 51.717212279100416,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 3188.8,
+      "next_chg_pct": -1.3060971835345048
+    },
+    {
+      "symbol": "PIDILITIND",
+      "name": "PIDILITE INDUSTRIES LTD",
+      "close": 1422.0,
+      "turnover_cr": 434.80132652,
+      "rsi": 35.70663683300337,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1461.6,
+      "next_chg_pct": 2.784810126582271
+    },
+    {
+      "symbol": "HCLTECH",
+      "name": "HCL TECHNOLOGIES LTD",
+      "close": 1403.9,
+      "turnover_cr": 434.05497393,
+      "rsi": 66.48274971302843,
+      "setups": [
+        "bull_flag"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1428.1,
+      "next_chg_pct": 1.7237694992520813
+    },
+    {
+      "symbol": "TITAN",
+      "name": "TITAN COMPANY LIMITED",
+      "close": 4434.0,
+      "turnover_cr": 423.34433265,
+      "rsi": 43.187974286115946,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 4436.5,
+      "next_chg_pct": 0.0563824988723427
+    },
+    {
+      "symbol": "SHRIRAMFIN",
+      "name": "SHRIRAM FINANCE LIMITED",
+      "close": 841.1,
+      "turnover_cr": 412.94254723,
+      "rsi": 30.88340251168667,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 823.15,
+      "next_chg_pct": -2.134110093924624
+    },
+    {
+      "symbol": "EQUITASBNK",
+      "name": "EQUITAS SMALL FIN BNK LTD",
+      "close": 57.17,
+      "turnover_cr": 387.83280451,
+      "rsi": 24.774228503181035,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 53.59,
+      "next_chg_pct": -6.262025537869508
+    },
+    {
+      "symbol": "UNIONBANK",
+      "name": "UNION BANK OF INDIA",
+      "close": 186.5,
+      "turnover_cr": 381.225831221,
+      "rsi": 62.48409711120107,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 186.0,
+      "next_chg_pct": -0.2680965147453085
+    },
+    {
+      "symbol": "DIVISLAB",
+      "name": "DIVI S LABORATORIES LTD",
+      "close": 9664.0,
+      "turnover_cr": 379.9432291,
+      "rsi": 61.88640171839324,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 9780.0,
+      "next_chg_pct": 1.2003311258278249
+    },
+    {
+      "symbol": "CARTRADE",
+      "name": "CARTRADE TECH LIMITED",
+      "close": 2325.0,
+      "turnover_cr": 343.45585546999996,
+      "rsi": 25.418473528382023,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 2189.8,
+      "next_chg_pct": -5.815053763440847
+    },
+    {
+      "symbol": "DIXON",
+      "name": "DIXON TECHNO (INDIA) LTD",
+      "close": 11488.0,
+      "turnover_cr": 343.2169162,
+      "rsi": 31.42215655221601,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 11000.0,
+      "next_chg_pct": -4.247910863509752
+    },
+    {
+      "symbol": "PNB",
+      "name": "PUNJAB NATIONAL BANK",
+      "close": 123.9,
+      "turnover_cr": 339.432966246,
+      "rsi": 63.87579580204405,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 122.85,
+      "next_chg_pct": -0.8474576271186529
+    },
+    {
+      "symbol": "DMART",
+      "name": "AVENUE SUPERMARTS LIMITED",
+      "close": 3175.0,
+      "turnover_cr": 331.60586874,
+      "rsi": 29.553933775483216,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 3199.0,
+      "next_chg_pct": 0.755905511811017
+    },
+    {
+      "symbol": "PARAS",
+      "name": "PARAS DEF AND SPCE TECH L",
+      "close": 1329.7,
+      "turnover_cr": 322.56669828,
+      "rsi": 54.63150232935105,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1249.7,
+      "next_chg_pct": -6.0163946754907105
+    },
+    {
+      "symbol": "AARTIPHARM",
+      "name": "AARTI PHARMALABS LIMITED",
+      "close": 927.65,
+      "turnover_cr": 322.443275335,
+      "rsi": 59.298073824276074,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 872.7,
+      "next_chg_pct": -5.923570312078907
+    },
+    {
+      "symbol": "HUBTOWN",
+      "name": "HUBTOWN LIMITED",
+      "close": 183.89,
+      "turnover_cr": 321.663710795,
+      "rsi": 62.11647016934516,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 183.86,
+      "next_chg_pct": -0.016314100821124278
+    },
+    {
+      "symbol": "WIPRO",
+      "name": "WIPRO LTD",
+      "close": 190.1,
+      "turnover_cr": 319.384642446,
+      "rsi": 67.8300165826377,
+      "setups": [
+        "bull_flag"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 198.31,
+      "next_chg_pct": 4.3187795896896475
+    },
+    {
+      "symbol": "POWERGRID",
+      "name": "POWER GRID CORP. LTD.",
+      "close": 260.0,
+      "turnover_cr": 273.27989210500004,
+      "rsi": 57.077116343810374,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 265.0,
+      "next_chg_pct": 1.9230769230769162
+    },
+    {
+      "symbol": "DRREDDY",
+      "name": "DR. REDDY S LABORATORIES",
+      "close": 1345.0,
+      "turnover_cr": 271.42172993,
+      "rsi": 74.50299960383455,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1352.0,
+      "next_chg_pct": 0.5204460966542701
+    },
+    {
+      "symbol": "IIFLCAPS",
+      "name": "IIFL CAPITAL SERVICES LTD",
+      "close": 347.75,
+      "turnover_cr": 268.3613863,
+      "rsi": 58.82767382544279,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 347.85,
+      "next_chg_pct": 0.02875629043854744
+    },
+    {
+      "symbol": "NYKAA",
+      "name": "FSN E COMMERCE VENTURES",
+      "close": 352.9,
+      "turnover_cr": 263.185158775,
+      "rsi": 61.083651449871454,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 349.35,
+      "next_chg_pct": -1.0059506942476482
+    },
+    {
+      "symbol": "NESTLEIND",
+      "name": "NESTLE INDIA LIMITED",
+      "close": 1188.6,
+      "turnover_cr": 258.37358546999997,
+      "rsi": 32.50941075571525,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1167.0,
+      "next_chg_pct": -1.8172640080767244
+    },
+    {
+      "symbol": "PVRINOX",
+      "name": "PVR INOX LIMITED",
+      "close": 1490.3,
+      "turnover_cr": 247.10671389,
+      "rsi": 69.02753139697958,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1495.1,
+      "next_chg_pct": 0.32208280212038254
+    },
+    {
+      "symbol": "ADANIGREEN",
+      "name": "ADANI GREEN ENERGY LTD",
+      "close": 1307.0,
+      "turnover_cr": 240.890879,
+      "rsi": 53.44372748187833,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1298.7,
+      "next_chg_pct": -0.6350420811017554
+    },
+    {
+      "symbol": "PATANJALI",
+      "name": "PATANJALI FOODS LIMITED",
+      "close": 378.8,
+      "turnover_cr": 236.069469075,
+      "rsi": 60.16470164418817,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 364.85,
+      "next_chg_pct": -3.6826821541710686
+    },
+    {
+      "symbol": "ADANIENSOL",
+      "name": "ADANI ENERGY SOLUTION LTD",
+      "close": 1365.0,
+      "turnover_cr": 234.27081146999998,
+      "rsi": 53.46250989898801,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1349.5,
+      "next_chg_pct": -1.1355311355311315
+    },
+    {
+      "symbol": "CDSL",
+      "name": "CENTRAL DEPO SER (I) LTD",
+      "close": 1282.0,
+      "turnover_cr": 232.77074971999997,
+      "rsi": 51.81765788870711,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1263.0,
+      "next_chg_pct": -1.4820592823712953
+    },
+    {
+      "symbol": "KEI",
+      "name": "KEI INDUSTRIES LTD.",
+      "close": 3830.8,
+      "turnover_cr": 229.63739338000002,
+      "rsi": 28.033954090148654,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 3770.0,
+      "next_chg_pct": -1.5871358462984264
+    },
+    {
+      "symbol": "GROWW",
+      "name": "BILLIONBRAINS GARAGE VN L",
+      "close": 191.12,
+      "turnover_cr": 227.25651369699997,
+      "rsi": 50.56941257020572,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 191.52,
+      "next_chg_pct": 0.20929259104227604
+    },
+    {
+      "symbol": "GESHIP",
+      "name": "THE GE SHPG.LTD",
+      "close": 1618.8,
+      "turnover_cr": 216.35006333,
+      "rsi": 67.71645560367847,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1593.6,
+      "next_chg_pct": -1.5567086730911783
+    },
+    {
+      "symbol": "ECLERX",
+      "name": "ECLERX SERVICES LTD",
+      "close": 1660.6,
+      "turnover_cr": 205.76500777,
+      "rsi": 29.785658787385245,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1556.7,
+      "next_chg_pct": -6.256774659761522
+    },
+    {
+      "symbol": "CANBK",
+      "name": "CANARA BANK",
+      "close": 119.79,
+      "turnover_cr": 201.98818282,
+      "rsi": 48.858378290302646,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 117.54,
+      "next_chg_pct": -1.8782870022539422
+    },
+    {
+      "symbol": "SHUKRAPHAR",
+      "name": "SHUKRA PHARMACEUTICALS L",
+      "close": 75.06,
+      "turnover_cr": 201.43133891600002,
+      "rsi": 71.23034291056408,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 74.87,
+      "next_chg_pct": -0.2531308286703893
+    },
+    {
+      "symbol": "MAZDOCK",
+      "name": "MAZAGON DOCK SHIPBUIL LTD",
+      "close": 1762.7,
+      "turnover_cr": 199.56989053,
+      "rsi": 24.638086744905806,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1705.3,
+      "next_chg_pct": -3.256368071708182
+    },
+    {
+      "symbol": "TATACONSUM",
+      "name": "TATA CONSUMER PRODUCT LTD",
+      "close": 1021.0,
+      "turnover_cr": 199.186987265,
+      "rsi": 60.26565659284449,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1025.9,
+      "next_chg_pct": 0.47992164544565785
+    },
+    {
+      "symbol": "INDIANB",
+      "name": "INDIAN BANK",
+      "close": 864.1,
+      "turnover_cr": 199.09575053,
+      "rsi": 58.168235745698894,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 865.5,
+      "next_chg_pct": 0.16201828492072856
+    },
+    {
+      "symbol": "SATIN",
+      "name": "SATIN CREDIT NET LTD",
+      "close": 251.18,
+      "turnover_cr": 198.510934473,
+      "rsi": 67.91623941768319,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 238.91,
+      "next_chg_pct": -4.884943068715664
+    },
+    {
+      "symbol": "DLF",
+      "name": "DLF LIMITED",
+      "close": 694.35,
+      "turnover_cr": 197.97471004000002,
+      "rsi": 61.9554281406668,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 691.55,
+      "next_chg_pct": -0.4032548426586069
+    },
+    {
+      "symbol": "SANOFICONR",
+      "name": "SANOFI CONS HEALTHC IND L",
+      "close": 3468.0,
+      "turnover_cr": 194.25944149,
+      "rsi": 41.137134015368765,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 3442.3,
+      "next_chg_pct": -0.7410611303344861
+    },
+    {
+      "symbol": "CUB",
+      "name": "CITY UNION BANK LTD",
+      "close": 226.9,
+      "turnover_cr": 193.708494857,
+      "rsi": 52.291112441219234,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 214.2,
+      "next_chg_pct": -5.597179374173655
+    },
+    {
+      "symbol": "BANKBARODA",
+      "name": "BANK OF BARODA",
+      "close": 241.31,
+      "turnover_cr": 192.033235655,
+      "rsi": 58.4207852315257,
+      "setups": [
+        "breakout_20d",
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 238.6,
+      "next_chg_pct": -1.1230367576975708
+    },
+    {
+      "symbol": "VOLTAS",
+      "name": "VOLTAS LTD",
+      "close": 1041.0,
+      "turnover_cr": 191.58374314,
+      "rsi": 49.00821332201348,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1028.0,
+      "next_chg_pct": -1.2487992315081686
+    },
+    {
+      "symbol": "LIQUIDCASE",
+      "name": "ZERODHAAMC - LIQUIDCASE",
+      "close": 116.62,
+      "turnover_cr": 183.454046994,
+      "rsi": 100.0,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 116.68,
+      "next_chg_pct": 0.05144915108901138
+    },
+    {
+      "symbol": "DALBHARAT",
+      "name": "DALMIA BHARAT LIMITED",
+      "close": 1407.9,
+      "turnover_cr": 180.05307915999998,
+      "rsi": 26.66605362054591,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1326.2,
+      "next_chg_pct": -5.802968960863697
+    },
+    {
+      "symbol": "INDUSINDBK",
+      "name": "INDUSIND BANK LIMITED",
+      "close": 868.0,
+      "turnover_cr": 168.55171888499999,
+      "rsi": 45.28256108709589,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 838.0,
+      "next_chg_pct": -3.4562211981566837
+    },
+    {
+      "symbol": "MUTHOOTFIN",
+      "name": "MUTHOOT FINANCE LIMITED",
+      "close": 2497.1,
+      "turnover_cr": 166.72780912000002,
+      "rsi": 40.24674749651205,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 2408.6,
+      "next_chg_pct": -3.544111168955988
+    },
+    {
+      "symbol": "GALLANTT",
+      "name": "GALLANTT ISPAT LIMITED",
+      "close": 572.0,
+      "turnover_cr": 163.3524194,
+      "rsi": 52.84832616710262,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 558.05,
+      "next_chg_pct": -2.4388111888111963
+    },
+    {
+      "symbol": "TANLA",
+      "name": "TANLA PLATFORMS LIMITED",
+      "close": 618.4,
+      "turnover_cr": 155.539956655,
+      "rsi": 72.28421417808242,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 627.15,
+      "next_chg_pct": 1.414941785252255
+    },
+    {
+      "symbol": "LUPIN",
+      "name": "LUPIN LIMITED",
+      "close": 1989.9,
+      "turnover_cr": 155.27025903,
+      "rsi": 47.59934840593287,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 2011.0,
+      "next_chg_pct": 1.0603547916980816
+    },
+    {
+      "symbol": "SGFIN",
+      "name": "SG FINSERVE LIMITED",
+      "close": 734.95,
+      "turnover_cr": 154.532886745,
+      "rsi": 66.70936109796618,
+      "setups": [
+        "breakout_20d",
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 689.0,
+      "next_chg_pct": -6.252125994965652
+    },
+    {
+      "symbol": "CASHIETF",
+      "name": "ICICIPRAMC - CASHIETF",
+      "close": 1086.17,
+      "turnover_cr": 146.521310875,
+      "rsi": 100.0,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1086.66,
+      "next_chg_pct": 0.04511264350883781
+    },
+    {
+      "symbol": "INDUSTOWER",
+      "name": "INDUS TOWERS LIMITED",
+      "close": 384.0,
+      "turnover_cr": 145.22643328499998,
+      "rsi": 52.62115920470804,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 378.3,
+      "next_chg_pct": -1.4843749999999933
+    },
+    {
+      "symbol": "SOUTHBANK",
+      "name": "THE SOUTH INDIAN BANK LTD",
+      "close": 56.57,
+      "turnover_cr": 143.59835194500002,
+      "rsi": 70.48489210170403,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 55.49,
+      "next_chg_pct": -1.909139119674741
+    },
+    {
+      "symbol": "NAM-INDIA",
+      "name": "NIPPON L I A M LTD",
+      "close": 923.9,
+      "turnover_cr": 134.2920488,
+      "rsi": 28.678894015346813,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 905.0,
+      "next_chg_pct": -2.0456759389544277
+    },
+    {
+      "symbol": "TMPV",
+      "name": "TATA MOTORS PASS VEH LTD",
+      "close": 266.0,
+      "turnover_cr": 126.65430583499999,
+      "rsi": 34.114474450311604,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 265.4,
+      "next_chg_pct": -0.22556390977443996
+    },
+    {
+      "symbol": "POLICYBZR",
+      "name": "PB FINTECH LIMITED",
+      "close": 1018.2,
+      "turnover_cr": 124.80991408,
+      "rsi": 34.26941670574392,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1000.1,
+      "next_chg_pct": -1.7776468277352242
+    },
+    {
+      "symbol": "LTTS",
+      "name": "L&T TECHNOLOGY SER. LTD.",
+      "close": 4182.6,
+      "turnover_cr": 120.20588930999999,
+      "rsi": 72.61458298306363,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 4280.2,
+      "next_chg_pct": 2.3334767847750015
+    },
+    {
+      "symbol": "TITAGARH",
+      "name": "TITAGARH RAIL SYSTEMS LTD",
+      "close": 664.8,
+      "turnover_cr": 120.17318105,
+      "rsi": 28.0797800590165,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 654.15,
+      "next_chg_pct": -1.6019855595667876
+    },
+    {
+      "symbol": "NILKAMAL",
+      "name": "NILKAMAL LIMITED",
+      "close": 2003.9,
+      "turnover_cr": 119.62222945,
+      "rsi": 65.49916602722473,
+      "setups": [
+        "breakout_20d",
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1948.7,
+      "next_chg_pct": -2.754628474474774
+    },
+    {
+      "symbol": "ACMESOLAR",
+      "name": "ACME SOLAR HOLDINGS LTD",
+      "close": 415.8,
+      "turnover_cr": 114.370550345,
+      "rsi": 51.40214503646392,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 404.8,
+      "next_chg_pct": -2.645502645502651
+    },
+    {
+      "symbol": "PGEL",
+      "name": "PG ELECTROPLAST LTD",
+      "close": 538.15,
+      "turnover_cr": 112.4888598,
+      "rsi": 57.69582751933036,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 530.05,
+      "next_chg_pct": -1.5051565548638846
+    },
+    {
+      "symbol": "LIQUID1",
+      "name": "KOTAKMAMC - KOTAKLIQ",
+      "close": 1129.31,
+      "turnover_cr": 112.16236723499999,
+      "rsi": 99.98486753699945,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1129.81,
+      "next_chg_pct": 0.044274822679324366
+    },
+    {
+      "symbol": "NHPC",
+      "name": "NHPC LTD",
+      "close": 77.2,
+      "turnover_cr": 106.03921284,
+      "rsi": 62.27453999949206,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 77.74,
+      "next_chg_pct": 0.6994818652849677
+    },
+    {
+      "symbol": "UPL",
+      "name": "UPL LIMITED",
+      "close": 541.95,
+      "turnover_cr": 105.91636415,
+      "rsi": 54.559413865570434,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 513.35,
+      "next_chg_pct": -5.277239597748872
+    },
+    {
+      "symbol": "AEQUS",
+      "name": "AEQUS LIMITED",
+      "close": 218.05,
+      "turnover_cr": 103.73027298,
+      "rsi": 33.74417752270543,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 213.05,
+      "next_chg_pct": -2.2930520522815856
+    },
+    {
+      "symbol": "HINDCOPPER",
+      "name": "HINDUSTAN COPPER LTD",
+      "close": 412.3,
+      "turnover_cr": 103.22732545,
+      "rsi": 30.37914114400452,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 400.85,
+      "next_chg_pct": -2.7771040504486977
+    },
+    {
+      "symbol": "BLUESTARCO",
+      "name": "BLUE STAR LIMITED",
+      "close": 1673.0,
+      "turnover_cr": 102.16310355,
+      "rsi": 63.80444637461007,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1627.9,
+      "next_chg_pct": -2.6957561267184627
+    },
+    {
+      "symbol": "MFSL",
+      "name": "MAX FINANCIAL SERV LTD",
+      "close": 1212.0,
+      "turnover_cr": 99.44025812000001,
+      "rsi": 29.952822098778086,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1200.0,
+      "next_chg_pct": -0.990099009900991
+    },
+    {
+      "symbol": "KPITTECH",
+      "name": "KPIT TECHNOLOGIES LIMITED",
+      "close": 543.7,
+      "turnover_cr": 98.01823761,
+      "rsi": 54.49490314688753,
+      "setups": [
+        "bull_flag"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 530.25,
+      "next_chg_pct": -2.4737906933971043
+    },
+    {
+      "symbol": "CEMPRO",
+      "name": "CEMINDIA PROJECTS LIMITED",
+      "close": 1287.4,
+      "turnover_cr": 94.59412682,
+      "rsi": 61.76526323422123,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1265.0,
+      "next_chg_pct": -1.7399409662886556
+    },
+    {
+      "symbol": "ANANTRAJ",
+      "name": "ANANT RAJ LIMITED",
+      "close": 463.95,
+      "turnover_cr": 94.178948045,
+      "rsi": 23.182136837323938,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 447.3,
+      "next_chg_pct": -3.588748787584861
+    },
+    {
+      "symbol": "ITCHOTELS",
+      "name": "ITC HOTELS LIMITED",
+      "close": 169.32,
+      "turnover_cr": 90.162145272,
+      "rsi": 61.169392117467495,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 167.17,
+      "next_chg_pct": -1.2697850224427154
+    },
+    {
+      "symbol": "HDFCAMC",
+      "name": "HDFC AMC LIMITED",
+      "close": 2316.7,
+      "turnover_cr": 87.49044861,
+      "rsi": 47.776917845091,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 2309.5,
+      "next_chg_pct": -0.3107868951525816
+    },
+    {
+      "symbol": "THELEELA",
+      "name": "LEELA PALACES HOTEL LTD",
+      "close": 639.9,
+      "turnover_cr": 86.707126585,
+      "rsi": 66.21673379589757,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 634.25,
+      "next_chg_pct": -0.882950461009524
+    },
+    {
+      "symbol": "KFINTECH",
+      "name": "KFIN TECHNOLOGIES LIMITED",
+      "close": 859.8,
+      "turnover_cr": 86.08074709,
+      "rsi": 48.27638327479128,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 850.9,
+      "next_chg_pct": -1.0351244475459431
+    },
+    {
+      "symbol": "APOLLOPIPE",
+      "name": "APOLLO PIPES LIMITED",
+      "close": 544.25,
+      "turnover_cr": 85.885992685,
+      "rsi": 57.10034750561682,
+      "setups": [
+        "breakout_20d",
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 501.95,
+      "next_chg_pct": -7.772163527790543
+    },
+    {
+      "symbol": "LIQGRWBEES",
+      "name": "NIPPONAMC - LIQGRWBEES",
+      "close": 1061.76,
+      "turnover_cr": 84.697236848,
+      "rsi": 100.0,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1062.24,
+      "next_chg_pct": 0.04520795660036825
+    },
+    {
+      "symbol": "SBC",
+      "name": "SBC EXPORTS LIMITED",
+      "close": 66.52,
+      "turnover_cr": 83.219614332,
+      "rsi": 72.36168949281793,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 66.15,
+      "next_chg_pct": -0.5562236921226593
+    },
+    {
+      "symbol": "IFCI",
+      "name": "IFCI LTD",
+      "close": 58.26,
+      "turnover_cr": 80.188528478,
+      "rsi": 29.167762588836766,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 54.67,
+      "next_chg_pct": -6.16203226913834
+    },
+    {
+      "symbol": "SIRCA",
+      "name": "SIRCA PAINT INDIA LIMITED",
+      "close": 415.8,
+      "turnover_cr": 78.74592872999999,
+      "rsi": 49.32522609489875,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 405.45,
+      "next_chg_pct": -2.4891774891774965
+    },
+    {
+      "symbol": "PASHUPATI",
+      "name": "PASHUPATI COTSPIN LIMITED",
+      "close": 127.83,
+      "turnover_cr": 78.515177676,
+      "rsi": 84.05440656020853,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 134.6,
+      "next_chg_pct": 5.296096378002035
+    },
+    {
+      "symbol": "OPTIEMUS",
+      "name": "OPTIEMUS INFRACOM LTD",
+      "close": 821.7,
+      "turnover_cr": 77.135569075,
+      "rsi": 60.181137522043564,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 789.45,
+      "next_chg_pct": -3.924790069368378
+    },
+    {
+      "symbol": "GREAVESCOT",
+      "name": "GREAVES COTTON LTD.",
+      "close": 186.8,
+      "turnover_cr": 76.64247398500001,
+      "rsi": 36.5793481729145,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 199.4,
+      "next_chg_pct": 6.745182012847972
+    },
+    {
+      "symbol": "COHANCE",
+      "name": "COHANCE LIFESCIENCES LTD",
+      "close": 481.35,
+      "turnover_cr": 72.40352837,
+      "rsi": 62.24644409368462,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 444.3,
+      "next_chg_pct": -7.697101900903713
+    },
+    {
+      "symbol": "CAMS",
+      "name": "COMPUTER AGE MNGT SER LTD",
+      "close": 696.95,
+      "turnover_cr": 72.00270047000001,
+      "rsi": 52.17176338118744,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 653.6,
+      "next_chg_pct": -6.219958390128422
+    },
+    {
+      "symbol": "VAIBHAVGBL",
+      "name": "VAIBHAV GLOBAL LIMITED",
+      "close": 158.3,
+      "turnover_cr": 71.468917664,
+      "rsi": 18.896646119332004,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 156.95,
+      "next_chg_pct": -0.8528111181301479
+    },
+    {
+      "symbol": "GRASIM",
+      "name": "GRASIM INDUSTRIES LTD",
+      "close": 2932.8,
+      "turnover_cr": 70.42948469,
+      "rsi": 44.30061100085728,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 2981.4,
+      "next_chg_pct": 1.6571194762684094
+    },
+    {
+      "symbol": "DCMSRIND",
+      "name": "DCM SHRIRAM IND LTD",
+      "close": 63.36,
+      "turnover_cr": 68.51321316,
+      "rsi": 76.26032295700168,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 61.11,
+      "next_chg_pct": -3.5511363636363646
+    },
+    {
+      "symbol": "MOSCHIP",
+      "name": "MOSCHIP TECHNOLOGIES LTD",
+      "close": 157.97,
+      "turnover_cr": 68.46845039099999,
+      "rsi": 25.262032251109716,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 152.15,
+      "next_chg_pct": -3.6842438437677982
+    },
+    {
+      "symbol": "ANANDRATHI",
+      "name": "ANAND RATHI WEALTH LTD",
+      "close": 2270.0,
+      "turnover_cr": 68.24017485,
+      "rsi": 67.44303607412527,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 2252.0,
+      "next_chg_pct": -0.7929515418502175
+    },
+    {
+      "symbol": "AUROPHARMA",
+      "name": "AUROBINDO PHARMA LTD",
+      "close": 1659.9,
+      "turnover_cr": 67.64841876,
+      "rsi": 51.65061407227714,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1681.4,
+      "next_chg_pct": 1.2952587505271396
+    },
+    {
+      "symbol": "RAMKY",
+      "name": "RAMKY INFRA LTD",
+      "close": 309.45,
+      "turnover_cr": 64.33698669,
+      "rsi": 59.68381894443973,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 307.15,
+      "next_chg_pct": -0.7432541606075316
+    },
+    {
+      "symbol": "PHOENIXLTD",
+      "name": "THE PHOENIX MILLS LTD",
+      "close": 1969.9,
+      "turnover_cr": 63.54996967,
+      "rsi": 59.476823213725375,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1957.2,
+      "next_chg_pct": -0.6447027767907065
+    },
+    {
+      "symbol": "RATNAVEER",
+      "name": "RATNAVEER PRECISION ENG L",
+      "close": 352.85,
+      "turnover_cr": 63.258067985000004,
+      "rsi": 61.51439813401415,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 360.25,
+      "next_chg_pct": 2.0972084455150863
+    },
+    {
+      "symbol": "TATAELXSI",
+      "name": "TATA ELXSI LIMITED",
+      "close": 3804.0,
+      "turnover_cr": 61.23368203,
+      "rsi": 65.72350634876807,
+      "setups": [
+        "bull_flag"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 3790.0,
+      "next_chg_pct": -0.3680336487907443
+    },
+    {
+      "symbol": "AURIONPRO",
+      "name": "AURIONPRO SOLN LTD",
+      "close": 582.65,
+      "turnover_cr": 60.764577179999996,
+      "rsi": 43.62873450292952,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 540.4,
+      "next_chg_pct": -7.251351583283272
+    },
+    {
+      "symbol": "PWL",
+      "name": "PHYSICSWALLAH LIMITED",
+      "close": 132.51,
+      "turnover_cr": 60.293153155999995,
+      "rsi": 52.27334513733698,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 128.99,
+      "next_chg_pct": -2.6564032903176993
+    },
+    {
+      "symbol": "PTCIL",
+      "name": "PTC INDUSTRIES LIMITED",
+      "close": 24700.0,
+      "turnover_cr": 58.4782005,
+      "rsi": 57.79226531834163,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 23945.0,
+      "next_chg_pct": -3.056680161943315
+    },
+    {
+      "symbol": "COCHINSHIP",
+      "name": "COCHIN SHIPYARD LIMITED",
+      "close": 1155.8,
+      "turnover_cr": 57.22686149,
+      "rsi": 32.80153762623826,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1114.2,
+      "next_chg_pct": -3.5992386225990547
+    },
+    {
+      "symbol": "APTUS",
+      "name": "APTUS VALUE HSG FIN I LTD",
+      "close": 200.32,
+      "turnover_cr": 56.768725534000005,
+      "rsi": 30.444255742055887,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 191.28,
+      "next_chg_pct": -4.512779552715651
+    },
+    {
+      "symbol": "GRAVITA",
+      "name": "GRAVITA INDIA LIMITED",
+      "close": 1413.6,
+      "turnover_cr": 55.485238210000006,
+      "rsi": 42.69292512039358,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1387.9,
+      "next_chg_pct": -1.8180531975098946
+    },
+    {
+      "symbol": "IGIL",
+      "name": "INTL GEMOLOGICAL INST LTD",
+      "close": 406.8,
+      "turnover_cr": 54.567046954999995,
+      "rsi": 81.43696777385966,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 397.75,
+      "next_chg_pct": -2.224680432645032
+    },
+    {
+      "symbol": "GRSE",
+      "name": "GARDEN REACH SHIP&ENG LTD",
+      "close": 1923.2,
+      "turnover_cr": 54.02320052,
+      "rsi": 32.94009290657145,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1943.7,
+      "next_chg_pct": 1.0659317803660473
+    },
+    {
+      "symbol": "63MOONS",
+      "name": "63 MOONS TECHNOLOGIES LTD",
+      "close": 936.3,
+      "turnover_cr": 53.44845816,
+      "rsi": 64.24981776178507,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 948.85,
+      "next_chg_pct": 1.3403823560824701
+    },
+    {
+      "symbol": "BDL",
+      "name": "BHARAT DYNAMICS LIMITED",
+      "close": 1011.0,
+      "turnover_cr": 52.73004717,
+      "rsi": 33.17468623057056,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 974.0,
+      "next_chg_pct": -3.6597428288822953
+    },
+    {
+      "symbol": "THYROCARE",
+      "name": "THYROCARE TECH LTD",
+      "close": 515.5,
+      "turnover_cr": 51.703064035000004,
+      "rsi": 52.055542875515606,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 456.3,
+      "next_chg_pct": -11.483996120271577
+    },
+    {
+      "symbol": "LLOYDSME",
+      "name": "LLOYDS METALS N ENERGY L",
+      "close": 1826.9,
+      "turnover_cr": 51.153648069999996,
+      "rsi": 51.64345051506924,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1825.3,
+      "next_chg_pct": -0.08758005364278842
+    },
+    {
+      "symbol": "HSCL",
+      "name": "HIMADRI SPECIALITY CHEM L",
+      "close": 536.25,
+      "turnover_cr": 50.64983592,
+      "rsi": 31.778452126728638,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 509.2,
+      "next_chg_pct": -5.044289044289041
+    },
+    {
+      "symbol": "KIRIINDUS",
+      "name": "KIRI INDUSTRIES LIMITED",
+      "close": 521.6,
+      "turnover_cr": 50.19837492,
+      "rsi": 54.24860244546644,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 539.1,
+      "next_chg_pct": 3.3550613496932558
+    },
+    {
+      "symbol": "GRINDWELL",
+      "name": "GRINDWELL NORTON LIMITED",
+      "close": 1955.2,
+      "turnover_cr": 49.16036547,
+      "rsi": 54.39101758440146,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1878.6,
+      "next_chg_pct": -3.917757774140762
+    },
+    {
+      "symbol": "HDFCSILVER",
+      "name": "HDFCAMC - HDFCSILVER",
+      "close": 179.74,
+      "turnover_cr": 48.980858847,
+      "rsi": 25.38387467820705,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 173.13,
+      "next_chg_pct": -3.677534216089917
+    },
+    {
+      "symbol": "VMM",
+      "name": "VISHAL MEGA MART LIMITED",
+      "close": 86.6,
+      "turnover_cr": 48.075099089,
+      "rsi": 26.529931058648117,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 84.4,
+      "next_chg_pct": -2.540415704387977
+    },
+    {
+      "symbol": "MSUMI",
+      "name": "MOTHERSON SUMI WRNG IND L",
+      "close": 35.76,
+      "turnover_cr": 46.091685033,
+      "rsi": 57.07117715186932,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 35.14,
+      "next_chg_pct": -1.733780760626391
+    },
+    {
+      "symbol": "LIQUIDADD",
+      "name": "DSPAMC - LIQUIDADD",
+      "close": 1151.66,
+      "turnover_cr": 45.138040452999995,
+      "rsi": 100.0,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1152.17,
+      "next_chg_pct": 0.04428390323532039
+    },
+    {
+      "symbol": "OIL",
+      "name": "OIL INDIA LTD",
+      "close": 454.5,
+      "turnover_cr": 44.40685061,
+      "rsi": 48.98872241436165,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 454.0,
+      "next_chg_pct": -0.11001100110010764
+    },
+    {
+      "symbol": "TENNIND",
+      "name": "TENNECO CLEAN AIR INDIA L",
+      "close": 428.05,
+      "turnover_cr": 43.369604755000005,
+      "rsi": 24.91498886032838,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 431.7,
+      "next_chg_pct": 0.8527041233500787
+    },
+    {
+      "symbol": "AARTIDRUGS",
+      "name": "AARTI DRUGS LTD.",
+      "close": 449.0,
+      "turnover_cr": 42.76739107,
+      "rsi": 65.91359572501639,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 435.2,
+      "next_chg_pct": -3.0734966592427693
+    },
+    {
+      "symbol": "LEMONTREE",
+      "name": "LEMON TREE HOTELS LTD",
+      "close": 111.34,
+      "turnover_cr": 42.196276567,
+      "rsi": 55.264086333976515,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 109.27,
+      "next_chg_pct": -1.8591701095742819
+    },
+    {
+      "symbol": "SBICARD",
+      "name": "SBI CARDS & PAY SER LTD",
+      "close": 540.0,
+      "turnover_cr": 41.6333686,
+      "rsi": 36.75045701214886,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 525.0,
+      "next_chg_pct": -2.777777777777779
+    },
+    {
+      "symbol": "BANKIETF",
+      "name": "ICICIPRAMC - IPRU5008",
+      "close": 56.52,
+      "turnover_cr": 40.76871587,
+      "rsi": 47.600417447743084,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 56.08,
+      "next_chg_pct": -0.7784854918612916
+    },
+    {
+      "symbol": "JSWHL",
+      "name": "JSW HOLDINGS LIMITED",
+      "close": 11332.0,
+      "turnover_cr": 40.6679269,
+      "rsi": 51.81365245077169,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 10901.0,
+      "next_chg_pct": -3.803388633956939
+    },
+    {
+      "symbol": "RPGLIFE",
+      "name": "RPG LIFE SCIENCES LTD",
+      "close": 3003.8,
+      "turnover_cr": 40.40921759,
+      "rsi": 58.18817282860541,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 2575.7,
+      "next_chg_pct": -14.25194753312472
+    },
+    {
+      "symbol": "IEX",
+      "name": "INDIAN ENERGY EXC LTD",
+      "close": 105.35,
+      "turnover_cr": 38.714756754,
+      "rsi": 45.04145948598809,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 100.9,
+      "next_chg_pct": -4.224015187470331
+    },
+    {
+      "symbol": "SUMICHEM",
+      "name": "SUMITOMO CHEM INDIA LTD",
+      "close": 331.9,
+      "turnover_cr": 38.580607945,
+      "rsi": 11.881816594057042,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 315.1,
+      "next_chg_pct": -5.061765592045786
+    },
+    {
+      "symbol": "SILVERIETF",
+      "name": "ICICIPRAMC - ICICISILVE",
+      "close": 187.77,
+      "turnover_cr": 36.451063089,
+      "rsi": 24.373311276306836,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 181.1,
+      "next_chg_pct": -3.5522181392128704
+    },
+    {
+      "symbol": "GUJENERGY",
+      "name": "GUJARAT ENERGY LIMITED",
+      "close": 210.88,
+      "turnover_cr": 35.790639392,
+      "rsi": 27.85258421609501,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 208.1,
+      "next_chg_pct": -1.3182852807283818
+    },
+    {
+      "symbol": "ZENTEC",
+      "name": "ZEN TECHNOLOGIES LIMITED",
+      "close": 1621.6,
+      "turnover_cr": 35.56760768,
+      "rsi": 50.07309245844195,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1588.4,
+      "next_chg_pct": -2.0473606314750703
+    },
+    {
+      "symbol": "MRF",
+      "name": "MRF LTD",
+      "close": 118065.0,
+      "turnover_cr": 35.3306375,
+      "rsi": 26.695301534297414,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 116775.0,
+      "next_chg_pct": -1.0926184728751065
+    },
+    {
+      "symbol": "JSFB",
+      "name": "JANA SMALL FIN BANK LTD",
+      "close": 394.2,
+      "turnover_cr": 34.58173462,
+      "rsi": 32.29014717169416,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 373.5,
+      "next_chg_pct": -5.2511415525114185
+    },
+    {
+      "symbol": "FIVESTAR",
+      "name": "FIVE-STAR BUS FIN LTD",
+      "close": 418.85,
+      "turnover_cr": 34.428256005,
+      "rsi": 24.759062101446418,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 396.85,
+      "next_chg_pct": -5.252477020413037
+    },
+    {
+      "symbol": "LIQUIDPLUS",
+      "name": "MIRAEAMC - LIQUIDPLUS",
+      "close": 1110.04,
+      "turnover_cr": 33.362676082,
+      "rsi": 100.0,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1110.52,
+      "next_chg_pct": 0.04324168498432979
+    },
+    {
+      "symbol": "KRISHANA",
+      "name": "KRISHANA PHOSCHEM LIMITED",
+      "close": 222.63,
+      "turnover_cr": 33.327692562,
+      "rsi": 69.22555366591628,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 228.55,
+      "next_chg_pct": 2.659120513857083
+    },
+    {
+      "symbol": "TATACOMM",
+      "name": "TATA COMMUNICATIONS LTD",
+      "close": 1709.4,
+      "turnover_cr": 32.851051489999996,
+      "rsi": 51.97542496440446,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1675.4,
+      "next_chg_pct": -1.9890019890019928
+    },
+    {
+      "symbol": "BANKBEES",
+      "name": "NIP IND ETF BANK BEES",
+      "close": 569.23,
+      "turnover_cr": 32.619032568,
+      "rsi": 47.20436728451698,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 565.47,
+      "next_chg_pct": -0.6605414331640969
+    },
+    {
+      "symbol": "SHAKTIPUMP",
+      "name": "SHAKTI PUMPS (I) LTD",
+      "close": 368.45,
+      "turnover_cr": 32.533092435,
+      "rsi": 21.008605937729357,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 353.65,
+      "next_chg_pct": -4.016827249287558
+    },
+    {
+      "symbol": "SUNDARMFIN",
+      "name": "SUNDARAM FINANCE LTD",
+      "close": 3948.4,
+      "turnover_cr": 32.10767644,
+      "rsi": 30.048697018415794,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 3941.0,
+      "next_chg_pct": -0.1874176881774936
+    },
+    {
+      "symbol": "GAUDIUMIVF",
+      "name": "GAUDIUM IVF N WOMEN H L",
+      "close": 111.07,
+      "turnover_cr": 32.019768057,
+      "rsi": 57.91004111386633,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 105.86,
+      "next_chg_pct": -4.690735572161698
+    },
+    {
+      "symbol": "SAREGAMA",
+      "name": "SAREGAMA INDIA LIMITED",
+      "close": 536.0,
+      "turnover_cr": 31.840949735000002,
+      "rsi": 62.91662924661148,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 548.65,
+      "next_chg_pct": 2.3600746268656714
+    },
+    {
+      "symbol": "PRANAV",
+      "name": "PRANAV CONSTRUCTIONS LTD",
+      "close": 93.01,
+      "turnover_cr": 31.727191398000002,
+      "rsi": 37.2872212576159,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 92.98,
+      "next_chg_pct": -0.03225459627996807
+    },
+    {
+      "symbol": "AGI",
+      "name": "AGI GREENPAC LIMITED",
+      "close": 653.15,
+      "turnover_cr": 31.381295110000003,
+      "rsi": 29.560583849913243,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 641.15,
+      "next_chg_pct": -1.8372502487943088
+    },
+    {
+      "symbol": "ASTERDM",
+      "name": "ASTER DM QUALITY CARE LTD",
+      "close": 679.2,
+      "turnover_cr": 31.2894524,
+      "rsi": 45.08332875840006,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 681.15,
+      "next_chg_pct": 0.28710247349821305
+    },
+    {
+      "symbol": "RAYMONDLSL",
+      "name": "RAYMOND LIFESTYLE LIMITED",
+      "close": 500.15,
+      "turnover_cr": 31.2411214,
+      "rsi": 21.661048844503313,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 479.25,
+      "next_chg_pct": -4.178746376087172
+    },
+    {
+      "symbol": "SHRINGARMS",
+      "name": "SHRINGAR HOU OF MANGALS L",
+      "close": 283.34,
+      "turnover_cr": 31.204741861000002,
+      "rsi": 58.55314236810445,
+      "setups": [
+        "bull_flag"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 273.61,
+      "next_chg_pct": -3.434036846191846
+    },
+    {
+      "symbol": "INOXWIND",
+      "name": "INOX WIND LIMITED",
+      "close": 59.18,
+      "turnover_cr": 30.949515545999997,
+      "rsi": 30.586396548178953,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 55.2,
+      "next_chg_pct": -6.725245015207837
+    },
+    {
+      "symbol": "SANOFI",
+      "name": "SANOFI INDIA LIMITED",
+      "close": 3189.5,
+      "turnover_cr": 30.4227398,
+      "rsi": 62.041053062202444,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 3204.1,
+      "next_chg_pct": 0.45775199874589223
+    },
+    {
+      "symbol": "BLISSGVS",
+      "name": "BLISS GVS PHARMA LTD",
+      "close": 680.9,
+      "turnover_cr": 30.392018235000002,
+      "rsi": 56.96450902331062,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 647.5,
+      "next_chg_pct": -4.905272433543839
+    },
+    {
+      "symbol": "MINDACORP",
+      "name": "MINDA CORPORATION LTD",
+      "close": 640.75,
+      "turnover_cr": 30.24883069,
+      "rsi": 48.61478510172398,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 632.45,
+      "next_chg_pct": -1.2953570035114992
+    },
+    {
+      "symbol": "SBIFUNDS",
+      "name": "SBI FUNDS MANAGEMENT LTD",
+      "close": 468.5,
+      "turnover_cr": 29.99089685,
+      "rsi": 33.05325244239641,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 468.2,
+      "next_chg_pct": -0.06403415154749847
+    },
+    {
+      "symbol": "TEJASNET",
+      "name": "TEJAS NETWORKS LIMITED",
+      "close": 416.8,
+      "turnover_cr": 29.538576885,
+      "rsi": 32.147939052496326,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 402.95,
+      "next_chg_pct": -3.322936660268716
+    },
+    {
+      "symbol": "ICICILIFE",
+      "name": "ICICI LIFE INSURANCE LTD",
+      "close": 411.95,
+      "turnover_cr": 29.27530248,
+      "rsi": 26.182120170253583,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 410.0,
+      "next_chg_pct": -0.4733584172836536
+    },
+    {
+      "symbol": "HDBFS",
+      "name": "HDB FINANCIAL SERVICES L",
+      "close": 499.6,
+      "turnover_cr": 28.99820945,
+      "rsi": 21.352993959014583,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 498.55,
+      "next_chg_pct": -0.21016813450760452
+    },
+    {
+      "symbol": "CNL",
+      "name": "CREATIVE NEWTECH LIMITED",
+      "close": 1202.4,
+      "turnover_cr": 28.49994147,
+      "rsi": 61.30457760852419,
+      "setups": [
+        "breakout_20d",
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1112.1,
+      "next_chg_pct": -7.509980039920173
+    },
+    {
+      "symbol": "EMMVEE",
+      "name": "EMMVEE PHOTOVOLTAIC PWR L",
+      "close": 243.7,
+      "turnover_cr": 28.495356015,
+      "rsi": 24.37280786908505,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 229.0,
+      "next_chg_pct": -6.032006565449322
+    },
+    {
+      "symbol": "SASKEN",
+      "name": "SASKEN TECHNOLOGIES LTD",
+      "close": 1906.1,
+      "turnover_cr": 28.357836560000003,
+      "rsi": 61.91957519696575,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1715.7,
+      "next_chg_pct": -9.988982739625406
+    },
+    {
+      "symbol": "ATUL",
+      "name": "ATUL LTD",
+      "close": 5146.0,
+      "turnover_cr": 28.0557215,
+      "rsi": 23.004485053626624,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 5028.5,
+      "next_chg_pct": -2.2833268558103414
+    },
+    {
+      "symbol": "ABDL",
+      "name": "ALLIED BLEND N DISTILS L",
+      "close": 710.2,
+      "turnover_cr": 27.55978885,
+      "rsi": 54.76520722287143,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 698.25,
+      "next_chg_pct": -1.682624612785133
+    },
+    {
+      "symbol": "UTTAMSUGAR",
+      "name": "UTTAM SUGAR MILLS LTD.",
+      "close": 360.7,
+      "turnover_cr": 27.416114225,
+      "rsi": 57.82034344518054,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 327.25,
+      "next_chg_pct": -9.273634599390068
+    },
+    {
+      "symbol": "SHYAMMETL",
+      "name": "SHYAM METALICS AND ENGY L",
+      "close": 1141.6,
+      "turnover_cr": 26.23148348,
+      "rsi": 54.41254186262594,
+      "setups": [
+        "bull_flag"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1162.9,
+      "next_chg_pct": 1.865802382620907
+    },
+    {
+      "symbol": "MBAPL",
+      "name": "MADHYA BHARAT AGRO P. LTD",
+      "close": 174.0,
+      "turnover_cr": 25.93849136,
+      "rsi": 61.80384720344819,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 177.11,
+      "next_chg_pct": 1.7873563218390842
+    },
+    {
+      "symbol": "HUDCO",
+      "name": "HSG & URBAN DEV CORPN LTD",
+      "close": 147.63,
+      "turnover_cr": 25.745164712,
+      "rsi": 30.52695355576654,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 143.07,
+      "next_chg_pct": -3.0888030888030937
+    },
+    {
+      "symbol": "FDC",
+      "name": "FDC LIMITED",
+      "close": 377.15,
+      "turnover_cr": 25.633689925,
+      "rsi": 67.3876889666245,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 377.0,
+      "next_chg_pct": -0.03977197401563437
+    },
+    {
+      "symbol": "CESC",
+      "name": "CESC LTD",
+      "close": 128.14,
+      "turnover_cr": 25.587610996000002,
+      "rsi": 39.146623878659256,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 124.63,
+      "next_chg_pct": -2.739191509286709
+    },
+    {
+      "symbol": "SMSPHARMA",
+      "name": "SMS PHARMACEUTICALS LTD.",
+      "close": 485.8,
+      "turnover_cr": 25.525790175,
+      "rsi": 64.04096382382124,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 511.35,
+      "next_chg_pct": 5.259365994236309
+    },
+    {
+      "symbol": "OLECTRA",
+      "name": "OLECTRA GREENTECH LIMITED",
+      "close": 976.5,
+      "turnover_cr": 24.9373858,
+      "rsi": 29.82589258938286,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 951.1,
+      "next_chg_pct": -2.601126472094206
+    },
+    {
+      "symbol": "ICIL",
+      "name": "INDO COUNT INDUSTRIES LTD",
+      "close": 449.3,
+      "turnover_cr": 24.0033499,
+      "rsi": 54.70649477835659,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 442.1,
+      "next_chg_pct": -1.6024927665257094
+    },
+    {
+      "symbol": "AEROENTER",
+      "name": "AEROFLEX ENTERPRISES LTD",
+      "close": 128.1,
+      "turnover_cr": 23.746604653,
+      "rsi": 51.766307227103596,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 124.62,
+      "next_chg_pct": -2.716627634660418
+    },
+    {
+      "symbol": "KIRLPNU",
+      "name": "KIRLOSKAR PNEUMATIC COM L",
+      "close": 556.45,
+      "turnover_cr": 23.688568645,
+      "rsi": 27.923471138967216,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 538.45,
+      "next_chg_pct": -3.234791984904306
+    },
+    {
+      "symbol": "FMCGIETF",
+      "name": "ICICIPRAMC - ICICIFMCG",
+      "close": 47.4,
+      "turnover_cr": 22.420085286000003,
+      "rsi": 47.90293691290665,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 46.97,
+      "next_chg_pct": -0.9071729957805919
+    },
+    {
+      "symbol": "LIQUIDETF",
+      "name": "DSP LIQUID ETF",
+      "close": 1000.0,
+      "turnover_cr": 22.235793332,
+      "rsi": 53.2550783434954,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 999.99,
+      "next_chg_pct": -0.000999999999995449
+    },
+    {
+      "symbol": "BHAGERIA",
+      "name": "BHAGERIA INDUSTRIES LTD",
+      "close": 370.75,
+      "turnover_cr": 22.170309425,
+      "rsi": 55.53512151148547,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 362.45,
+      "next_chg_pct": -2.2387053270397916
+    },
+    {
+      "symbol": "ITBEES",
+      "name": "NIP IND ETF IT",
+      "close": 35.46,
+      "turnover_cr": 22.05707872,
+      "rsi": 62.73398782315421,
+      "setups": [
+        "bull_flag"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 36.23,
+      "next_chg_pct": 2.171460800902425
+    },
+    {
+      "symbol": "PSUBNKBEES",
+      "name": "NIP IND ETF PSU BANK BEES",
+      "close": 92.72,
+      "turnover_cr": 21.644124872,
+      "rsi": 57.14021002479182,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 91.64,
+      "next_chg_pct": -1.164797238999138
+    },
+    {
+      "symbol": "KAJARIACER",
+      "name": "KAJARIA CERAMICS LTD",
+      "close": 1102.1,
+      "turnover_cr": 21.63632758,
+      "rsi": 29.115971552252205,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1109.2,
+      "next_chg_pct": 0.6442246620089076
+    },
+    {
+      "symbol": "CHOLAHLDNG",
+      "name": "CHOLAMANDALAM FIN HOL LTD",
+      "close": 1365.0,
+      "turnover_cr": 21.47383597,
+      "rsi": 48.265613116765124,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1351.3,
+      "next_chg_pct": -1.0036630036630023
+    },
+    {
+      "symbol": "PTC",
+      "name": "PTC INDIA LIMITED",
+      "close": 141.02,
+      "turnover_cr": 21.034892554,
+      "rsi": 38.506994177454764,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 136.17,
+      "next_chg_pct": -3.4392284782300497
+    },
+    {
+      "symbol": "LIQUIDBETF",
+      "name": "BFAM - LIQUIDBETF",
+      "close": 1105.24,
+      "turnover_cr": 20.885291031999998,
+      "rsi": 100.0,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1105.74,
+      "next_chg_pct": 0.04523904310376192
+    },
+    {
+      "symbol": "GOKULAGRO",
+      "name": "GOKUL AGRO RESOURCES LTD",
+      "close": 216.52,
+      "turnover_cr": 20.71801156,
+      "rsi": 55.086900030342846,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 214.47,
+      "next_chg_pct": -0.946794753371516
+    },
+    {
+      "symbol": "WESTLIFE",
+      "name": "WESTLIFE FOODWORLD LTD",
+      "close": 610.35,
+      "turnover_cr": 20.696225119999998,
+      "rsi": 60.8425786915831,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 593.8,
+      "next_chg_pct": -2.711558941590897
+    },
+    {
+      "symbol": "EPL",
+      "name": "EPL LIMITED",
+      "close": 218.39,
+      "turnover_cr": 20.635684866,
+      "rsi": 35.16476313579008,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 216.73,
+      "next_chg_pct": -0.7601080635560198
+    },
+    {
+      "symbol": "BANKBETA",
+      "name": "UTIAMC-BANKBETA",
+      "close": 56.99,
+      "turnover_cr": 20.415004217,
+      "rsi": 47.99931842981156,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 56.46,
+      "next_chg_pct": -0.9299877171433657
+    },
+    {
+      "symbol": "GMDCLTD",
+      "name": "GUJARAT MINERAL DEV CORP",
+      "close": 438.75,
+      "turnover_cr": 20.140108084999998,
+      "rsi": 31.07479275396794,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 411.65,
+      "next_chg_pct": -6.176638176638183
+    },
+    {
+      "symbol": "BAJAJCON",
+      "name": "BAJAJ CONSUMER CARE LTD",
+      "close": 390.6,
+      "turnover_cr": 19.94444579,
+      "rsi": 30.001356084896543,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 370.15,
+      "next_chg_pct": -5.235535074244768
+    },
+    {
+      "symbol": "MILKYMIST",
+      "name": "MILKY MIST DAIRY FOOD L",
+      "close": 304.5,
+      "turnover_cr": 19.85144656,
+      "rsi": 56.36198415772805,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 306.05,
+      "next_chg_pct": 0.5090311986863716
+    },
+    {
+      "symbol": "ABSLAMC",
+      "name": "ADIT BIRL SUN LIF AMC LTD",
+      "close": 844.9,
+      "turnover_cr": 19.768002365,
+      "rsi": 22.411789172643978,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 805.5,
+      "next_chg_pct": -4.663273760208309
+    },
+    {
+      "symbol": "POCL",
+      "name": "PONDY OXIDES & CHEM LTD",
+      "close": 377.6,
+      "turnover_cr": 19.16936097,
+      "rsi": 25.94441919645223,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 397.65,
+      "next_chg_pct": 5.309851694915246
+    },
+    {
+      "symbol": "TRITURBINE",
+      "name": "TRIVENI TURBINE LIMITED",
+      "close": 469.6,
+      "turnover_cr": 18.6500584,
+      "rsi": 35.26776444405024,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 470.05,
+      "next_chg_pct": 0.09582623509369892
+    },
+    {
+      "symbol": "ROUTE",
+      "name": "ROUTE MOBILE LIMITED",
+      "close": 452.6,
+      "turnover_cr": 18.034484380000002,
+      "rsi": 52.6521624956201,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 438.65,
+      "next_chg_pct": -3.08219178082193
+    },
+    {
+      "symbol": "VIKRAMSOLR",
+      "name": "VIKRAM SOLAR LIMITED",
+      "close": 128.0,
+      "turnover_cr": 16.674615181,
+      "rsi": 24.11261111438563,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 125.29,
+      "next_chg_pct": -2.117187499999995
+    },
+    {
+      "symbol": "ELGIEQUIP",
+      "name": "ELGI EQUIPMENTS LTD",
+      "close": 511.25,
+      "turnover_cr": 16.456813315,
+      "rsi": 29.24106374387523,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 509.05,
+      "next_chg_pct": -0.43031784841075504
+    },
+    {
+      "symbol": "MSTCLTD",
+      "name": "MSTC LIMITED",
+      "close": 571.95,
+      "turnover_cr": 16.357265830000003,
+      "rsi": 30.236341345803382,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 534.85,
+      "next_chg_pct": -6.486580994842206
+    },
+    {
+      "symbol": "GCSL",
+      "name": "GRETEX CORPORATE SERVICES",
+      "close": 761.75,
+      "turnover_cr": 15.558553694999999,
+      "rsi": 76.81062814792811,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 767.45,
+      "next_chg_pct": 0.748276993764363
+    },
+    {
+      "symbol": "INOXGREEN",
+      "name": "INOX GREEN ENERGY SER LTD",
+      "close": 106.77,
+      "turnover_cr": 15.419718055,
+      "rsi": 24.173986814059674,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 101.82,
+      "next_chg_pct": -4.636133745434112
+    },
+    {
+      "symbol": "BLS",
+      "name": "BLS INTL SERVS LTD",
+      "close": 219.38,
+      "turnover_cr": 14.978891931,
+      "rsi": 47.505262718950796,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 209.22,
+      "next_chg_pct": -4.631233476160091
+    },
+    {
+      "symbol": "CHAMBLFERT",
+      "name": "CHAMBAL FERTILIZERS LTD",
+      "close": 365.7,
+      "turnover_cr": 14.884403465,
+      "rsi": 32.01889351221479,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 353.9,
+      "next_chg_pct": -3.2266885425211944
+    },
+    {
+      "symbol": "GATEWAY",
+      "name": "GATEWAY DISTRIPARKS LTD",
+      "close": 43.84,
+      "turnover_cr": 14.718485326,
+      "rsi": 14.251967441797504,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 42.87,
+      "next_chg_pct": -2.2125912408759274
+    },
+    {
+      "symbol": "PRAJIND",
+      "name": "PRAJ INDUSTRIES LTD",
+      "close": 254.2,
+      "turnover_cr": 14.633423140000001,
+      "rsi": 23.977876690546523,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 241.7,
+      "next_chg_pct": -4.917387883556257
+    },
+    {
+      "symbol": "KDDL",
+      "name": "KDDL LIMITED",
+      "close": 3860.2,
+      "turnover_cr": 14.3690033,
+      "rsi": 52.76453305990053,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 3743.8,
+      "next_chg_pct": -3.0153878037407322
+    },
+    {
+      "symbol": "AFCONS",
+      "name": "AFCONS INFRASTRUCTURE LTD",
+      "close": 211.66,
+      "turnover_cr": 14.367964271,
+      "rsi": 23.391729757381455,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 206.04,
+      "next_chg_pct": -2.655201738637436
+    },
+    {
+      "symbol": "SHREEPUSHK",
+      "name": "SHRE PUSH CHEM & FERT LTD",
+      "close": 577.0,
+      "turnover_cr": 14.20641266,
+      "rsi": 70.17979620047305,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 602.6,
+      "next_chg_pct": 4.436741767764296
+    },
+    {
+      "symbol": "PRASOLCHEM",
+      "name": "PRASOL CHEMICALS LIMITED",
+      "close": 818.2,
+      "turnover_cr": 14.190542545,
+      "rsi": 62.55349943741599,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 805.1,
+      "next_chg_pct": -1.6010755316548497
+    },
+    {
+      "symbol": "MOREALTY",
+      "name": "MOTILALAMC - MOREALTY",
+      "close": 82.25,
+      "turnover_cr": 13.957126986000002,
+      "rsi": 48.23787572312171,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 81.52,
+      "next_chg_pct": -0.8875379939209727
+    },
+    {
+      "symbol": "HONAUT",
+      "name": "HONEYWELL AUTOMATION IND",
+      "close": 30510.0,
+      "turnover_cr": 13.933768,
+      "rsi": 28.249654275020617,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 29490.0,
+      "next_chg_pct": -3.343166175024581
+    },
+    {
+      "symbol": "EMUDHRA",
+      "name": "EMUDHRA LIMITED",
+      "close": 353.45,
+      "turnover_cr": 13.93344545,
+      "rsi": 28.171788734983963,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 339.9,
+      "next_chg_pct": -3.8336398359032464
+    },
+    {
+      "symbol": "ZOTA",
+      "name": "ZOTA HEALTH CARE LIMITED",
+      "close": 1323.6,
+      "turnover_cr": 13.91404646,
+      "rsi": 53.97104047410553,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1328.8,
+      "next_chg_pct": 0.3928679359323173
+    },
+    {
+      "symbol": "SBISILVER",
+      "name": "SBIAMC - SBISILVER",
+      "close": 184.63,
+      "turnover_cr": 13.572935580000001,
+      "rsi": 25.113264384001155,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 177.85,
+      "next_chg_pct": -3.6722092834317266
+    },
+    {
+      "symbol": "ENDURANCE",
+      "name": "ENDURANCE TECHNO. LTD.",
+      "close": 2311.8,
+      "turnover_cr": 13.26637083,
+      "rsi": 31.072761225236363,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 2273.4,
+      "next_chg_pct": -1.6610433428497329
+    },
+    {
+      "symbol": "ADSL",
+      "name": "ALLIED DIGITAL SERV. LTD",
+      "close": 108.21,
+      "turnover_cr": 13.241705194,
+      "rsi": 56.87257333557826,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 105.27,
+      "next_chg_pct": -2.7169392847241403
+    },
+    {
+      "symbol": "BECTORFOOD",
+      "name": "MRS BECTORS FOOD SPE LTD",
+      "close": 185.9,
+      "turnover_cr": 13.074120665,
+      "rsi": 30.419517437953118,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 181.59,
+      "next_chg_pct": -2.318450779989245
+    },
+    {
+      "symbol": "STYRENIX",
+      "name": "STYRENIX PERFORMANCE LTD",
+      "close": 1811.8,
+      "turnover_cr": 12.73999889,
+      "rsi": 30.219453283658282,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1754.8,
+      "next_chg_pct": -3.1460426095595517
+    },
+    {
+      "symbol": "SIGNATURE",
+      "name": "SIGNATUREGLOBAL INDIA LTD",
+      "close": 716.7,
+      "turnover_cr": 12.7285519,
+      "rsi": 44.11441169500856,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 702.5,
+      "next_chg_pct": -1.9813031952002347
+    },
+    {
+      "symbol": "HDFCBSE500",
+      "name": "HDFCAMC - HDFCBSE500",
+      "close": 35.39,
+      "turnover_cr": 12.467629594,
+      "rsi": 46.25261752108845,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 35.25,
+      "next_chg_pct": -0.39559197513422406
+    },
+    {
+      "symbol": "MMFL",
+      "name": "MM FORGINGS LTD",
+      "close": 494.05,
+      "turnover_cr": 12.371109795,
+      "rsi": 34.40255919735944,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 482.9,
+      "next_chg_pct": -2.2568565934622087
+    },
+    {
+      "symbol": "AJMERA",
+      "name": "AJMERA REALTY & INF I LTD",
+      "close": 137.86,
+      "turnover_cr": 12.000618223,
+      "rsi": 73.48141805181419,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 132.59,
+      "next_chg_pct": -3.8227187001305785
+    },
+    {
+      "symbol": "BHARTIHEXA",
+      "name": "BHARTI HEXACOM LIMITED",
+      "close": 1657.4,
+      "turnover_cr": 11.97770813,
+      "rsi": 65.40694541141688,
+      "setups": [
+        "bull_flag"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1636.2,
+      "next_chg_pct": -1.2791118619524533
+    },
+    {
+      "symbol": "SILVER",
+      "name": "BIRLASLAMC - SILVER",
+      "close": 187.98,
+      "turnover_cr": 11.956523234,
+      "rsi": 24.451289101248506,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 181.21,
+      "next_chg_pct": -3.6014469624428003
+    },
+    {
+      "symbol": "APCOTEXIND",
+      "name": "APCOTEX INDUSTRIES LIMITE",
+      "close": 484.5,
+      "turnover_cr": 11.92131931,
+      "rsi": 24.11633557709135,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 476.75,
+      "next_chg_pct": -1.5995872033023772
+    },
+    {
+      "symbol": "FUSION",
+      "name": "FUSION FINANCE LIMITED",
+      "close": 135.18,
+      "turnover_cr": 11.873008169,
+      "rsi": 14.844146342769548,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 129.24,
+      "next_chg_pct": -4.394141145139807
+    },
+    {
+      "symbol": "CREDITACC",
+      "name": "CREDITACCESS GRAMEEN LTD",
+      "close": 1038.4,
+      "turnover_cr": 11.42520221,
+      "rsi": 26.809072863163635,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 1023.6,
+      "next_chg_pct": -1.42526964560864
+    },
+    {
+      "symbol": "JSLL",
+      "name": "JEENA SIKHO LIFECARE LTD",
+      "close": 347.75,
+      "turnover_cr": 11.140948105,
+      "rsi": 22.084985823345804,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 334.45,
+      "next_chg_pct": -3.824586628324944
+    },
+    {
+      "symbol": "ORIENTHOT",
+      "name": "ORIENT HOTELS LTD",
+      "close": 160.17,
+      "turnover_cr": 11.083187156000001,
+      "rsi": 70.29448169904985,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 160.86,
+      "next_chg_pct": 0.43079228319911067
+    },
+    {
+      "symbol": "RAMCOCEM",
+      "name": "THE RAMCO CEMENTS LIMITED",
+      "close": 729.7,
+      "turnover_cr": 11.07954726,
+      "rsi": 23.265636582945902,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 719.65,
+      "next_chg_pct": -1.377278333561749
+    },
+    {
+      "symbol": "SILVERBETA",
+      "name": "UTIAMC-SILVERBETA",
+      "close": 181.71,
+      "turnover_cr": 10.977408058,
+      "rsi": 24.93892339409537,
+      "setups": [
+        "oversold"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 175.02,
+      "next_chg_pct": -3.681690605910515
+    },
+    {
+      "symbol": "IMAGICAA",
+      "name": "IMAGICAAWORLD ENT LTD",
+      "close": 43.39,
+      "turnover_cr": 10.763955,
+      "rsi": 39.21385361412184,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 41.05,
+      "next_chg_pct": -5.392947683798122
+    },
+    {
+      "symbol": "GUJTHEM",
+      "name": "GUJARAT THEMIS BIOSYN LTD",
+      "close": 375.8,
+      "turnover_cr": 10.587363295000001,
+      "rsi": 51.0316693886295,
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 363.2,
+      "next_chg_pct": -3.352847259180425
+    },
+    {
+      "symbol": "LASERPOWER",
+      "name": "LASER POWER & INFRA LTD",
+      "close": 209.5,
+      "turnover_cr": 10.571773895,
+      "rsi": 28.684325226465532,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 201.1,
+      "next_chg_pct": -4.009546539379483
+    },
+    {
+      "symbol": "ABFRL",
+      "name": "ADITYA BIRLA FASHION & RT",
+      "close": 40.14,
+      "turnover_cr": 10.547861645000001,
+      "rsi": 27.681279377136036,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 38.78,
+      "next_chg_pct": -3.388141504733433
+    },
+    {
+      "symbol": "ALGOQUANT",
+      "name": "ALGOQUANT FINTECH LIMITED",
+      "close": 76.43,
+      "turnover_cr": 10.498473920999999,
+      "rsi": 65.9303116696739,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 76.22,
+      "next_chg_pct": -0.274761219416475
+    },
+    {
+      "symbol": "LLOYDSENT",
+      "name": "LLOYDS ENTERPRISES LTD",
+      "close": 62.76,
+      "turnover_cr": 10.493163576,
+      "rsi": 32.349054487648814,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 60.98,
+      "next_chg_pct": -2.8362014021669824
+    },
+    {
+      "symbol": "WAAREERTL",
+      "name": "WAAREE RENEWABLE TECH LTD",
+      "close": 692.1,
+      "turnover_cr": 10.43300077,
+      "rsi": 32.20725235815138,
+      "setups": [
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 694.3,
+      "next_chg_pct": 0.3178731397196932
+    },
+    {
+      "symbol": "VADILALIND",
+      "name": "VADILAL INDUSTRIES LTD",
+      "close": 7580.0,
+      "turnover_cr": 10.39507765,
+      "rsi": 60.694555290120306,
+      "setups": [
+        "breakout_20d"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 7492.5,
+      "next_chg_pct": -1.1543535620052725
+    },
+    {
+      "symbol": "COMSYN",
+      "name": "COMMERCIAL SYN BAGS LTD",
+      "close": 210.9,
+      "turnover_cr": 10.278933325,
+      "rsi": 24.466363294957347,
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "next_day": "2026-10-30",
+      "next_close": 203.1,
+      "next_chg_pct": -3.69843527738265
+    }
+  ]
+}
