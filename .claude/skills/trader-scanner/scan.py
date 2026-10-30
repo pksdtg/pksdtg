@@ -122,6 +122,8 @@ NYSE_EARLY_CLOSE = {  # 1:00 p.m. ET
 }
 CALENDAR_YEARS = (2026, 2027)
 OPEN = datetime.time(9, 30)
+NO_ENTRIES_AFTER = "15:30"
+DAILY_MIN_PRICE, DAILY_MIN_VOLUME = 5.0, 1000000
 CLOSE = datetime.time(16, 0)
 EARLY = datetime.time(13, 0)
 
@@ -671,9 +673,9 @@ def orb_window(now_utc, at, or_minutes, until, explicit_day=None):
             raise ScanError("The market closed at %s ET on %s. Replay the session with --at 10:15."
                             % (clock_label(close_dt), day_label(day)))
     if cutoff < first_close:
-        raise ScanError("It is %s ET: the %d-minute opening range runs 9:30 to %s and the first bar after it "
+        raise ScanError("It is %s ET: the %d-minute opening range runs %s to %s and the first bar after it "
                         "closes at %s. Run orb again after %s."
-                        % (clock_label(cutoff), or_minutes, clock_label(range_end), clock_label(first_close),
+                        % (clock_label(cutoff), or_minutes, clock_label(slot(day, 0)), clock_label(range_end), clock_label(first_close),
                            clock_label(first_close)))
     if until is not None and cutoff.time() > until:
         raise ScanError("It is %s ET, after %s, your last time for new entries (no_entries_after): an "
@@ -837,7 +839,40 @@ def money(x):
 
 # ---------------------------------------------------------------- commands
 
+def cmd_universe_nse(a):
+    """NSE: every EQ and BE series stock in NSE's securities list (EQUITY_L.csv)."""
+    if a.offline:
+        with open(os.path.join(a.offline, "EQUITY_L.csv"), encoding="utf-8", errors="replace") as fh:
+            text = fh.read()
+    else:
+        try:
+            text = trader_market.NSESession().get(trader_market.NSE_EQUITY_LIST).decode("utf-8", "replace")
+        except (urllib.error.URLError, OSError) as e:
+            raise ScanError("could not reach nsearchives.nseindia.com: %s" % getattr(e, "reason", e))
+    kept, counts = trader_market.nse_universe(text)
+    if not a.no_write:
+        d = os.path.dirname(a.out)
+        if d:
+            os.makedirs(d, exist_ok=True)
+        with open(a.out, "w", encoding="utf-8") as fh:
+            for sym, name in kept:
+                fh.write("%s|%s\n" % (sym, name))
+    if a.json:
+        print(json.dumps({"count": len(kept), "rows": counts["rows"], "market": "NSE",
+                          "dropped": {"other series": counts["other series"]},
+                          "out": None if a.no_write else a.out}, indent=2))
+    else:
+        print("NSE securities list (EQUITY_L.csv): %s rows." % "{:,}".format(counts["rows"]))
+        print("Kept %s NSE stocks in the EQ and BE series; dropped %s in other series."
+              % ("{:,}".format(len(kept)), "{:,}".format(counts["other series"])))
+        if not a.no_write:
+            print("Wrote %s (one SYMBOL|Name a line)." % a.out)
+    return 0 if kept else 1
+
+
 def cmd_universe(a):
+    if MARKET == "NSE":
+        return cmd_universe_nse(a)
     t0 = time.time()
     texts = {}
     for k, fname in enumerate(NASDAQ_FILES):
@@ -944,7 +979,7 @@ def cmd_orb(a):
     now = parse_now(a.now)
     at = parse_hhmm(a.at) if a.at else None
     cfg = read_config(a.config)
-    until = parse_hhmm(a.until or cfg.get("no_entries_after") or "15:30", "--until")
+    until = parse_hhmm(a.until or cfg.get("no_entries_after") or NO_ENTRIES_AFTER, "--until")
     data = failed = None
     explicit_day = None
     offline_syms = None
@@ -995,8 +1030,8 @@ def cmd_orb(a):
     if a.json:
         print(json.dumps(dict(doc, counts=counts, seconds=round(time.time() - t0, 1)), indent=2))
         return 0 if hits else 1
-    print("Opening-range breakout scan, %s %s ET: %d-minute range (9:30 to %s), 5-minute bars, Yahoo."
-          % (day_label(day), clock_label(cutoff), a.or_minutes, clock_label(slot(day, a.or_minutes // BAR_MIN))))
+    print("Opening-range breakout scan, %s %s ET: %d-minute range (%s to %s), 5-minute bars, Yahoo."
+          % (day_label(day), clock_label(cutoff), a.or_minutes, clock_label(slot(day, 0)), clock_label(slot(day, a.or_minutes // BAR_MIN))))
     print("Fetched %s of %s charts%s; %s usable%s; %s candidates, %s confirmed with real highs and lows."
           % ("{:,}".format(counts["fetched"]), "{:,}".format(len(symbols)),
              (" (%s failed or had no data)" % "{:,}".format(nfailed)) if nfailed else "",
@@ -1056,9 +1091,9 @@ def main(argv=None):
         p.add_argument("--json", action="store_true")
 
     p = sub.add_parser("daily", help="pre-market setups from daily closes")
-    common(p, 5.0, 1000000)
+    common(p, DAILY_MIN_PRICE, DAILY_MIN_VOLUME)
     p = sub.add_parser("orb", help="opening-range breakouts so far today")
-    common(p, 5.0, 0)
+    common(p, DAILY_MIN_PRICE, 0)
     p.add_argument("--or-minutes", type=int, default=15)
     p.add_argument("--max-confirm", type=int, default=MAX_CONFIRM,
                    help="v8 charts to fetch in stage 2, most traded first (%d; 0 = all)" % MAX_CONFIRM)
@@ -1077,6 +1112,16 @@ def main(argv=None):
     except KeyboardInterrupt:
         print("scan.py: stopped", file=sys.stderr)
         return 1
+
+
+# ---------------------------------------------------------------- market
+
+try:  # TRADER_MARKET=NSE, or "market": "NSE" in trader/config.json: NSE India hours, holidays, tickers
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    import trader_market
+    MARKET = trader_market.apply(globals())
+except ImportError:
+    MARKET = "US"
 
 
 if __name__ == "__main__":

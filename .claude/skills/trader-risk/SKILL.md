@@ -160,6 +160,19 @@ It never places an order, never edits an order to make it pass, never
 loosens a limit, never blocks a sell that only gets the user out, and never
 treats a PASS as the user's yes.
 
+## NSE India
+
+Set `"market": "NSE"` in `trader/config.json` (or `TRADER_MARKET=NSE`) and this
+tool runs on NSE: India Standard Time (no daylight saving), the 9:15 to 15:30
+session, NSE's 2026 equity holidays (2027 is not published yet), Yahoo `.NS`
+tickers (`RELIANCE` becomes `RELIANCE.NS`, `M&M` and `BAJAJ-AUTO` work), and
+printed times in IST and amounts in Rs. Defaults move with it: no entries
+before 9:30 or after 15:00, flat by 15:10 (before brokers' intraday auto
+square-off, around 15:20). Money settings in `trader/config.json` are read as
+rupees; set them in rupees. The shared switch is `../trader_market.py`.
+
+The entry window and the market-closed check use NSE hours and holidays.
+
 ## Safety
 
 - Education and tooling, not financial advice. A PASS is a rules check, not a recommendation.

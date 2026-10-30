@@ -815,5 +815,15 @@ def main(argv=None):
     return 1 if res["block"] else 0
 
 
+# ---------------------------------------------------------------- market
+
+try:  # TRADER_MARKET=NSE, or "market": "NSE" in trader/config.json: NSE India hours, holidays, tickers
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    import trader_market
+    MARKET = trader_market.apply(globals())
+except ImportError:
+    MARKET = "US"
+
+
 if __name__ == "__main__":
     sys.exit(main())

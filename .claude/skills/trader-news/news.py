@@ -49,6 +49,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 
@@ -57,6 +58,7 @@ CHART = "https://%s.finance.yahoo.com/v8/finance/chart/%s?range=1d&interval=5m"
 SEC_FEED = ("https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=%s&type=%s"
             "&dateb=&owner=include&count=%d&output=atom")
 TICKERS_URL = "https://www.sec.gov/files/company_tickers.json"
+NSE_ANNOUNCEMENTS = "corporate-announcements?index=equities&symbol=%s"
 PLACEHOLDER = "you@example.com"
 BROWSER_UA = "Mozilla/5.0 (compatible; day-trader-skill/2.0; +https://github.com/Jakeschincariol/day-trader-skill)"
 KEEP_DAYS = 30
@@ -74,6 +76,10 @@ ITEMS_8K = {
     "7.01": "Regulation FD disclosure", "8.01": "other events", "9.01": "exhibits",
 }
 IMPORTANT_ITEMS = {"1.03", "1.05", "2.02", "2.04", "2.06", "3.01", "4.02", "5.01", "5.02"}
+# NSE announcement subjects worth the same "!" as an important 8-K item
+IMPORTANT_NSE = re.compile(r"financial results|outcome of board meeting|resignation|cessation|change in director"
+                           r"|insolvency|default|fraud|delisting|suspension|cyber|credit rating|auditor"
+                           r"|acquisition|amalgamation|scheme of arrangement|buy ?back", re.I)
 KEYWORDS = [
     ("earnings", r"\bearnings\b|\bresults\b|\bEPS\b|\bguidance\b|\bforecast\b"),
     ("analyst", r"\bupgrade[sd]?\b|\bdowngrade[sd]?\b|price target|\boutperform\b|\bunderperform\b"),
@@ -288,6 +294,31 @@ def parse_sec_atom(data, ticker):
     return out
 
 
+def parse_nse_announcements(data, ticker):
+    """NSE corporate announcements JSON -> items (times are IST on the exchange's side)."""
+    try:
+        rows = json.loads(data)
+    except ValueError as exc:
+        raise NewsError("NSE announcements for %s are not JSON: %s" % (ticker, exc))
+    if isinstance(rows, dict):
+        rows = rows.get("data") or []
+    out = []
+    for r in rows if isinstance(rows, list) else []:
+        try:
+            ist = _dt.datetime.strptime(r.get("an_dt") or "", "%d-%b-%Y %H:%M:%S")
+            when = (ist - _dt.timedelta(hours=5, minutes=30)).replace(tzinfo=_dt.timezone.utc)
+        except ValueError:
+            when = None
+        desc = (r.get("desc") or "").strip()
+        text = (r.get("attchmntText") or "").strip()
+        out.append({"id": "nse:%s" % (r.get("seq_id") or r.get("attchmntFile") or desc + str(r.get("an_dt"))),
+                    "source": "NSE", "kind": "filing", "form": desc, "ticker": ticker,
+                    "title": "%s: %s" % (r.get("sm_name") or ticker, desc or "announcement"),
+                    "summary": text, "items": [], "important": bool(IMPORTANT_NSE.search(desc + " " + text)),
+                    "link": r.get("attchmntFile") or "", "time": when})
+    return out
+
+
 def parse_chart(data, ticker):
     """Yahoo chart JSON -> {"ticker", "price", "prev_close", "pct", "time"} or raise."""
     try:
@@ -378,9 +409,22 @@ def fingerprint(it):
 
 # ---------------------------------------------------------------- the check
 
-def collect(fetcher, watch, state, sec=True, forms=("8-K",), count=10, errors=None):
+def collect(fetcher, watch, state, sec=True, forms=("8-K",), count=10, errors=None, nse=False):
     errors = [] if errors is None else errors
     items = []
+    if nse:
+        session = None if fetcher.offline else trader_market.NSESession()
+        for t in sorted(watch):
+            try:
+                if session is None:
+                    data = fetcher.get("", "nse-%s.json" % t)
+                else:
+                    data = session.get(trader_market.NSE_HOME + "api/" + NSE_ANNOUNCEMENTS
+                                       % urllib.parse.quote(trader_market.strip_suffix(t)),
+                                       accept="application/json")
+                items += parse_nse_announcements(data, t)
+            except (NewsError, urllib.error.URLError, OSError) as exc:
+                errors.append("NSE announcements for %s: %s" % (t, getattr(exc, "reason", exc)))
     for t in sorted(watch):
         try:
             items += parse_rss(fetcher.get(YAHOO % yahoo_symbol(t), "yahoo-%s.xml" % t), t)
@@ -488,7 +532,7 @@ def main(argv=None):
     ap.add_argument("--hours", type=float, default=48, help="ignore items older than this")
     ap.add_argument("--all", action="store_true", help="show seen items too")
     ap.add_argument("--forms", default="8-K", help="SEC forms to watch, comma separated")
-    ap.add_argument("--no-sec", action="store_true", help="headlines only")
+    ap.add_argument("--no-sec", action="store_true", help="headlines only (NSE: no exchange announcements)")
     ap.add_argument("--no-moves", action="store_true", help="skip the price line per ticker")
     ap.add_argument("--move-pct", type=float, default=MOVE_PCT, help="flag a move this big (percent)")
     ap.add_argument("--user-agent", help="SEC User-Agent: \"Your Name you@example.com\"")
@@ -513,14 +557,15 @@ def main(argv=None):
     state = load_json(args.state) or {}
     errors = []
     ua = sec_user_agent(args.user_agent, args.config)
-    sec = not args.no_sec
+    sec = not args.no_sec and MARKET != "NSE"  # NSE: exchange announcements take the place of 8-Ks
     if sec and not ua and not args.offline:
         errors.append("SEC filings skipped: set sec_user_agent in trader/config.json or "
                       "SEC_USER_AGENT (\"Your Name you@example.com\") to include them")
         sec = False
     fetcher = Fetcher(ua, offline=args.offline)
     forms = [f.strip().upper() for f in args.forms.split(",") if f.strip()]
-    items = collect(fetcher, watch, state, sec=sec, forms=forms, errors=errors)
+    items = collect(fetcher, watch, state, sec=sec, forms=forms, errors=errors,
+                    nse=MARKET == "NSE" and not args.no_sec)
     items = dedupe(tag(items, watch))
     shown = select(items, state, now, hours=args.hours, show_all=args.all)
     moves = [] if args.no_moves else collect_moves(fetcher, watch, errors)
@@ -540,6 +585,16 @@ def main(argv=None):
             json.dump(state, fh, indent=2)
             fh.write("\n")
     return 0 if any(i["new"] for i in shown) else 1
+
+
+# ---------------------------------------------------------------- market
+
+try:  # TRADER_MARKET=NSE, or "market": "NSE" in trader/config.json: NSE India hours, holidays, tickers
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    import trader_market
+    MARKET = trader_market.apply(globals())
+except ImportError:
+    MARKET = "US"
 
 
 if __name__ == "__main__":

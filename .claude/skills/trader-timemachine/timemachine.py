@@ -185,9 +185,13 @@ def clock24(minutes):
 
 # ---------------------------------------------------------------- data
 
+def yahoo_symbol(sym):
+    return sym.upper().replace(".", "-")
+
+
 def chart_url(sym, host="query2"):
     return "https://%s.finance.yahoo.com/v8/finance/chart/%s?range=60d&interval=5m" % (
-        host, urllib.parse.quote(sym.upper().replace(".", "-")))
+        host, urllib.parse.quote(yahoo_symbol(sym), safe=".^-"))
 
 
 def _sleep(seconds):
@@ -624,7 +628,7 @@ def resolve_rule(plan, entry_day):
 # ---------------------------------------------------------------- the run
 
 def _until12(mc):
-    t = mc.get("until") or "16:00"
+    t = mc.get("until") or "%02d:%02d" % divmod(CLOSE_MIN, 60)
     return clock12(int(t[:2]) * 60 + int(t[3:]))
 
 
@@ -686,7 +690,7 @@ def time_machine(text, plan, now_utc, replays=10000, seed=19, window=2, until=No
     result = chart_result(text, sym)
     meta, bars, dropped = parse_bars(result, now_utc)
     msym = str(meta.get("symbol") or "").upper()
-    if msym and msym != sym.replace(".", "-"):
+    if msym and msym != yahoo_symbol(sym):
         raise TMError("the data is for %s but the plan is for %s" % (msym, sym))
     gran = meta.get("dataGranularity")
     if gran and gran != "5m":
@@ -950,6 +954,16 @@ def main(argv=None):
     except TMError as e:
         print("timemachine.py: %s" % e, file=sys.stderr)
         return 1
+
+
+# ---------------------------------------------------------------- market
+
+try:  # TRADER_MARKET=NSE, or "market": "NSE" in trader/config.json: NSE India hours, holidays, tickers
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    import trader_market
+    MARKET = trader_market.apply(globals())
+except ImportError:
+    MARKET = "US"
 
 
 if __name__ == "__main__":

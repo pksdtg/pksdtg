@@ -120,6 +120,19 @@ sizes it: a $50 max loss per trade buys floor(50 / 5.86) = 8 shares.
 It never places an order, never sizes a position, never widens a stop to
 make a plan pass, and never calls a stop a guarantee.
 
+## NSE India
+
+Set `"market": "NSE"` in `trader/config.json` (or `TRADER_MARKET=NSE`) and this
+tool runs on NSE: India Standard Time (no daylight saving), the 9:15 to 15:30
+session, NSE's 2026 equity holidays (2027 is not published yet), Yahoo `.NS`
+tickers (`RELIANCE` becomes `RELIANCE.NS`, `M&M` and `BAJAJ-AUTO` work), and
+printed times in IST and amounts in Rs. Defaults move with it: no entries
+before 9:30 or after 15:00, flat by 15:10 (before brokers' intraday auto
+square-off, around 15:20). Money settings in `trader/config.json` are read as
+rupees; set them in rupees. The shared switch is `../trader_market.py`.
+
+NSE prices move in ticks that depend on the stock's price band (WIPRO near Rs 194 traded at Rs 193.93, a Rs 0.01 tick; higher-priced stocks use larger ticks). This tool rounds to the paisa. Check the tick with your broker and round the stop and target to it before you place them.
+
 ## Safety
 
 - Education and tooling, not financial advice. A PASS is a rules check, not a recommendation.

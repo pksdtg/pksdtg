@@ -50,6 +50,7 @@ STRING_FIELDS = ("qty", "notional", "limit_price", "stop_price", "trail_price", 
 TIF_WORDS = {"day": "good for today", "gtc": "good until canceled", "opg": "at the open",
              "cls": "at the close", "ioc": "immediate or cancel", "fok": "fill or kill"}
 YES_WORDS = ("yes", "y")
+FLAT_BY = "15:55"  # default flat-by time, New York
 BATCH_WORDS = {"all", "every", "everything", "rest", "remaining", "them", "both", "batch", "each"}
 DOUBT_WORDS = {"no", "not", "dont", "don't", "wait", "cancel", "stop", "but", "maybe", "later",
                "hold", "unless", "if"}
@@ -355,6 +356,10 @@ def render(order, idx, total, cfg, risk, state, today):
     paper = cfg.get("paper", True)
     acct = "PAPER account" if paper else "LIVE ACCOUNT, REAL MONEY"
     lines = ["ORDER %d of %d, %s, %s" % (idx, total, acct, "Interactive Brokers" if broker == "ibkr" else "Alpaca")]
+    if MARKET == "NSE" and broker != "ibkr":
+        lines.append("  NSE: Alpaca does not trade Indian stocks. Treat this as a paper ticket, or place it "
+                     "yourself with an NSE broker (symbol %s, without .NS)." % str(order.get("symbol", "")).upper()
+                     .replace(".NS", ""))
     for part in plain_parts(order):
         lines.append("  " + part)
     if order.get("why"):
@@ -602,7 +607,7 @@ def cmd_flatten(a):
                               "%s) and pass --qty if you do hold some" % (sym, a.portfolio, sym))
     plan = read_json(a.plan, "plan", required=False) or {}
     flat_by = (plan.get("flat_by") if str(plan.get("symbol", "")).upper() == sym else None) \
-        or cfg.get("flat_by") or "15:55"
+        or cfg.get("flat_by") or FLAT_BY
     order = {"symbol": sym, "side": "sell", "qty": _str_num(qty), "type": "market", "time_in_force": "day",
              "why": "flat by %s New York: closes the %s day trade before the close (qty from %s)"
              % (flat_by, sym, source)}
@@ -714,6 +719,16 @@ def main(argv=None):
     except TicketError as e:
         print("ticket.py: %s" % e, file=sys.stderr)
         return 1
+
+
+# ---------------------------------------------------------------- market
+
+try:  # TRADER_MARKET=NSE, or "market": "NSE" in trader/config.json: NSE India hours, holidays, tickers
+    sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    import trader_market
+    MARKET = trader_market.apply(globals())
+except ImportError:
+    MARKET = "US"
 
 
 if __name__ == "__main__":

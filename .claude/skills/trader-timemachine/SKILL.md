@@ -156,6 +156,19 @@ and never calls a result a sure thing. It never prints a P&L or a profit.
 It never uses a bar that has not closed yet, and never mixes today's bars
 into the pool.
 
+## NSE India
+
+Set `"market": "NSE"` in `trader/config.json` (or `TRADER_MARKET=NSE`) and this
+tool runs on NSE: India Standard Time (no daylight saving), the 9:15 to 15:30
+session, NSE's 2026 equity holidays (2027 is not published yet), Yahoo `.NS`
+tickers (`RELIANCE` becomes `RELIANCE.NS`, `M&M` and `BAJAJ-AUTO` work), and
+printed times in IST and amounts in Rs. Defaults move with it: no entries
+before 9:30 or after 15:00, flat by 15:10 (before brokers' intraday auto
+square-off, around 15:20). Money settings in `trader/config.json` are read as
+rupees; set them in rupees. The shared switch is `../trader_market.py`.
+
+Yahoo leaves NSE's 15:15 to 15:30 five-minute bars empty, so a replayed NSE session runs 9:15 to 15:15 (72 bars). The flat-by at 15:10 is inside it.
+
 ## Safety
 
 - Education and tooling, not financial advice. A PASS is a rules check, not a recommendation.

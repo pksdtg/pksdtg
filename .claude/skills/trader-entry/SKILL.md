@@ -132,6 +132,19 @@ is `/trader-exit`), never moves the level after the fact, and never counts a
 bar that has not closed. It never runs `/trader-broker` from a background
 watch: nobody is there to say yes.
 
+## NSE India
+
+Set `"market": "NSE"` in `trader/config.json` (or `TRADER_MARKET=NSE`) and this
+tool runs on NSE: India Standard Time (no daylight saving), the 9:15 to 15:30
+session, NSE's 2026 equity holidays (2027 is not published yet), Yahoo `.NS`
+tickers (`RELIANCE` becomes `RELIANCE.NS`, `M&M` and `BAJAJ-AUTO` work), and
+printed times in IST and amounts in Rs. Defaults move with it: no entries
+before 9:30 or after 15:00, flat by 15:10 (before brokers' intraday auto
+square-off, around 15:20). Money settings in `trader/config.json` are read as
+rupees; set them in rupees. The shared switch is `../trader_market.py`.
+
+The 15-minute range is 9:15 to 9:30; the first trigger can come on the 9:30 bar.
+
 ## Safety
 
 - Education and tooling, not financial advice. A PASS is a rules check, not a recommendation.

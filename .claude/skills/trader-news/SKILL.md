@@ -97,6 +97,19 @@ ticker has no news, say so rather than padding the brief.
 - Never hammers a server: one request per feed per ticker, a pause between
   calls, and SEC's 10 requests a second limit stays far away.
 
+## NSE India
+
+Set `"market": "NSE"` in `trader/config.json` (or `TRADER_MARKET=NSE`) and this
+tool runs on NSE: India Standard Time (no daylight saving), the 9:15 to 15:30
+session, NSE's 2026 equity holidays (2027 is not published yet), Yahoo `.NS`
+tickers (`RELIANCE` becomes `RELIANCE.NS`, `M&M` and `BAJAJ-AUTO` work), and
+printed times in IST and amounts in Rs. Defaults move with it: no entries
+before 9:30 or after 15:00, flat by 15:10 (before brokers' intraday auto
+square-off, around 15:20). Money settings in `trader/config.json` are read as
+rupees; set them in rupees. The shared switch is `../trader_market.py`.
+
+Exchange announcements from nseindia.com take the place of SEC 8-Ks (no User-Agent needed). Results, board-meeting outcomes, resignations, defaults, ratings and deals are marked `!`. `--no-sec` turns them off.
+
 ## Safety
 
 Education and tooling, not financial advice. This skill only reads and
