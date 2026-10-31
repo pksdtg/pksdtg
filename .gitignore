@@ -1,2 +1,6 @@
 __pycache__/
 *.pyc
+
+# generated court-case reports (portal data, not code)
+reports/
+*.xlsx

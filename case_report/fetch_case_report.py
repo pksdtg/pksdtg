@@ -33,8 +33,8 @@ from playwright.sync_api import sync_playwright
 CONFIG = {
     # --- Portal pages --------------------------------------------------------
     "LOGIN_URL": "https://vidhi.jharkhand.gov.in/Login.aspx",
-    # page with the case table; "" = read the page the portal opens after login
-    "CASE_LIST_URL": "",
+    # Case Management > Case Box (open cases); "" = read the page opened after login
+    "CASE_LIST_URL": "https://vidhi.jharkhand.gov.in/CMS/DEPT/frmCMSDEPTMyCaseBoxOpen.aspx",
 
     # --- Login form (CSS selectors; right-click field > Inspect to find) ------
     "USER_FIELD": "#ContentPlaceHolder1_txt_userid",
@@ -44,18 +44,35 @@ CONFIG = {
     # Login counts as done once the browser has left Login.aspx
     # True if the login page has a CAPTCHA or OTP you must type yourself
     "MANUAL_CAPTCHA": True,
+    # After the CAPTCHA, Vidhi asks "Please select a module to proceed":
+    # (dropdown, option value)  5 = Case Management, 7 = Affidavit Management
+    "MODULE_SELECT": ("#ContentPlaceHolder1_ddlModules", "5"),
 
     # --- Case table ----------------------------------------------------------
-    "TABLE": "table",                     # the table that lists the cases
+    "TABLE": "#myTable",                  # the table that lists the cases
+    # If set, download the portal's Excel export (all cases at once) instead of
+    # paging through the table.  "" = read the table page by page.
+    "EXPORT_BUTTON": "#ContentPlaceHolder1_btnExportToExcel",
     "NEXT_PAGE": "a:has-text('Next'), button:has-text('Next'), li.next a",
     "MAX_PAGES": 50,
     # Optional: choose a filter on the page before reading (e.g. Case Category = Writ)
-    # list of ("select" | "click" | "fill", selector, value)
-    "BEFORE_READ_ACTIONS": [],
+    # list of ("select" | "click" | "fill" | "value", selector, value)
+    # "value" also works on read-only date boxes; {today} = today as 31-Oct-2026
+    # Case Box shows only the last year by default - widen it to every case.
+    "BEFORE_READ_ACTIONS": [
+        ("value", "#ContentPlaceHolder1_txtFromDate", "01-Jan-2010"),
+        ("value", "#ContentPlaceHolder1_txtToDate", "{today}"),
+        ("click", "#ContentPlaceHolder1_btnSearch", ""),
+    ],
 
     # Portal column heading  ->  report column.   Matching ignores case/spaces.
     # Add every spelling your portal uses; unmatched portal columns are ignored.
     "COLUMN_MAP": {
+        # Vidhi Case Box columns
+        "case no h.c filing no. h.c filling date": "CASE FULL",
+        "case subject": "Subject/Status", "heading": "Present Status",
+        "respondent advocate": "Govt. Advocate", "respondent department": "Case related",
+        # other spellings
         "dir sl no": "Dir Sl No", "diary no": "Dir Sl No", "entry no": "Dir Sl No",
         "case type": "CASE TYPE", "type": "CASE TYPE",
         "case no": "CASE NO", "case number": "CASE NO", "number": "CASE NO",
@@ -73,8 +90,9 @@ CONFIG = {
         "status": "Present Status", "present status": "Present Status", "case status": "Present Status",
         "remarks": "Remarks", "brief": "Remarks", "brief facts": "Remarks",
     },
-    # If the portal shows "WPS/1264/2025" in one column, map that column to
-    # "CASE FULL" and it will be split into CASE TYPE / CASE NO / YEAR.
+    # If the portal shows "WPS/1264/2025" or "W.P(S)6423/2026 14360 28.10.2026"
+    # in one column, map that column to "CASE FULL" and it will be split into
+    # CASE TYPE / CASE NO / YEAR (+ the H.C filing no., used for unnumbered cases).
     # e.g.  "case no": "CASE FULL"
 
     # Keep only writ cases (CASE TYPE starting with any of these). [] = keep all
@@ -114,11 +132,13 @@ def case_key(r):
     t = re.sub(r"[^A-Z]", "", str(r.get("CASE TYPE", "")).upper())
     n = re.sub(r"\D", "", str(r.get("CASE NO", "")))
     y = re.sub(r"\D", "", str(r.get("YEAR", "")))
+    n = n.lstrip("0")
     if not n:
-        # no case number: fall back to the petitioner so such rows don't all
-        # collapse into one ('', '', '') key and get dropped as duplicates
-        return (t, "", y, norm(r.get("Petitioner's Name", "")).lower())
-    return (t, n.lstrip("0"), y)
+        # no case number yet (fresh filing shows as 0): fall back to the H.C
+        # filing no. or petitioner so such rows don't all collapse into one key
+        f = re.sub(r"\D", "", str(r.get("FILING NO", "")))
+        return (t, "", y, f or norm(r.get("Petitioner's Name", "")).lower())
+    return (t, n, y)
 
 
 def cell_text(v):
@@ -145,10 +165,18 @@ def login(page, user, pwd):
         page.locator(c["CAPTCHA_FIELD"]).first.focus()
     else:
         page.locator(c["LOGIN_BUTTON"]).first.click()
-    try:
-        page.wait_for_url(lambda u: "login.aspx" not in u.lower(), timeout=300_000)
-    except PWTimeout:
+    module = c.get("MODULE_SELECT")
+    for _ in range(300):                       # 5 min to type the CAPTCHA
+        if "login.aspx" not in page.url.lower():
+            break
+        if module and page.locator(module[0]).first.is_visible():
+            print("Selecting module ...")
+            page.locator(module[0]).first.select_option(module[1])
+            module = None
+        page.wait_for_timeout(1000)
+    else:
         sys.exit("Login did not complete. Check User ID / Password / CAPTCHA.")
+    page.wait_for_load_state("networkidle")
     print("Logged in.")
 
 
@@ -176,11 +204,14 @@ def read_table(page):
             if h and norm(val) and h not in rec:
                 rec[h] = val.strip()
         if "CASE FULL" in rec:
-            m = re.match(r"\s*([A-Za-z.()\s]+?)\s*[/\-\s]\s*(\d+)\s*[/\-\s]\s*(\d{4})", rec.pop("CASE FULL"))
+            m = re.match(r"\s*([A-Za-z.()\s]+?)\s*[/\-\s]?\s*(\d+)\s*[/\-\s]\s*(\d{4})(?:\s+(\d+))?",
+                         rec.pop("CASE FULL"))
             if m:
                 rec.setdefault("CASE TYPE", m.group(1).strip())
                 rec.setdefault("CASE NO", m.group(2))
                 rec.setdefault("YEAR", m.group(3))
+                if m.group(4):
+                    rec["FILING NO"] = m.group(4)
         if rec.get("CASE NO") or rec.get("Petitioner's Name"):
             out.append(rec)
     return out
@@ -192,10 +223,14 @@ def fetch_cases(page):
         page.goto(c["CASE_LIST_URL"], wait_until="domcontentloaded")
     for kind, sel, val in c["BEFORE_READ_ACTIONS"]:
         loc = page.locator(sel).first
+        val = val.replace("{today}", date.today().strftime("%d-%b-%Y"))
         {"select": lambda: loc.select_option(label=val),
          "fill": lambda: loc.fill(val),
+         "value": lambda: loc.evaluate("(e, v) => { e.removeAttribute('readonly'); e.value = v; }", val),
          "click": lambda: loc.click()}[kind]()
-        page.wait_for_load_state("networkidle")
+        page.wait_for_load_state("networkidle", timeout=180_000)
+    if c.get("EXPORT_BUTTON"):
+        return read_export(page)
     cases, seen = [], set()
     for p in range(1, c["MAX_PAGES"] + 1):
         page.wait_for_load_state("networkidle")
@@ -212,6 +247,29 @@ def fetch_cases(page):
         if "disabled" in cls or "true" in cls:
             break
         nxt.first.click()
+    return cases
+
+
+def read_export(page):
+    """Click the portal's Excel export (an HTML table saved as .xls) and read it."""
+    print("  downloading the portal's Excel export ...")
+    with page.expect_download(timeout=300_000) as d:
+        page.locator(CONFIG["EXPORT_BUTTON"]).first.click()
+    html = open(d.value.path(), encoding="utf-8", errors="replace").read()
+    tmp = page.context.new_page()
+    tmp.set_content(html)
+    sel = CONFIG["TABLE"]
+    if tmp.locator(sel).count() == 0:
+        CONFIG["TABLE"] = "table"
+    rows = read_table(tmp)
+    CONFIG["TABLE"] = sel
+    tmp.close()
+    cases, seen = [], set()
+    for r in rows:                      # the export lists some cases twice
+        if case_key(r) not in seen:
+            seen.add(case_key(r))
+            cases.append(r)
+    print(f"  export: {len(cases)} rows")
     return cases
 
 
