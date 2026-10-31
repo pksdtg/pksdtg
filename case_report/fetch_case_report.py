@@ -32,15 +32,16 @@ from playwright.sync_api import sync_playwright
 # =============================================================================
 CONFIG = {
     # --- Portal pages --------------------------------------------------------
-    "LOGIN_URL": "https://YOUR-PORTAL-ADDRESS/login",
-    "CASE_LIST_URL": "https://YOUR-PORTAL-ADDRESS/cases",  # page with the case table
+    "LOGIN_URL": "https://vidhi.jharkhand.gov.in/Login.aspx",
+    # page with the case table; "" = read the page the portal opens after login
+    "CASE_LIST_URL": "",
 
     # --- Login form (CSS selectors; right-click field > Inspect to find) ------
-    "USER_FIELD": "input[name='username'], #username, #userid, input[type='text']",
-    "PASS_FIELD": "input[type='password']",
-    "LOGIN_BUTTON": "button[type='submit'], input[type='submit'], #btnLogin",
-    # Something that only appears AFTER a successful login (logout link, etc.)
-    "LOGGED_IN_MARK": "text=/logout|sign out|लॉग आउट/i",
+    "USER_FIELD": "#ContentPlaceHolder1_txt_userid",
+    "PASS_FIELD": "#ContentPlaceHolder1_txt_password",
+    "CAPTCHA_FIELD": "#ContentPlaceHolder1_txtCaptcha",
+    "LOGIN_BUTTON": "#ContentPlaceHolder1_btnLogin",
+    # Login counts as done once the browser has left Login.aspx
     # True if the login page has a CAPTCHA or OTP you must type yourself
     "MANUAL_CAPTCHA": True,
 
@@ -141,12 +142,13 @@ def login(page, user, pwd):
     if c["MANUAL_CAPTCHA"]:
         print("\n>>> Type the CAPTCHA / OTP in the browser window and click Login.")
         print(">>> The script continues by itself once you are logged in (5 min max).\n")
+        page.locator(c["CAPTCHA_FIELD"]).first.focus()
     else:
         page.locator(c["LOGIN_BUTTON"]).first.click()
     try:
-        page.locator(c["LOGGED_IN_MARK"]).first.wait_for(timeout=300_000)
+        page.wait_for_url(lambda u: "login.aspx" not in u.lower(), timeout=300_000)
     except PWTimeout:
-        sys.exit("Login did not complete. Check User ID / Password and LOGGED_IN_MARK.")
+        sys.exit("Login did not complete. Check User ID / Password / CAPTCHA.")
     print("Logged in.")
 
 
