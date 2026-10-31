@@ -298,7 +298,7 @@ def write_report(rows, out_path, as_on):
 
     # print setup: landscape, fit all columns on one page width, repeat heading rows
     ws.page_setup.orientation = "landscape"
-    ws.page_setup.paperSize = ws.PAPERSIZE_LETTER
+    ws.page_setup.paperSize = ws.PAPERSIZE_A4
     ws.page_setup.fitToWidth = 1
     ws.page_setup.fitToHeight = 0
     ws.sheet_properties.pageSetUpPr.fitToPage = True
