@@ -1,10 +1,10 @@
 {
   "created_by": "trader-scanner",
-  "created_at": "2026-10-31T00:47:06Z",
+  "created_at": "2026-11-03T21:58:35Z",
   "mode": "daily",
-  "as_of": "2026-10-30 close",
+  "as_of": "2026-11-03 close",
   "universe": 2587,
-  "scanned": 801,
+  "scanned": 817,
   "failed": 0,
   "source": "yahoo",
   "filters": {
@@ -14,204 +14,387 @@
   "note": "A scan is a list of charts that match a rule, not a list of stocks to buy.",
   "hits": [
     {
-      "symbol": "LAURUSLABS",
+      "symbol": "RELIANCE",
       "setups": [
         "breakout_20d"
       ],
-      "price": 2405.5,
-      "close_date": "2026-10-30",
-      "rsi": 78.7,
-      "volume": 7909825
-    },
-    {
-      "symbol": "INFY",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 1185.0,
-      "close_date": "2026-10-30",
-      "rsi": 64.3,
-      "volume": 13029753
-    },
-    {
-      "symbol": "ATHERENERG",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 1756.0,
-      "close_date": "2026-10-30",
-      "rsi": 70.0,
-      "volume": 7918994
-    },
-    {
-      "symbol": "TRENT",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 3017.3,
-      "close_date": "2026-10-30",
-      "rsi": 61.9,
-      "volume": 4430525
-    },
-    {
-      "symbol": "ETERNAL",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 343.65,
-      "close_date": "2026-10-30",
-      "rsi": 62.1,
-      "volume": 38677937
-    },
-    {
-      "symbol": "COFORGE",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 2045.0,
-      "close_date": "2026-10-30",
+      "price": 1307.9,
+      "close_date": "2026-11-03",
       "rsi": 66.6,
-      "volume": 6124567
+      "volume": 42318217
     },
     {
-      "symbol": "SUZLON",
-      "setups": [
-        "oversold"
-      ],
-      "price": 33.9,
-      "close_date": "2026-10-30",
-      "rsi": 25.6,
-      "volume": 331194283
-    },
-    {
-      "symbol": "EQUITASBNK",
-      "setups": [
-        "oversold"
-      ],
-      "price": 53.59,
-      "close_date": "2026-10-30",
-      "rsi": 21.2,
-      "volume": 188616796
-    },
-    {
-      "symbol": "DIVISLAB",
+      "symbol": "BHARTIARTL",
       "setups": [
         "breakout_20d"
       ],
-      "price": 9780.0,
-      "close_date": "2026-10-30",
-      "rsi": 64.4,
-      "volume": 1027168
+      "price": 2065.0,
+      "close_date": "2026-11-03",
+      "rsi": 73.5,
+      "volume": 18602031
     },
     {
-      "symbol": "VEDPOWER",
+      "symbol": "HDFCBANK",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 33.13,
-      "close_date": "2026-10-30",
-      "rsi": 57.3,
-      "volume": 298947635
+      "price": 725.5,
+      "close_date": "2026-11-03",
+      "rsi": 58.4,
+      "volume": 42738372
+    },
+    {
+      "symbol": "ICICIBANK",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1424.5,
+      "close_date": "2026-11-03",
+      "rsi": 61.8,
+      "volume": 17496481
     },
     {
       "symbol": "BSE",
       "setups": [
         "breakout_20d"
       ],
-      "price": 3510.4,
-      "close_date": "2026-10-30",
-      "rsi": 61.3,
-      "volume": 2791743
+      "price": 3665.7,
+      "close_date": "2026-11-03",
+      "rsi": 67.7,
+      "volume": 6061702
     },
     {
-      "symbol": "KOTAKBANK",
+      "symbol": "MCX",
       "setups": [
         "breakout_20d"
       ],
-      "price": 461.6,
-      "close_date": "2026-10-30",
-      "rsi": 69.2,
-      "volume": 20730172
+      "price": 3490.1,
+      "close_date": "2026-11-03",
+      "rsi": 64.2,
+      "volume": 4746483
     },
     {
-      "symbol": "SUNPHARMA",
+      "symbol": "MARICO",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 878.4,
+      "close_date": "2026-11-03",
+      "rsi": 74.6,
+      "volume": 14639924
+    },
+    {
+      "symbol": "GROWW",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 205.98,
+      "close_date": "2026-11-03",
+      "rsi": 65.5,
+      "volume": 53193611
+    },
+    {
+      "symbol": "WELSPUNLIV",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 253.09,
+      "close_date": "2026-11-03",
+      "rsi": 71.7,
+      "volume": 41850532
+    },
+    {
+      "symbol": "SOLARINDS",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 1777.7,
-      "close_date": "2026-10-30",
-      "rsi": 47.2,
-      "volume": 5125487
+      "price": 19654.0,
+      "close_date": "2026-11-03",
+      "rsi": 51.6,
+      "volume": 524468
     },
     {
-      "symbol": "INDIGO",
+      "symbol": "KANOHAR",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 4877.6,
-      "close_date": "2026-10-30",
-      "rsi": 55.4,
-      "volume": 1646759
+      "price": 1025.6,
+      "close_date": "2026-11-03",
+      "rsi": 57.7,
+      "volume": 8583364
     },
     {
       "symbol": "TCS",
       "setups": [
         "bull_flag"
       ],
-      "price": 2502.6,
-      "close_date": "2026-10-30",
-      "rsi": 66.8,
-      "volume": 3016270
+      "price": 2499.1,
+      "close_date": "2026-11-03",
+      "rsi": 66.1,
+      "volume": 3485800
     },
     {
-      "symbol": "AEROFLEX",
+      "symbol": "ITC",
       "setups": [
-        "reclaim_ma20"
+        "breakout_20d"
       ],
-      "price": 538.35,
-      "close_date": "2026-10-29",
-      "rsi": 55.2,
-      "volume": 13796771
+      "price": 273.9,
+      "close_date": "2026-11-03",
+      "rsi": 61.3,
+      "volume": 31520030
     },
     {
-      "symbol": "VOGL",
+      "symbol": "KOTAKBANK",
       "setups": [
-        "reclaim_ma20"
+        "breakout_20d"
       ],
-      "price": 30.23,
-      "close_date": "2026-10-30",
-      "rsi": 47.3,
-      "volume": 231188019
+      "price": 464.65,
+      "close_date": "2026-11-03",
+      "rsi": 68.9,
+      "volume": 18520882
     },
     {
       "symbol": "LT",
       "setups": [
         "breakout_20d"
       ],
-      "price": 3871.7,
-      "close_date": "2026-10-30",
-      "rsi": 61.6,
-      "volume": 1761610
+      "price": 3948.2,
+      "close_date": "2026-11-03",
+      "rsi": 66.4,
+      "volume": 2152853
     },
     {
-      "symbol": "PERSISTENT",
+      "symbol": "ETERNAL",
       "setups": [
         "breakout_20d"
       ],
-      "price": 6048.0,
-      "close_date": "2026-10-30",
-      "rsi": 65.3,
-      "volume": 1107581
+      "price": 349.45,
+      "close_date": "2026-11-03",
+      "rsi": 65.0,
+      "volume": 20634889
     },
     {
-      "symbol": "PPLPHARMA",
+      "symbol": "ITI",
       "setups": [
         "breakout_20d"
       ],
-      "price": 238.91,
-      "close_date": "2026-10-30",
-      "rsi": 73.2,
-      "volume": 26850063
+      "price": 261.95,
+      "close_date": "2026-11-03",
+      "rsi": 63.9,
+      "volume": 25759242
+    },
+    {
+      "symbol": "TRIDENT",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 23.79,
+      "close_date": "2026-11-03",
+      "rsi": 65.0,
+      "volume": 273977281
+    },
+    {
+      "symbol": "DIVISLAB",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 10064.0,
+      "close_date": "2026-11-03",
+      "rsi": 69.4,
+      "volume": 611299
+    },
+    {
+      "symbol": "TEMPSENS",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 552.25,
+      "close_date": "2026-11-03",
+      "rsi": 54.6,
+      "volume": 11065877
+    },
+    {
+      "symbol": "ANGELONE",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 310.4,
+      "close_date": "2026-11-03",
+      "rsi": 58.9,
+      "volume": 18138873
+    },
+    {
+      "symbol": "BAJAJ-AUTO",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 10540.0,
+      "close_date": "2026-11-03",
+      "rsi": 51.4,
+      "volume": 497022
+    },
+    {
+      "symbol": "PAYTM",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 1720.0,
+      "close_date": "2026-11-03",
+      "rsi": 55.5,
+      "volume": 2907653
+    },
+    {
+      "symbol": "ASIANPAINT",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 2437.8,
+      "close_date": "2026-11-03",
+      "rsi": 59.3,
+      "volume": 2008937
+    },
+    {
+      "symbol": "VRLLOG",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 295.45,
+      "close_date": "2026-11-03",
+      "rsi": 60.5,
+      "volume": 15967527
+    },
+    {
+      "symbol": "KRBL",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 401.45,
+      "close_date": "2026-11-03",
+      "rsi": 59.7,
+      "volume": 11717462
+    },
+    {
+      "symbol": "CDSL",
+      "setups": [
+        "breakout_20d",
+        "reclaim_ma20"
+      ],
+      "price": 1320.0,
+      "close_date": "2026-11-03",
+      "rsi": 57.9,
+      "volume": 3359404
+    },
+    {
+      "symbol": "MARUTI",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 11869.0,
+      "close_date": "2026-11-03",
+      "rsi": 55.8,
+      "volume": 363540
+    },
+    {
+      "symbol": "CARTRADE",
+      "setups": [
+        "oversold_bounce"
+      ],
+      "price": 2498.4,
+      "close_date": "2026-11-03",
+      "rsi": 39.7,
+      "volume": 1679633
+    },
+    {
+      "symbol": "ATHERENERG",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1795.0,
+      "close_date": "2026-11-03",
+      "rsi": 71.9,
+      "volume": 2333673
+    },
+    {
+      "symbol": "TECHNOCRAF",
+      "setups": [
+        "breakout_20d",
+        "reclaim_ma20"
+      ],
+      "price": 506.85,
+      "close_date": "2026-11-03",
+      "rsi": 62.4,
+      "volume": 8187460
+    },
+    {
+      "symbol": "ULTRACEMCO",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 11700.0,
+      "close_date": "2026-11-03",
+      "rsi": 66.5,
+      "volume": 341237
+    },
+    {
+      "symbol": "INDHOTEL",
+      "setups": [
+        "breakout_20d",
+        "bull_flag"
+      ],
+      "price": 836.05,
+      "close_date": "2026-11-03",
+      "rsi": 74.5,
+      "volume": 4678690
+    },
+    {
+      "symbol": "MAZDOCK",
+      "setups": [
+        "oversold_bounce"
+      ],
+      "price": 1785.1,
+      "close_date": "2026-11-03",
+      "rsi": 32.8,
+      "volume": 2135306
+    },
+    {
+      "symbol": "POLICYBZR",
+      "setups": [
+        "oversold"
+      ],
+      "price": 928.0,
+      "close_date": "2026-11-03",
+      "rsi": 28.4,
+      "volume": 4019995
+    },
+    {
+      "symbol": "INDUSTOWER",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 390.0,
+      "close_date": "2026-11-03",
+      "rsi": 55.9,
+      "volume": 9434848
+    },
+    {
+      "symbol": "JSWSTEEL",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1320.0,
+      "close_date": "2026-11-03",
+      "rsi": 63.4,
+      "volume": 2616228
+    },
+    {
+      "symbol": "HINDUNILVR",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1962.8,
+      "close_date": "2026-11-03",
+      "rsi": 63.8,
+      "volume": 1722676
     },
     {
       "symbol": "HCLTECH",
@@ -219,1669 +402,1831 @@
         "breakout_20d",
         "bull_flag"
       ],
-      "price": 1428.1,
-      "close_date": "2026-10-30",
-      "rsi": 69.6,
-      "volume": 4431428
+      "price": 1439.1,
+      "close_date": "2026-11-03",
+      "rsi": 71.0,
+      "volume": 2343498
     },
     {
-      "symbol": "POONAWALLA",
+      "symbol": "TFCILTD",
       "setups": [
         "breakout_20d"
       ],
-      "price": 461.7,
-      "close_date": "2026-10-30",
-      "rsi": 58.2,
-      "volume": 13125594
-    },
-    {
-      "symbol": "DIXON",
-      "setups": [
-        "oversold"
-      ],
-      "price": 11000.0,
-      "close_date": "2026-10-30",
-      "rsi": 25.8,
-      "volume": 521733
-    },
-    {
-      "symbol": "WIPRO",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 198.31,
-      "close_date": "2026-10-30",
-      "rsi": 73.6,
-      "volume": 28864672
-    },
-    {
-      "symbol": "TECHM",
-      "setups": [
-        "bull_flag"
-      ],
-      "price": 1790.8,
-      "close_date": "2026-10-30",
-      "rsi": 65.6,
-      "volume": 3106371
+      "price": 161.89,
+      "close_date": "2026-11-03",
+      "rsi": 65.7,
+      "volume": 20584087
     },
     {
       "symbol": "SWIGGY",
       "setups": [
         "oversold"
       ],
-      "price": 176.6,
-      "close_date": "2026-10-30",
-      "rsi": 23.2,
-      "volume": 30151706
+      "price": 176.72,
+      "close_date": "2026-11-03",
+      "rsi": 24.0,
+      "volume": 18428608
     },
     {
-      "symbol": "NTPC",
+      "symbol": "LICI",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 316.25,
-      "close_date": "2026-10-30",
-      "rsi": 53.2,
-      "volume": 15451850
+      "price": 395.5,
+      "close_date": "2026-11-03",
+      "rsi": 51.6,
+      "volume": 7713767
     },
     {
-      "symbol": "ACUTAAS",
+      "symbol": "EICHERMOT",
       "setups": [
         "breakout_20d"
       ],
-      "price": 3976.7,
-      "close_date": "2026-10-29",
-      "rsi": 72.4,
-      "volume": 1147501
+      "price": 7440.0,
+      "close_date": "2026-11-03",
+      "rsi": 58.2,
+      "volume": 409109
     },
     {
-      "symbol": "ZYDUSLIFE",
+      "symbol": "TECHM",
       "setups": [
-        "breakout_20d"
+        "bull_flag"
       ],
-      "price": 1245.5,
-      "close_date": "2026-10-30",
-      "rsi": 70.9,
-      "volume": 3660113
+      "price": 1789.1,
+      "close_date": "2026-11-03",
+      "rsi": 65.2,
+      "volume": 1646217
     },
     {
-      "symbol": "BOROLTD",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 286.4,
-      "close_date": "2026-10-30",
-      "rsi": 63.2,
-      "volume": 15837662
-    },
-    {
-      "symbol": "SHRIRAMFIN",
-      "setups": [
-        "oversold"
-      ],
-      "price": 823.15,
-      "close_date": "2026-10-30",
-      "rsi": 29.0,
-      "volume": 4807922
-    },
-    {
-      "symbol": "CARTRADE",
-      "setups": [
-        "oversold"
-      ],
-      "price": 2189.8,
-      "close_date": "2026-10-30",
-      "rsi": 22.5,
-      "volume": 1717263
-    },
-    {
-      "symbol": "MARSONS",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 124.05,
-      "close_date": "2026-10-29",
-      "rsi": 50.8,
-      "volume": 29628617
-    },
-    {
-      "symbol": "JISLJALEQS",
+      "symbol": "BRITANNIA",
       "setups": [
         "breakout_20d",
         "reclaim_ma20"
       ],
-      "price": 28.47,
-      "close_date": "2026-10-30",
-      "rsi": 57.8,
-      "volume": 127684056
-    },
-    {
-      "symbol": "POWERGRID",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 265.0,
-      "close_date": "2026-10-30",
-      "rsi": 62.1,
-      "volume": 13684232
-    },
-    {
-      "symbol": "QUICKHEAL",
-      "setups": [
-        "breakout_20d",
-        "reclaim_ma20"
-      ],
-      "price": 154.46,
-      "close_date": "2026-10-30",
-      "rsi": 60.0,
-      "volume": 22218289
-    },
-    {
-      "symbol": "NAVINFLUOR",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 8680.0,
-      "close_date": "2026-10-30",
-      "rsi": 59.0,
-      "volume": 389611
-    },
-    {
-      "symbol": "SONACOMS",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 890.5,
-      "close_date": "2026-10-30",
-      "rsi": 67.7,
-      "volume": 3435442
-    },
-    {
-      "symbol": "HEROMOTOCO",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 5167.0,
-      "close_date": "2026-10-30",
-      "rsi": 49.5,
-      "volume": 573471
-    },
-    {
-      "symbol": "AUBANK",
-      "setups": [
-        "oversold"
-      ],
-      "price": 864.0,
-      "close_date": "2026-10-30",
-      "rsi": 29.4,
-      "volume": 3403330
-    },
-    {
-      "symbol": "GROWW",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 191.12,
-      "close_date": "2026-10-29",
-      "rsi": 50.7,
-      "volume": 14177159
-    },
-    {
-      "symbol": "ECLERX",
-      "setups": [
-        "oversold"
-      ],
-      "price": 1660.6,
-      "close_date": "2026-10-29",
-      "rsi": 29.5,
-      "volume": 1509140
-    },
-    {
-      "symbol": "BLUESTARCO",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 1673.0,
-      "close_date": "2026-10-29",
-      "rsi": 63.5,
-      "volume": 1496219
-    },
-    {
-      "symbol": "GAIL",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 167.91,
-      "close_date": "2026-10-30",
-      "rsi": 48.8,
-      "volume": 14183267
-    },
-    {
-      "symbol": "DRREDDY",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 1352.0,
-      "close_date": "2026-10-30",
-      "rsi": 75.7,
-      "volume": 1713900
-    },
-    {
-      "symbol": "DHANUKA",
-      "setups": [
-        "breakout_20d",
-        "reclaim_ma20"
-      ],
-      "price": 980.15,
-      "close_date": "2026-10-30",
-      "rsi": 65.6,
-      "volume": 2284485
-    },
-    {
-      "symbol": "UNITDSPR",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 1333.7,
-      "close_date": "2026-10-30",
-      "rsi": 49.2,
-      "volume": 1665686
-    },
-    {
-      "symbol": "SMSPHARMA",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 511.35,
-      "close_date": "2026-10-30",
-      "rsi": 69.1,
-      "volume": 4304302
-    },
-    {
-      "symbol": "MFSL",
-      "setups": [
-        "oversold"
-      ],
-      "price": 1200.0,
-      "close_date": "2026-10-30",
-      "rsi": 28.9,
-      "volume": 1813987
-    },
-    {
-      "symbol": "RATNAVEER",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 360.25,
-      "close_date": "2026-10-30",
-      "rsi": 64.3,
-      "volume": 5918392
-    },
-    {
-      "symbol": "IDFCFIRSTB",
-      "setups": [
-        "oversold"
-      ],
-      "price": 72.0,
-      "close_date": "2026-10-30",
-      "rsi": 30.0,
-      "volume": 28243213
-    },
-    {
-      "symbol": "INDUSTOWER",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 384.0,
-      "close_date": "2026-10-29",
-      "rsi": 52.5,
-      "volume": 5177347
-    },
-    {
-      "symbol": "CIPLA",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 1378.9,
-      "close_date": "2026-10-30",
-      "rsi": 59.0,
-      "volume": 1436439
-    },
-    {
-      "symbol": "NESTLEIND",
-      "setups": [
-        "oversold"
-      ],
-      "price": 1167.0,
-      "close_date": "2026-10-30",
-      "rsi": 29.8,
-      "volume": 1669426
-    },
-    {
-      "symbol": "MARICO",
-      "setups": [
-        "breakout_20d",
-        "reclaim_ma20"
-      ],
-      "price": 802.9,
-      "close_date": "2026-10-29",
-      "rsi": 55.4,
-      "volume": 2410223
-    },
-    {
-      "symbol": "URBANCO",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 152.81,
-      "close_date": "2026-10-30",
-      "rsi": 50.2,
-      "volume": 12038245
-    },
-    {
-      "symbol": "MAZDOCK",
-      "setups": [
-        "oversold"
-      ],
-      "price": 1705.3,
-      "close_date": "2026-10-30",
-      "rsi": 22.6,
-      "volume": 1009959
-    },
-    {
-      "symbol": "LTM",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 4233.5,
-      "close_date": "2026-10-30",
-      "rsi": 53.4,
-      "volume": 388641
-    },
-    {
-      "symbol": "GMDCLTD",
-      "setups": [
-        "oversold"
-      ],
-      "price": 411.65,
-      "close_date": "2026-10-30",
-      "rsi": 24.8,
-      "volume": 3767480
-    },
-    {
-      "symbol": "INTELLECT",
-      "setups": [
-        "oversold"
-      ],
-      "price": 504.55,
-      "close_date": "2026-10-30",
-      "rsi": 27.5,
-      "volume": 3002429
-    },
-    {
-      "symbol": "HINDCOPPER",
-      "setups": [
-        "oversold"
-      ],
-      "price": 400.85,
-      "close_date": "2026-10-30",
-      "rsi": 28.0,
-      "volume": 3566982
+      "price": 4930.0,
+      "close_date": "2026-11-03",
+      "rsi": 59.2,
+      "volume": 591462
     },
     {
       "symbol": "TATACONSUM",
       "setups": [
         "breakout_20d"
       ],
-      "price": 1025.9,
-      "close_date": "2026-10-30",
-      "rsi": 61.2,
-      "volume": 1369118
+      "price": 1073.0,
+      "close_date": "2026-11-03",
+      "rsi": 69.7,
+      "volume": 2688508
     },
     {
-      "symbol": "INDIANB",
+      "symbol": "DLF",
       "setups": [
         "breakout_20d"
       ],
-      "price": 864.1,
-      "close_date": "2026-10-29",
-      "rsi": 58.5,
-      "volume": 1508590
+      "price": 709.0,
+      "close_date": "2026-11-03",
+      "rsi": 65.8,
+      "volume": 4067705
     },
     {
-      "symbol": "IFCI",
-      "setups": [
-        "oversold"
-      ],
-      "price": 54.67,
-      "close_date": "2026-10-30",
-      "rsi": 25.0,
-      "volume": 22474839
-    },
-    {
-      "symbol": "M&MFIN",
-      "setups": [
-        "oversold"
-      ],
-      "price": 261.7,
-      "close_date": "2026-10-30",
-      "rsi": 20.8,
-      "volume": 4627086
-    },
-    {
-      "symbol": "TANLA",
+      "symbol": "HDFCAMC",
       "setups": [
         "breakout_20d"
       ],
-      "price": 627.15,
-      "close_date": "2026-10-30",
-      "rsi": 73.7,
-      "volume": 1912320
+      "price": 2440.0,
+      "close_date": "2026-11-03",
+      "rsi": 60.3,
+      "volume": 1163243
     },
     {
-      "symbol": "NHPC",
+      "symbol": "GAIL",
       "setups": [
         "breakout_20d"
       ],
-      "price": 77.74,
-      "close_date": "2026-10-30",
-      "rsi": 63.6,
-      "volume": 15091409
+      "price": 181.75,
+      "close_date": "2026-11-03",
+      "rsi": 68.1,
+      "volume": 15445883
     },
     {
-      "symbol": "KEI",
-      "setups": [
-        "oversold"
-      ],
-      "price": 3770.0,
-      "close_date": "2026-10-30",
-      "rsi": 27.5,
-      "volume": 302470
-    },
-    {
-      "symbol": "ADANIENSOL",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 1365.0,
-      "close_date": "2026-10-29",
-      "rsi": 53.4,
-      "volume": 822528
-    },
-    {
-      "symbol": "LTTS",
+      "symbol": "JINDALSTEL",
       "setups": [
         "breakout_20d"
       ],
-      "price": 4280.2,
-      "close_date": "2026-10-30",
-      "rsi": 74.8,
-      "volume": 260430
-    },
-    {
-      "symbol": "KRISHNADEF",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 1213.6,
-      "close_date": "2026-10-30",
+      "price": 1105.0,
+      "close_date": "2026-11-03",
       "rsi": 58.9,
-      "volume": 914369
+      "volume": 2428177
     },
     {
-      "symbol": "DALBHARAT",
+      "symbol": "DRREDDY",
       "setups": [
-        "oversold"
+        "breakout_20d"
       ],
-      "price": 1407.9,
-      "close_date": "2026-10-29",
-      "rsi": 26.7,
-      "volume": 767052
-    },
-    {
-      "symbol": "HSCL",
-      "setups": [
-        "oversold"
-      ],
-      "price": 509.2,
-      "close_date": "2026-10-30",
-      "rsi": 27.8,
-      "volume": 2065022
-    },
-    {
-      "symbol": "SMARTWORKS",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 484.5,
-      "close_date": "2026-10-29",
-      "rsi": 50.5,
-      "volume": 2124786
+      "price": 1368.3,
+      "close_date": "2026-11-03",
+      "rsi": 75.3,
+      "volume": 1954684
     },
     {
       "symbol": "DMART",
       "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 3359.0,
+      "close_date": "2026-11-03",
+      "rsi": 47.1,
+      "volume": 782376
+    },
+    {
+      "symbol": "KITEX",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 133.23,
+      "close_date": "2026-11-03",
+      "rsi": 69.1,
+      "volume": 19652287
+    },
+    {
+      "symbol": "LODHA",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 1060.8,
+      "close_date": "2026-11-03",
+      "rsi": 49.8,
+      "volume": 2395271
+    },
+    {
+      "symbol": "SBILIFE",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 1683.0,
+      "close_date": "2026-11-03",
+      "rsi": 50.2,
+      "volume": 1471854
+    },
+    {
+      "symbol": "CIPLA",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1396.9,
+      "close_date": "2026-11-03",
+      "rsi": 63.5,
+      "volume": 1723151
+    },
+    {
+      "symbol": "MOTILALOFS",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 1010.0,
+      "close_date": "2026-11-03",
+      "rsi": 52.5,
+      "volume": 2375316
+    },
+    {
+      "symbol": "PERSISTENT",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 6097.0,
+      "close_date": "2026-11-03",
+      "rsi": 66.8,
+      "volume": 388520
+    },
+    {
+      "symbol": "CHOLAFIN",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1650.0,
+      "close_date": "2026-11-03",
+      "rsi": 55.7,
+      "volume": 1434985
+    },
+    {
+      "symbol": "IOC",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 138.67,
+      "close_date": "2026-11-03",
+      "rsi": 65.5,
+      "volume": 16942486
+    },
+    {
+      "symbol": "RATNAVEER",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 379.4,
+      "close_date": "2026-11-03",
+      "rsi": 69.9,
+      "volume": 6182552
+    },
+    {
+      "symbol": "TVSMOTOR",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 4303.2,
+      "close_date": "2026-11-03",
+      "rsi": 63.6,
+      "volume": 543439
+    },
+    {
+      "symbol": "GLENMARK",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 2408.0,
+      "close_date": "2026-11-03",
+      "rsi": 61.0,
+      "volume": 930027
+    },
+    {
+      "symbol": "GOCOLORS",
+      "setups": [
         "oversold_bounce"
       ],
-      "price": 3199.0,
-      "close_date": "2026-10-30",
-      "rsi": 32.5,
-      "volume": 317297
+      "price": 264.26,
+      "close_date": "2026-11-03",
+      "rsi": 42.1,
+      "volume": 8320113
     },
     {
-      "symbol": "PASHUPATI",
+      "symbol": "FUSION",
+      "setups": [
+        "oversold_bounce"
+      ],
+      "price": 144.17,
+      "close_date": "2026-11-03",
+      "rsi": 38.7,
+      "volume": 15207576
+    },
+    {
+      "symbol": "BAJAJFINSV",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 1718.1,
+      "close_date": "2026-11-03",
+      "rsi": 46.8,
+      "volume": 1263681
+    },
+    {
+      "symbol": "GRASIM",
       "setups": [
         "breakout_20d"
       ],
-      "price": 134.6,
-      "close_date": "2026-10-30",
-      "rsi": 85.9,
-      "volume": 7396347
+      "price": 3090.0,
+      "close_date": "2026-11-03",
+      "rsi": 60.4,
+      "volume": 695742
     },
     {
-      "symbol": "SOUTHBANK",
+      "symbol": "KFINTECH",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 861.6,
+      "close_date": "2026-11-03",
+      "rsi": 49.0,
+      "volume": 2408446
+    },
+    {
+      "symbol": "EMCURE",
       "setups": [
         "breakout_20d"
       ],
-      "price": 56.57,
-      "close_date": "2026-10-29",
-      "rsi": 70.5,
-      "volume": 17522488
+      "price": 1976.6,
+      "close_date": "2026-11-03",
+      "rsi": 64.9,
+      "volume": 1005828
+    },
+    {
+      "symbol": "GMRAIRPORT",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 91.1,
+      "close_date": "2026-11-03",
+      "rsi": 50.4,
+      "volume": 21252837
+    },
+    {
+      "symbol": "MUTHOOTFIN",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 2528.2,
+      "close_date": "2026-11-03",
+      "rsi": 46.0,
+      "volume": 762021
+    },
+    {
+      "symbol": "NELCAST",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 164.02,
+      "close_date": "2026-11-03",
+      "rsi": 74.7,
+      "volume": 11615348
+    },
+    {
+      "symbol": "360ONE",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 1065.0,
+      "close_date": "2026-11-03",
+      "rsi": 54.2,
+      "volume": 1776500
+    },
+    {
+      "symbol": "AFFLE",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1582.9,
+      "close_date": "2026-11-03",
+      "rsi": 62.9,
+      "volume": 1189340
+    },
+    {
+      "symbol": "PETRONET",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 303.0,
+      "close_date": "2026-11-03",
+      "rsi": 60.8,
+      "volume": 6054657
+    },
+    {
+      "symbol": "CUMMINSIND",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 4650.0,
+      "close_date": "2026-11-03",
+      "rsi": 48.2,
+      "volume": 393163
+    },
+    {
+      "symbol": "IZMO",
+      "setups": [
+        "reclaim_ma20",
+        "oversold_bounce"
+      ],
+      "price": 802.8,
+      "close_date": "2026-11-03",
+      "rsi": 51.9,
+      "volume": 2265679
+    },
+    {
+      "symbol": "ZYDUSWELL",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 493.35,
+      "close_date": "2026-11-03",
+      "rsi": 49.3,
+      "volume": 3629032
+    },
+    {
+      "symbol": "TMPV",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 276.7,
+      "close_date": "2026-11-03",
+      "rsi": 46.1,
+      "volume": 6459706
+    },
+    {
+      "symbol": "GLAND",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 3158.9,
+      "close_date": "2026-11-03",
+      "rsi": 63.1,
+      "volume": 563977
     },
     {
       "symbol": "PVRINOX",
       "setups": [
         "breakout_20d"
       ],
-      "price": 1490.3,
-      "close_date": "2026-10-29",
-      "rsi": 69.0,
-      "volume": 662726
+      "price": 1524.0,
+      "close_date": "2026-11-03",
+      "rsi": 71.9,
+      "volume": 1151331
     },
     {
-      "symbol": "BDL",
+      "symbol": "AIAENG",
       "setups": [
         "oversold"
       ],
-      "price": 974.0,
-      "close_date": "2026-10-30",
-      "rsi": 29.2,
-      "volume": 982034
+      "price": 3389.7,
+      "close_date": "2026-11-03",
+      "rsi": 24.3,
+      "volume": 515015
     },
     {
-      "symbol": "NAM-INDIA",
+      "symbol": "CGCL",
       "setups": [
-        "oversold"
+        "reclaim_ma20"
       ],
-      "price": 905.0,
-      "close_date": "2026-10-30",
-      "rsi": 26.8,
-      "volume": 1037062
+      "price": 240.29,
+      "close_date": "2026-11-03",
+      "rsi": 48.4,
+      "volume": 7251563
     },
     {
-      "symbol": "GESHIP",
+      "symbol": "MARSONS",
       "setups": [
         "breakout_20d"
       ],
-      "price": 1618.8,
-      "close_date": "2026-10-29",
-      "rsi": 67.6,
-      "volume": 572324
+      "price": 154.05,
+      "close_date": "2026-11-03",
+      "rsi": 71.9,
+      "volume": 11253603
+    },
+    {
+      "symbol": "MFSL",
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "price": 1185.1,
+      "close_date": "2026-11-03",
+      "rsi": 28.6,
+      "volume": 1426968
+    },
+    {
+      "symbol": "NYKAA",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 353.9,
+      "close_date": "2026-11-03",
+      "rsi": 60.5,
+      "volume": 4546938
+    },
+    {
+      "symbol": "UNOMINDA",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1124.5,
+      "close_date": "2026-11-03",
+      "rsi": 51.5,
+      "volume": 1327771
+    },
+    {
+      "symbol": "TRIVENI",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 242.18,
+      "close_date": "2026-11-03",
+      "rsi": 51.9,
+      "volume": 6109121
+    },
+    {
+      "symbol": "MPHASIS",
+      "setups": [
+        "bull_flag"
+      ],
+      "price": 2535.3,
+      "close_date": "2026-11-03",
+      "rsi": 57.1,
+      "volume": 570769
+    },
+    {
+      "symbol": "HYUNDAI",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 2030.0,
+      "close_date": "2026-11-03",
+      "rsi": 56.8,
+      "volume": 697248
+    },
+    {
+      "symbol": "AKUMS",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 761.15,
+      "close_date": "2026-11-03",
+      "rsi": 54.6,
+      "volume": 1858673
+    },
+    {
+      "symbol": "UPL",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 517.85,
+      "close_date": "2026-11-03",
+      "rsi": 46.1,
+      "volume": 2725190
+    },
+    {
+      "symbol": "RRKABEL",
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "price": 2000.5,
+      "close_date": "2026-11-03",
+      "rsi": 28.4,
+      "volume": 696436
+    },
+    {
+      "symbol": "AMBUJACEM",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 368.9,
+      "close_date": "2026-11-03",
+      "rsi": 52.7,
+      "volume": 3708763
     },
     {
       "symbol": "COCHINSHIP",
       "setups": [
-        "oversold"
+        "reclaim_ma20"
       ],
-      "price": 1114.2,
-      "close_date": "2026-10-30",
-      "rsi": 28.6,
-      "volume": 783625
+      "price": 1201.0,
+      "close_date": "2026-11-03",
+      "rsi": 45.7,
+      "volume": 1125860
     },
     {
-      "symbol": "SJVN",
+      "symbol": "TATAPOWER",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 356.55,
+      "close_date": "2026-11-03",
+      "rsi": 54.9,
+      "volume": 3731791
+    },
+    {
+      "symbol": "FLUOROCHEM",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 53.39,
-      "close_date": "2026-10-30",
-      "rsi": 44.2,
-      "volume": 15654920
+      "price": 4463.9,
+      "close_date": "2026-11-03",
+      "rsi": 53.6,
+      "volume": 294078
     },
     {
-      "symbol": "INOXWIND",
+      "symbol": "TANLA",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 662.05,
+      "close_date": "2026-11-03",
+      "rsi": 78.5,
+      "volume": 1911676
+    },
+    {
+      "symbol": "CAMS",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 687.0,
+      "close_date": "2026-11-03",
+      "rsi": 50.1,
+      "volume": 1841087
+    },
+    {
+      "symbol": "GODREJPROP",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1669.5,
+      "close_date": "2026-11-03",
+      "rsi": 55.3,
+      "volume": 755646
+    },
+    {
+      "symbol": "ASAHIINDIA",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 991.45,
+      "close_date": "2026-11-03",
+      "rsi": 65.0,
+      "volume": 1271983
+    },
+    {
+      "symbol": "PFOCUS",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 289.55,
+      "close_date": "2026-11-03",
+      "rsi": 49.4,
+      "volume": 4345787
+    },
+    {
+      "symbol": "YATHARTH",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 981.85,
+      "close_date": "2026-11-03",
+      "rsi": 51.5,
+      "volume": 1257141
+    },
+    {
+      "symbol": "E2E",
       "setups": [
         "oversold"
       ],
-      "price": 55.2,
-      "close_date": "2026-10-30",
-      "rsi": 25.1,
-      "volume": 14055365
+      "price": 494.65,
+      "close_date": "2026-11-03",
+      "rsi": 29.4,
+      "volume": 2440095
+    },
+    {
+      "symbol": "MINDACORP",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 684.6,
+      "close_date": "2026-11-03",
+      "rsi": 60.4,
+      "volume": 1748510
+    },
+    {
+      "symbol": "PFIZER",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 3821.6,
+      "close_date": "2026-11-03",
+      "rsi": 47.8,
+      "volume": 313050
+    },
+    {
+      "symbol": "GNFC",
+      "setups": [
+        "oversold"
+      ],
+      "price": 465.05,
+      "close_date": "2026-11-03",
+      "rsi": 27.7,
+      "volume": 2479540
+    },
+    {
+      "symbol": "MAHABANK",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 80.6,
+      "close_date": "2026-11-03",
+      "rsi": 50.2,
+      "volume": 13950226
+    },
+    {
+      "symbol": "MSUMI",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 38.93,
+      "close_date": "2026-11-03",
+      "rsi": 70.5,
+      "volume": 28270160
+    },
+    {
+      "symbol": "DIACABS",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 367.5,
+      "close_date": "2026-11-03",
+      "rsi": 57.4,
+      "volume": 2884182
+    },
+    {
+      "symbol": "PASHUPATI",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 148.72,
+      "close_date": "2026-11-03",
+      "rsi": 88.9,
+      "volume": 6595918
+    },
+    {
+      "symbol": "PHOENIXLTD",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 2048.7,
+      "close_date": "2026-11-03",
+      "rsi": 66.5,
+      "volume": 477066
+    },
+    {
+      "symbol": "EQUITASBNK",
+      "setups": [
+        "oversold"
+      ],
+      "price": 52.65,
+      "close_date": "2026-11-03",
+      "rsi": 20.5,
+      "volume": 17603775
+    },
+    {
+      "symbol": "RAYMOND",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 1172.3,
+      "close_date": "2026-11-03",
+      "rsi": 61.5,
+      "volume": 788267
+    },
+    {
+      "symbol": "MGL",
+      "setups": [
+        "breakout_20d",
+        "reclaim_ma20"
+      ],
+      "price": 1055.9,
+      "close_date": "2026-11-03",
+      "rsi": 52.1,
+      "volume": 799582
     },
     {
       "symbol": "SBC",
       "setups": [
         "breakout_20d"
       ],
-      "price": 66.52,
-      "close_date": "2026-10-29",
-      "rsi": 72.2,
-      "volume": 11177299
+      "price": 66.71,
+      "close_date": "2026-11-03",
+      "rsi": 69.6,
+      "volume": 12259566
+    },
+    {
+      "symbol": "INDOMIM",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 1203.8,
+      "close_date": "2026-11-03",
+      "rsi": 56.8,
+      "volume": 673116
+    },
+    {
+      "symbol": "ALIVUS",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1481.3,
+      "close_date": "2026-11-03",
+      "rsi": 70.2,
+      "volume": 525429
+    },
+    {
+      "symbol": "TIINDIA",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 2190.0,
+      "close_date": "2026-11-03",
+      "rsi": 42.7,
+      "volume": 343028
+    },
+    {
+      "symbol": "MTNL",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 23.65,
+      "close_date": "2026-11-03",
+      "rsi": 51.0,
+      "volume": 30990728
+    },
+    {
+      "symbol": "KIRLOSENG",
+      "setups": [
+        "oversold"
+      ],
+      "price": 1717.9,
+      "close_date": "2026-11-03",
+      "rsi": 29.3,
+      "volume": 414825
+    },
+    {
+      "symbol": "EXIDEIND",
+      "setups": [
+        "oversold_bounce"
+      ],
+      "price": 346.25,
+      "close_date": "2026-11-03",
+      "rsi": 35.6,
+      "volume": 2046648
+    },
+    {
+      "symbol": "NH",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1870.6,
+      "close_date": "2026-11-03",
+      "rsi": 64.8,
+      "volume": 377481
+    },
+    {
+      "symbol": "PRESTIGE",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1537.0,
+      "close_date": "2026-11-03",
+      "rsi": 59.9,
+      "volume": 448757
+    },
+    {
+      "symbol": "SHREEPUSHK",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 623.1,
+      "close_date": "2026-11-03",
+      "rsi": 70.5,
+      "volume": 1102136
+    },
+    {
+      "symbol": "M&MFIN",
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "price": 264.1,
+      "close_date": "2026-11-03",
+      "rsi": 23.1,
+      "volume": 2459131
+    },
+    {
+      "symbol": "TATACAP",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 333.8,
+      "close_date": "2026-11-03",
+      "rsi": 56.4,
+      "volume": 1917729
     },
     {
       "symbol": "ANANTRAJ",
       "setups": [
         "oversold"
       ],
-      "price": 447.3,
-      "close_date": "2026-10-30",
-      "rsi": 20.3,
-      "volume": 1626552
+      "price": 443.65,
+      "close_date": "2026-11-03",
+      "rsi": 19.8,
+      "volume": 1416269
     },
     {
-      "symbol": "TITAGARH",
+      "symbol": "ESCORTS",
       "setups": [
-        "oversold"
+        "oversold_bounce"
       ],
-      "price": 654.15,
-      "close_date": "2026-10-30",
-      "rsi": 26.7,
-      "volume": 1084443
+      "price": 2439.7,
+      "close_date": "2026-11-03",
+      "rsi": 30.7,
+      "volume": 257394
     },
     {
-      "symbol": "INDIACEM",
+      "symbol": "DECNGOLD",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 312.1,
-      "close_date": "2026-10-30",
-      "rsi": 48.6,
-      "volume": 2236233
+      "price": 185.82,
+      "close_date": "2026-11-03",
+      "rsi": 49.6,
+      "volume": 3233362
     },
     {
-      "symbol": "SHUKRAPHAR",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 75.06,
-      "close_date": "2026-10-29",
-      "rsi": 71.2,
-      "volume": 9273107
-    },
-    {
-      "symbol": "EMMVEE",
+      "symbol": "MOIL",
       "setups": [
         "oversold"
       ],
-      "price": 229.0,
-      "close_date": "2026-10-30",
-      "rsi": 20.3,
-      "volume": 2914584
+      "price": 203.22,
+      "close_date": "2026-11-03",
+      "rsi": 28.6,
+      "volume": 2897729
     },
     {
-      "symbol": "KPITTECH",
+      "symbol": "ATLANTAELE",
+      "setups": [
+        "oversold"
+      ],
+      "price": 1413.0,
+      "close_date": "2026-11-03",
+      "rsi": 27.9,
+      "volume": 408992
+    },
+    {
+      "symbol": "NHPC",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 79.4,
+      "close_date": "2026-11-03",
+      "rsi": 67.3,
+      "volume": 7165700
+    },
+    {
+      "symbol": "DABUR",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 381.65,
+      "close_date": "2026-11-03",
+      "rsi": 53.9,
+      "volume": 1459720
+    },
+    {
+      "symbol": "BHARTIHEXA",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 1704.7,
+      "close_date": "2026-11-03",
+      "rsi": 68.4,
+      "volume": 315857
+    },
+    {
+      "symbol": "MOLDTKPAC",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 316.0,
+      "close_date": "2026-11-03",
+      "rsi": 53.0,
+      "volume": 1677379
+    },
+    {
+      "symbol": "SOUTHBANK",
       "setups": [
         "bull_flag"
       ],
-      "price": 530.25,
-      "close_date": "2026-10-30",
-      "rsi": 49.7,
-      "volume": 1237812
+      "price": 53.96,
+      "close_date": "2026-11-03",
+      "rsi": 58.5,
+      "volume": 9101120
     },
     {
-      "symbol": "AGARWALEYE",
+      "symbol": "SKIPPER",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 488.7,
-      "close_date": "2026-10-29",
-      "rsi": 55.6,
-      "volume": 1306555
+      "price": 519.15,
+      "close_date": "2026-11-03",
+      "rsi": 50.5,
+      "volume": 932889
     },
     {
-      "symbol": "EXIDEIND",
+      "symbol": "OBEROIRLTY",
       "setups": [
-        "oversold"
+        "reclaim_ma20"
       ],
-      "price": 335.5,
-      "close_date": "2026-10-30",
-      "rsi": 27.2,
-      "volume": 1763945
+      "price": 1677.0,
+      "close_date": "2026-11-03",
+      "rsi": 47.9,
+      "volume": 286835
     },
     {
-      "symbol": "KAJARIACER",
-      "setups": [
-        "oversold_bounce"
-      ],
-      "price": 1109.2,
-      "close_date": "2026-10-30",
-      "rsi": 31.8,
-      "volume": 501173
-    },
-    {
-      "symbol": "IIFLCAPS",
+      "symbol": "IEX",
       "setups": [
         "breakout_20d"
       ],
-      "price": 347.75,
-      "close_date": "2026-10-29",
-      "rsi": 58.9,
-      "volume": 1539005
+      "price": 109.0,
+      "close_date": "2026-11-03",
+      "rsi": 54.0,
+      "volume": 4358065
     },
     {
-      "symbol": "VMM",
-      "setups": [
-        "oversold"
-      ],
-      "price": 84.4,
-      "close_date": "2026-10-30",
-      "rsi": 23.8,
-      "volume": 6254253
-    },
-    {
-      "symbol": "LEMONTREE",
+      "symbol": "LALITHAA",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 111.34,
-      "close_date": "2026-10-29",
-      "rsi": 55.4,
-      "volume": 4510815
-    },
-    {
-      "symbol": "AEQUS",
-      "setups": [
-        "oversold_bounce"
-      ],
-      "price": 218.05,
-      "close_date": "2026-10-29",
-      "rsi": 33.9,
-      "volume": 2264436
-    },
-    {
-      "symbol": "63MOONS",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 936.3,
-      "close_date": "2026-10-29",
-      "rsi": 63.9,
-      "volume": 505794
-    },
-    {
-      "symbol": "SAREGAMA",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 548.65,
-      "close_date": "2026-10-30",
-      "rsi": 66.2,
-      "volume": 792663
-    },
-    {
-      "symbol": "TRITURBINE",
-      "setups": [
-        "oversold_bounce"
-      ],
-      "price": 469.6,
-      "close_date": "2026-10-29",
-      "rsi": 35.4,
-      "volume": 895787
-    },
-    {
-      "symbol": "BUILDPRO",
-      "setups": [
-        "oversold"
-      ],
-      "price": 175.2,
-      "close_date": "2026-10-30",
-      "rsi": 20.4,
-      "volume": 2356620
-    },
-    {
-      "symbol": "SBICARD",
-      "setups": [
-        "oversold_bounce"
-      ],
-      "price": 540.0,
-      "close_date": "2026-10-29",
-      "rsi": 36.5,
-      "volume": 757554
-    },
-    {
-      "symbol": "OIL",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 454.5,
-      "close_date": "2026-10-29",
-      "rsi": 49.0,
-      "volume": 887446
-    },
-    {
-      "symbol": "TENNIND",
-      "setups": [
-        "oversold"
-      ],
-      "price": 428.05,
-      "close_date": "2026-10-29",
-      "rsi": 25.2,
-      "volume": 919117
-    },
-    {
-      "symbol": "SIRCA",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 415.8,
-      "close_date": "2026-10-29",
-      "rsi": 49.7,
-      "volume": 938832
-    },
-    {
-      "symbol": "CEMPRO",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 1287.4,
-      "close_date": "2026-10-29",
-      "rsi": 61.7,
-      "volume": 300084
-    },
-    {
-      "symbol": "PRESTIGE",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 1453.3,
-      "close_date": "2026-10-30",
-      "rsi": 49.6,
-      "volume": 260174
-    },
-    {
-      "symbol": "GUJENERGY",
-      "setups": [
-        "oversold"
-      ],
-      "price": 208.1,
-      "close_date": "2026-10-30",
-      "rsi": 26.0,
-      "volume": 1815112
+      "price": 363.0,
+      "close_date": "2026-11-03",
+      "rsi": 56.4,
+      "volume": 1272844
     },
     {
       "symbol": "SGMART",
       "setups": [
         "breakout_20d"
       ],
-      "price": 864.55,
-      "close_date": "2026-10-29",
-      "rsi": 69.3,
-      "volume": 433022
+      "price": 886.3,
+      "close_date": "2026-11-03",
+      "rsi": 71.0,
+      "volume": 504447
     },
     {
-      "symbol": "GRAVITA",
+      "symbol": "SAREGAMA",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 562.2,
+      "close_date": "2026-11-03",
+      "rsi": 69.0,
+      "volume": 761297
+    },
+    {
+      "symbol": "DIAMONDYD",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 1067.5,
+      "close_date": "2026-11-03",
+      "rsi": 51.5,
+      "volume": 399513
+    },
+    {
+      "symbol": "AEQUS",
       "setups": [
         "oversold_bounce"
       ],
-      "price": 1413.6,
-      "close_date": "2026-10-29",
-      "rsi": 43.4,
-      "volume": 262291
+      "price": 209.39,
+      "close_date": "2026-11-03",
+      "rsi": 32.0,
+      "volume": 2009580
     },
     {
-      "symbol": "NOCIL",
+      "symbol": "TENNIND",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 458.5,
+      "close_date": "2026-11-03",
+      "rsi": 46.1,
+      "volume": 911839
+    },
+    {
+      "symbol": "ACC",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 1170.1,
+      "close_date": "2026-11-03",
+      "rsi": 48.4,
+      "volume": 357202
+    },
+    {
+      "symbol": "DALBHARAT",
+      "setups": [
+        "oversold_bounce"
+      ],
+      "price": 1381.4,
+      "close_date": "2026-11-03",
+      "rsi": 30.2,
+      "volume": 300911
+    },
+    {
+      "symbol": "SFL",
       "setups": [
         "oversold"
       ],
-      "price": 137.12,
-      "close_date": "2026-10-30",
-      "rsi": 26.0,
-      "volume": 2552851
+      "price": 509.1,
+      "close_date": "2026-11-03",
+      "rsi": 21.5,
+      "volume": 814543
     },
     {
-      "symbol": "VINATIORGA",
+      "symbol": "CREDITACC",
       "setups": [
-        "oversold"
+        "oversold_bounce"
       ],
-      "price": 992.2,
-      "close_date": "2026-10-30",
-      "rsi": 24.6,
-      "volume": 350518
-    },
-    {
-      "symbol": "TEJASNET",
-      "setups": [
-        "oversold"
-      ],
-      "price": 402.95,
-      "close_date": "2026-10-30",
-      "rsi": 28.8,
-      "volume": 855951
-    },
-    {
-      "symbol": "KRISHANA",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 222.63,
-      "close_date": "2026-10-29",
-      "rsi": 69.1,
-      "volume": 1515956
-    },
-    {
-      "symbol": "THELEELA",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 639.9,
-      "close_date": "2026-10-29",
-      "rsi": 66.4,
-      "volume": 512346
-    },
-    {
-      "symbol": "OSWALPUMPS",
-      "setups": [
-        "oversold"
-      ],
-      "price": 202.05,
-      "close_date": "2026-10-30",
-      "rsi": 15.4,
-      "volume": 1616170
-    },
-    {
-      "symbol": "AFCONS",
-      "setups": [
-        "oversold"
-      ],
-      "price": 206.04,
-      "close_date": "2026-10-30",
-      "rsi": 21.2,
-      "volume": 1579997
-    },
-    {
-      "symbol": "MBAPL",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 174.0,
-      "close_date": "2026-10-29",
-      "rsi": 61.4,
-      "volume": 1845633
-    },
-    {
-      "symbol": "SHAKTIPUMP",
-      "setups": [
-        "oversold"
-      ],
-      "price": 353.65,
-      "close_date": "2026-10-30",
-      "rsi": 17.7,
-      "volume": 906249
+      "price": 1058.8,
+      "close_date": "2026-11-03",
+      "rsi": 32.8,
+      "volume": 387181
     },
     {
       "symbol": "ICICILIFE",
       "setups": [
-        "oversold"
-      ],
-      "price": 411.95,
-      "close_date": "2026-10-29",
-      "rsi": 26.0,
-      "volume": 773913
-    },
-    {
-      "symbol": "POCL",
-      "setups": [
+        "oversold",
         "oversold_bounce"
       ],
-      "price": 397.65,
-      "close_date": "2026-10-30",
-      "rsi": 37.2,
-      "volume": 771375
-    },
-    {
-      "symbol": "ARE&M",
-      "setups": [
-        "oversold"
-      ],
-      "price": 686.85,
-      "close_date": "2026-10-30",
-      "rsi": 29.2,
-      "volume": 444349
-    },
-    {
-      "symbol": "BLISSGVS",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 680.9,
-      "close_date": "2026-10-29",
-      "rsi": 57.2,
-      "volume": 445760
-    },
-    {
-      "symbol": "FIVESTAR",
-      "setups": [
-        "oversold"
-      ],
-      "price": 396.85,
-      "close_date": "2026-10-30",
-      "rsi": 20.9,
-      "volume": 754918
-    },
-    {
-      "symbol": "XTRANET",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 290.05,
-      "close_date": "2026-10-29",
-      "rsi": 53.8,
-      "volume": 1016211
-    },
-    {
-      "symbol": "OPTIEMUS",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 821.7,
-      "close_date": "2026-10-29",
-      "rsi": 60.0,
-      "volume": 354412
-    },
-    {
-      "symbol": "APTUS",
-      "setups": [
-        "oversold"
-      ],
-      "price": 191.28,
-      "close_date": "2026-10-30",
-      "rsi": 25.4,
-      "volume": 1444910
-    },
-    {
-      "symbol": "OLECTRA",
-      "setups": [
-        "oversold"
-      ],
-      "price": 951.1,
-      "close_date": "2026-10-30",
+      "price": 409.7,
+      "close_date": "2026-11-03",
       "rsi": 27.0,
-      "volume": 288874
+      "volume": 946692
     },
     {
-      "symbol": "MOSCHIP",
+      "symbol": "TAALTECH",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 996.85,
+      "close_date": "2026-11-03",
+      "rsi": 57.0,
+      "volume": 379386
+    },
+    {
+      "symbol": "GUJENERGY",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 219.38,
+      "close_date": "2026-11-03",
+      "rsi": 44.5,
+      "volume": 1719910
+    },
+    {
+      "symbol": "PREMIERENE",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 890.0,
+      "close_date": "2026-11-03",
+      "rsi": 49.4,
+      "volume": 420632
+    },
+    {
+      "symbol": "EMMVEE",
       "setups": [
         "oversold"
       ],
-      "price": 152.15,
-      "close_date": "2026-10-30",
-      "rsi": 22.7,
-      "volume": 1783933
+      "price": 231.26,
+      "close_date": "2026-11-03",
+      "rsi": 25.2,
+      "volume": 1605409
     },
     {
-      "symbol": "SWANCORP",
+      "symbol": "SYMBIOTEC",
       "setups": [
-        "oversold"
+        "bull_flag"
       ],
-      "price": 227.35,
-      "close_date": "2026-10-30",
-      "rsi": 25.6,
-      "volume": 1175832
-    },
-    {
-      "symbol": "PRAJIND",
-      "setups": [
-        "oversold"
-      ],
-      "price": 241.7,
-      "close_date": "2026-10-30",
-      "rsi": 19.9,
-      "volume": 1103591
-    },
-    {
-      "symbol": "CHAMBLFERT",
-      "setups": [
-        "oversold_bounce"
-      ],
-      "price": 365.7,
-      "close_date": "2026-10-29",
-      "rsi": 32.1,
-      "volume": 721718
+      "price": 1263.0,
+      "close_date": "2026-11-03",
+      "rsi": 58.7,
+      "volume": 293476
     },
     {
       "symbol": "CONFIPET",
       "setups": [
         "oversold"
       ],
-      "price": 67.6,
-      "close_date": "2026-10-29",
-      "rsi": 28.1,
-      "volume": 3884368
+      "price": 56.18,
+      "close_date": "2026-11-03",
+      "rsi": 20.1,
+      "volume": 6242288
     },
     {
-      "symbol": "ABSLAMC",
-      "setups": [
-        "oversold"
-      ],
-      "price": 844.9,
-      "close_date": "2026-10-29",
-      "rsi": 22.4,
-      "volume": 309756
-    },
-    {
-      "symbol": "TECHNOE",
-      "setups": [
-        "oversold"
-      ],
-      "price": 829.3,
-      "close_date": "2026-10-30",
-      "rsi": 29.0,
-      "volume": 301696
-    },
-    {
-      "symbol": "SUMICHEM",
-      "setups": [
-        "oversold"
-      ],
-      "price": 315.1,
-      "close_date": "2026-10-30",
-      "rsi": 10.2,
-      "volume": 789978
-    },
-    {
-      "symbol": "ABDL",
+      "symbol": "CHAMBLFERT",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 710.2,
-      "close_date": "2026-10-29",
-      "rsi": 54.5,
-      "volume": 341209
+      "price": 381.7,
+      "close_date": "2026-11-03",
+      "rsi": 49.2,
+      "volume": 907177
     },
     {
-      "symbol": "EPL",
-      "setups": [
-        "oversold_bounce"
-      ],
-      "price": 218.39,
-      "close_date": "2026-10-29",
-      "rsi": 35.4,
-      "volume": 1102701
-    },
-    {
-      "symbol": "AEGISVOPAK",
-      "setups": [
-        "oversold",
-        "oversold_bounce"
-      ],
-      "price": 236.2,
-      "close_date": "2026-10-29",
-      "rsi": 25.8,
-      "volume": 1004788
-    },
-    {
-      "symbol": "MEDPLUS",
+      "symbol": "DIGITIDE",
       "setups": [
         "oversold"
       ],
-      "price": 579.9,
-      "close_date": "2026-10-30",
-      "rsi": 28.4,
-      "volume": 407283
+      "price": 60.55,
+      "close_date": "2026-11-03",
+      "rsi": 24.1,
+      "volume": 5709073
     },
     {
-      "symbol": "HUDCO",
-      "setups": [
-        "oversold"
-      ],
-      "price": 143.07,
-      "close_date": "2026-10-30",
-      "rsi": 26.5,
-      "volume": 1629849
-    },
-    {
-      "symbol": "DCMSRIND",
+      "symbol": "SMSPHARMA",
       "setups": [
         "breakout_20d"
       ],
-      "price": 63.36,
-      "close_date": "2026-10-29",
-      "rsi": 76.3,
-      "volume": 3503789
-    },
-    {
-      "symbol": "V2RETAIL",
-      "setups": [
-        "oversold"
-      ],
-      "price": 147.47,
-      "close_date": "2026-10-30",
-      "rsi": 27.9,
-      "volume": 1486668
-    },
-    {
-      "symbol": "SWSOLAR",
-      "setups": [
-        "oversold"
-      ],
-      "price": 135.97,
-      "close_date": "2026-10-30",
-      "rsi": 26.9,
-      "volume": 1603279
-    },
-    {
-      "symbol": "GENESYS",
-      "setups": [
-        "oversold"
-      ],
-      "price": 171.15,
-      "close_date": "2026-10-30",
-      "rsi": 23.3,
-      "volume": 1242653
-    },
-    {
-      "symbol": "NIITMTS",
-      "setups": [
-        "oversold"
-      ],
-      "price": 159.79,
-      "close_date": "2026-10-30",
-      "rsi": 23.2,
-      "volume": 1325447
-    },
-    {
-      "symbol": "EIDPARRY",
-      "setups": [
-        "oversold"
-      ],
-      "price": 600.45,
-      "close_date": "2026-10-30",
-      "rsi": 24.9,
-      "volume": 350627
-    },
-    {
-      "symbol": "COMSYN",
-      "setups": [
-        "oversold",
-        "oversold_bounce"
-      ],
-      "price": 210.9,
-      "close_date": "2026-10-29",
-      "rsi": 24.8,
-      "volume": 982614
-    },
-    {
-      "symbol": "MMFL",
-      "setups": [
-        "oversold_bounce"
-      ],
-      "price": 494.05,
-      "close_date": "2026-10-29",
-      "rsi": 35.0,
-      "volume": 397706
-    },
-    {
-      "symbol": "ORIENTCEM",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 114.92,
-      "close_date": "2026-10-29",
-      "rsi": 45.3,
-      "volume": 1638340
-    },
-    {
-      "symbol": "UTTAMSUGAR",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 360.7,
-      "close_date": "2026-10-29",
-      "rsi": 57.9,
-      "volume": 515507
-    },
-    {
-      "symbol": "PRANAV",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 92.98,
-      "close_date": "2026-10-30",
-      "rsi": 37.3,
-      "volume": 1963276
-    },
-    {
-      "symbol": "VIKRAMSOLR",
-      "setups": [
-        "oversold",
-        "oversold_bounce"
-      ],
-      "price": 128.0,
-      "close_date": "2026-10-29",
-      "rsi": 24.2,
-      "volume": 1402611
-    },
-    {
-      "symbol": "JBMA",
-      "setups": [
-        "oversold"
-      ],
-      "price": 467.65,
-      "close_date": "2026-10-30",
-      "rsi": 20.6,
-      "volume": 381546
-    },
-    {
-      "symbol": "RAYMONDLSL",
-      "setups": [
-        "oversold",
-        "oversold_bounce"
-      ],
-      "price": 500.15,
-      "close_date": "2026-10-29",
-      "rsi": 21.8,
-      "volume": 346673
-    },
-    {
-      "symbol": "BORORENEW",
-      "setups": [
-        "oversold"
-      ],
-      "price": 393.55,
-      "close_date": "2026-10-29",
-      "rsi": 28.1,
-      "volume": 433391
-    },
-    {
-      "symbol": "JSWDULUX",
-      "setups": [
-        "oversold"
-      ],
-      "price": 264.4,
-      "close_date": "2026-10-30",
-      "rsi": 25.1,
-      "volume": 624215
-    },
-    {
-      "symbol": "MANAKCOAT",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 147.84,
-      "close_date": "2026-10-29",
-      "rsi": 70.9,
-      "volume": 1101051
-    },
-    {
-      "symbol": "BECTORFOOD",
-      "setups": [
-        "oversold_bounce"
-      ],
-      "price": 185.9,
-      "close_date": "2026-10-29",
-      "rsi": 30.6,
-      "volume": 870769
-    },
-    {
-      "symbol": "JSFB",
-      "setups": [
-        "oversold"
-      ],
-      "price": 373.5,
-      "close_date": "2026-10-30",
-      "rsi": 28.8,
-      "volume": 424254
-    },
-    {
-      "symbol": "INOXGREEN",
-      "setups": [
-        "oversold"
-      ],
-      "price": 101.82,
-      "close_date": "2026-10-30",
-      "rsi": 22.0,
-      "volume": 1547746
-    },
-    {
-      "symbol": "BAJAJCON",
-      "setups": [
-        "oversold"
-      ],
-      "price": 370.15,
-      "close_date": "2026-10-30",
-      "rsi": 26.5,
-      "volume": 423164
-    },
-    {
-      "symbol": "ABFRL",
-      "setups": [
-        "oversold"
-      ],
-      "price": 38.78,
-      "close_date": "2026-10-30",
-      "rsi": 24.3,
-      "volume": 3990951
-    },
-    {
-      "symbol": "GOCOLORS",
-      "setups": [
-        "oversold"
-      ],
-      "price": 256.9,
-      "close_date": "2026-10-29",
-      "rsi": 25.9,
-      "volume": 597835
-    },
-    {
-      "symbol": "MAHLIFE",
-      "setups": [
-        "oversold_bounce"
-      ],
-      "price": 317.25,
-      "close_date": "2026-10-29",
-      "rsi": 33.8,
-      "volume": 465202
-    },
-    {
-      "symbol": "VAIBHAVGBL",
-      "setups": [
-        "oversold"
-      ],
-      "price": 158.3,
-      "close_date": "2026-10-29",
-      "rsi": 18.5,
-      "volume": 918257
-    },
-    {
-      "symbol": "KIRLPNU",
-      "setups": [
-        "oversold",
-        "oversold_bounce"
-      ],
-      "price": 556.45,
-      "close_date": "2026-10-29",
-      "rsi": 28.0,
-      "volume": 259952
-    },
-    {
-      "symbol": "LLOYDSENT",
-      "setups": [
-        "oversold_bounce"
-      ],
-      "price": 62.76,
-      "close_date": "2026-10-29",
-      "rsi": 32.3,
-      "volume": 2180682
-    },
-    {
-      "symbol": "UNITEDPOLY",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 55.41,
-      "close_date": "2026-10-29",
-      "rsi": 71.8,
-      "volume": 2362918
+      "price": 514.15,
+      "close_date": "2026-11-03",
+      "rsi": 68.3,
+      "volume": 668706
     },
     {
       "symbol": "AARTIDRUGS",
       "setups": [
         "breakout_20d"
       ],
-      "price": 449.0,
-      "close_date": "2026-10-29",
-      "rsi": 65.9,
-      "volume": 291559
+      "price": 466.3,
+      "close_date": "2026-11-03",
+      "rsi": 67.6,
+      "volume": 680834
     },
     {
-      "symbol": "HDBFS",
+      "symbol": "TI",
       "setups": [
         "oversold"
       ],
-      "price": 498.55,
-      "close_date": "2026-10-30",
-      "rsi": 21.3,
-      "volume": 252325
+      "price": 465.1,
+      "close_date": "2026-11-03",
+      "rsi": 28.9,
+      "volume": 651976
     },
     {
-      "symbol": "ORIENTHOT",
+      "symbol": "ITCHOTELS",
       "setups": [
         "breakout_20d"
       ],
-      "price": 160.17,
-      "close_date": "2026-10-29",
-      "rsi": 70.3,
-      "volume": 778562
+      "price": 171.03,
+      "close_date": "2026-11-03",
+      "rsi": 62.0,
+      "volume": 1719861
     },
     {
-      "symbol": "YATRA",
+      "symbol": "IGIL",
+      "setups": [
+        "breakout_20d",
+        "bull_flag"
+      ],
+      "price": 407.85,
+      "close_date": "2026-11-03",
+      "rsi": 76.9,
+      "volume": 708422
+    },
+    {
+      "symbol": "V2RETAIL",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 164.62,
+      "close_date": "2026-11-03",
+      "rsi": 44.1,
+      "volume": 1754238
+    },
+    {
+      "symbol": "INDIGOPNTS",
       "setups": [
         "oversold"
       ],
-      "price": 68.55,
-      "close_date": "2026-10-30",
-      "rsi": 16.8,
-      "volume": 1800944
+      "price": 865.55,
+      "close_date": "2026-11-03",
+      "rsi": 19.3,
+      "volume": 325173
     },
     {
-      "symbol": "ELECTCAST",
+      "symbol": "SUMICHEM",
       "setups": [
         "oversold"
       ],
-      "price": 63.56,
-      "close_date": "2026-10-30",
-      "rsi": 28.8,
-      "volume": 1910986
+      "price": 313.9,
+      "close_date": "2026-11-03",
+      "rsi": 14.2,
+      "volume": 888296
     },
     {
-      "symbol": "CMPDI",
+      "symbol": "HAPPSTMNDS",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 311.25,
+      "close_date": "2026-11-03",
+      "rsi": 47.4,
+      "volume": 886684
+    },
+    {
+      "symbol": "PGEL",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 541.0,
+      "close_date": "2026-11-03",
+      "rsi": 57.9,
+      "volume": 506196
+    },
+    {
+      "symbol": "ANTHEM",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 854.45,
+      "close_date": "2026-11-03",
+      "rsi": 52.2,
+      "volume": 310052
+    },
+    {
+      "symbol": "FIVESTAR",
       "setups": [
         "oversold"
       ],
-      "price": 178.46,
-      "close_date": "2026-10-30",
-      "rsi": 29.8,
-      "volume": 670769
+      "price": 397.1,
+      "close_date": "2026-11-03",
+      "rsi": 22.4,
+      "volume": 655204
+    },
+    {
+      "symbol": "HONASA",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 457.2,
+      "close_date": "2026-11-03",
+      "rsi": 51.8,
+      "volume": 563041
+    },
+    {
+      "symbol": "JSWCEMENT",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 121.97,
+      "close_date": "2026-11-03",
+      "rsi": 65.5,
+      "volume": 2104523
+    },
+    {
+      "symbol": "EMAMILTD",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 382.0,
+      "close_date": "2026-11-03",
+      "rsi": 55.0,
+      "volume": 665683
+    },
+    {
+      "symbol": "CLEAN",
+      "setups": [
+        "oversold"
+      ],
+      "price": 658.8,
+      "close_date": "2026-11-03",
+      "rsi": 26.0,
+      "volume": 374242
+    },
+    {
+      "symbol": "ROLEXRINGS",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 168.76,
+      "close_date": "2026-11-03",
+      "rsi": 49.8,
+      "volume": 1452203
+    },
+    {
+      "symbol": "MARKOLINES",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 179.33,
+      "close_date": "2026-11-03",
+      "rsi": 58.7,
+      "volume": 1259929
+    },
+    {
+      "symbol": "SHIPROCKET",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 130.87,
+      "close_date": "2026-11-03",
+      "rsi": 55.1,
+      "volume": 1681912
+    },
+    {
+      "symbol": "LEMONTREE",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 114.26,
+      "close_date": "2026-11-03",
+      "rsi": 59.8,
+      "volume": 1899809
+    },
+    {
+      "symbol": "CEIGALL",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 397.2,
+      "close_date": "2026-11-03",
+      "rsi": 61.0,
+      "volume": 515698
     },
     {
       "symbol": "JKTYRE",
       "setups": [
-        "oversold"
+        "reclaim_ma20"
       ],
-      "price": 301.8,
-      "close_date": "2026-10-30",
-      "rsi": 28.6,
-      "volume": 392478
+      "price": 325.1,
+      "close_date": "2026-11-03",
+      "rsi": 47.7,
+      "volume": 625861
     },
     {
-      "symbol": "GATEWAY",
+      "symbol": "MSTCLTD",
       "setups": [
-        "oversold"
+        "oversold_bounce"
       ],
-      "price": 42.87,
-      "close_date": "2026-10-30",
-      "rsi": 12.8,
-      "volume": 2741160
+      "price": 565.5,
+      "close_date": "2026-11-03",
+      "rsi": 35.4,
+      "volume": 356514
     },
     {
-      "symbol": "SAMHI",
+      "symbol": "MOSCHIP",
+      "setups": [
+        "oversold_bounce"
+      ],
+      "price": 158.41,
+      "close_date": "2026-11-03",
+      "rsi": 30.7,
+      "volume": 1272115
+    },
+    {
+      "symbol": "VGUARD",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 287.1,
+      "close_date": "2026-11-03",
+      "rsi": 48.8,
+      "volume": 696563
+    },
+    {
+      "symbol": "LTFOODS",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 410.55,
+      "close_date": "2026-11-03",
+      "rsi": 54.4,
+      "volume": 479283
+    },
+    {
+      "symbol": "GCSL",
       "setups": [
         "breakout_20d"
       ],
-      "price": 155.47,
-      "close_date": "2026-10-29",
-      "rsi": 56.2,
-      "volume": 743090
-    },
-    {
-      "symbol": "TVSSCS",
-      "setups": [
-        "oversold"
-      ],
-      "price": 104.68,
-      "close_date": "2026-10-30",
-      "rsi": 23.3,
-      "volume": 1066369
+      "price": 773.35,
+      "close_date": "2026-11-03",
+      "rsi": 78.7,
+      "volume": 253649
     },
     {
       "symbol": "LEAPIND",
       "setups": [
         "oversold"
       ],
-      "price": 116.59,
-      "close_date": "2026-10-30",
-      "rsi": 30.0,
-      "volume": 953391
+      "price": 112.92,
+      "close_date": "2026-11-03",
+      "rsi": 27.4,
+      "volume": 1672480
     },
     {
-      "symbol": "DECNGOLD",
+      "symbol": "MENONBE",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 321.5,
+      "close_date": "2026-11-03",
+      "rsi": 63.3,
+      "volume": 586020
+    },
+    {
+      "symbol": "BORORENEW",
       "setups": [
         "oversold"
       ],
-      "price": 160.03,
-      "close_date": "2026-10-30",
-      "rsi": 27.5,
-      "volume": 687656
+      "price": 378.65,
+      "close_date": "2026-11-03",
+      "rsi": 23.6,
+      "volume": 496818
     },
     {
-      "symbol": "FUSION",
+      "symbol": "HDBFS",
       "setups": [
         "oversold"
       ],
-      "price": 135.18,
-      "close_date": "2026-10-29",
-      "rsi": 15.1,
-      "volume": 813485
+      "price": 503.1,
+      "close_date": "2026-11-03",
+      "rsi": 24.8,
+      "volume": 371544
     },
     {
-      "symbol": "SHRINGARMS",
+      "symbol": "AEGISVOPAK",
       "setups": [
-        "bull_flag"
+        "oversold_bounce"
       ],
-      "price": 283.34,
-      "close_date": "2026-10-29",
-      "rsi": 58.6,
-      "volume": 385431
+      "price": 234.43,
+      "close_date": "2026-11-03",
+      "rsi": 32.9,
+      "volume": 796883
     },
     {
-      "symbol": "EMUDHRA",
+      "symbol": "LATENTVIEW",
       "setups": [
         "oversold"
       ],
-      "price": 339.9,
-      "close_date": "2026-10-30",
-      "rsi": 27.2,
-      "volume": 317919
+      "price": 195.95,
+      "close_date": "2026-11-03",
+      "rsi": 18.6,
+      "volume": 947793
+    },
+    {
+      "symbol": "BUILDPRO",
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "price": 176.43,
+      "close_date": "2026-11-03",
+      "rsi": 24.0,
+      "volume": 1038137
+    },
+    {
+      "symbol": "BAJAJCON",
+      "setups": [
+        "oversold_bounce"
+      ],
+      "price": 385.25,
+      "close_date": "2026-11-03",
+      "rsi": 33.0,
+      "volume": 466413
+    },
+    {
+      "symbol": "ROUTE",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 455.7,
+      "close_date": "2026-11-03",
+      "rsi": 53.7,
+      "volume": 387273
     },
     {
       "symbol": "ALGOQUANT",
       "setups": [
+        "bull_flag"
+      ],
+      "price": 77.34,
+      "close_date": "2026-11-03",
+      "rsi": 65.0,
+      "volume": 2260669
+    },
+    {
+      "symbol": "BHAGCHEM",
+      "setups": [
+        "oversold"
+      ],
+      "price": 187.19,
+      "close_date": "2026-11-03",
+      "rsi": 29.4,
+      "volume": 906295
+    },
+    {
+      "symbol": "AFCONS",
+      "setups": [
+        "oversold"
+      ],
+      "price": 211.4,
+      "close_date": "2026-11-03",
+      "rsi": 29.5,
+      "volume": 782885
+    },
+    {
+      "symbol": "ABFRL",
+      "setups": [
+        "oversold"
+      ],
+      "price": 39.24,
+      "close_date": "2026-11-03",
+      "rsi": 27.1,
+      "volume": 4040032
+    },
+    {
+      "symbol": "METROPOLIS",
+      "setups": [
         "breakout_20d"
       ],
-      "price": 76.43,
-      "close_date": "2026-10-29",
-      "rsi": 65.8,
-      "volume": 1412174
+      "price": 568.7,
+      "close_date": "2026-11-03",
+      "rsi": 58.7,
+      "volume": 265497
+    },
+    {
+      "symbol": "PICCADIL",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 586.3,
+      "close_date": "2026-11-03",
+      "rsi": 51.8,
+      "volume": 256504
+    },
+    {
+      "symbol": "EMBDL",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 53.26,
+      "close_date": "2026-11-03",
+      "rsi": 49.0,
+      "volume": 2811679
+    },
+    {
+      "symbol": "NETWORK18",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 25.44,
+      "close_date": "2026-11-03",
+      "rsi": 51.4,
+      "volume": 5748795
+    },
+    {
+      "symbol": "KRSNAA",
+      "setups": [
+        "oversold"
+      ],
+      "price": 485.8,
+      "close_date": "2026-11-03",
+      "rsi": 29.5,
+      "volume": 298850
+    },
+    {
+      "symbol": "GREENPANEL",
+      "setups": [
+        "oversold_bounce"
+      ],
+      "price": 133.15,
+      "close_date": "2026-11-03",
+      "rsi": 38.2,
+      "volume": 1068621
+    },
+    {
+      "symbol": "BERGEPAINT",
+      "setups": [
+        "breakout_20d",
+        "reclaim_ma20"
+      ],
+      "price": 479.7,
+      "close_date": "2026-11-03",
+      "rsi": 58.3,
+      "volume": 277178
+    },
+    {
+      "symbol": "CMSINFO",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 212.25,
+      "close_date": "2026-11-03",
+      "rsi": 44.7,
+      "volume": 603488
+    },
+    {
+      "symbol": "HLEGLAS",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 424.15,
+      "close_date": "2026-11-03",
+      "rsi": 54.2,
+      "volume": 301818
+    },
+    {
+      "symbol": "COMSYN",
+      "setups": [
+        "oversold"
+      ],
+      "price": 205.43,
+      "close_date": "2026-11-03",
+      "rsi": 25.2,
+      "volume": 558291
+    },
+    {
+      "symbol": "ABLBL",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 73.16,
+      "close_date": "2026-11-03",
+      "rsi": 46.5,
+      "volume": 1561952
+    },
+    {
+      "symbol": "SHAKTIPUMP",
+      "setups": [
+        "oversold"
+      ],
+      "price": 357.0,
+      "close_date": "2026-11-03",
+      "rsi": 22.5,
+      "volume": 317388
+    },
+    {
+      "symbol": "LCCPROJECT",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 136.5,
+      "close_date": "2026-11-03",
+      "rsi": 44.6,
+      "volume": 819212
+    },
+    {
+      "symbol": "JSWDULUX",
+      "setups": [
+        "oversold"
+      ],
+      "price": 260.25,
+      "close_date": "2026-11-03",
+      "rsi": 23.4,
+      "volume": 424230
+    },
+    {
+      "symbol": "LLOYDSENT",
+      "setups": [
+        "oversold",
+        "oversold_bounce"
+      ],
+      "price": 60.59,
+      "close_date": "2026-11-03",
+      "rsi": 29.5,
+      "volume": 1789808
+    },
+    {
+      "symbol": "ENKEIWHEL",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 406.45,
+      "close_date": "2026-11-03",
+      "rsi": 60.2,
+      "volume": 251568
+    },
+    {
+      "symbol": "FEDDERSHOL",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 60.53,
+      "close_date": "2026-11-03",
+      "rsi": 59.1,
+      "volume": 1547546
+    },
+    {
+      "symbol": "KANSAINER",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 187.12,
+      "close_date": "2026-11-03",
+      "rsi": 55.3,
+      "volume": 492655
+    },
+    {
+      "symbol": "LAXMIINDIA",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 104.41,
+      "close_date": "2026-11-03",
+      "rsi": 47.8,
+      "volume": 879334
+    },
+    {
+      "symbol": "AYE",
+      "setups": [
+        "oversold_bounce"
+      ],
+      "price": 132.81,
+      "close_date": "2026-11-03",
+      "rsi": 31.6,
+      "volume": 679494
+    },
+    {
+      "symbol": "NOCIL",
+      "setups": [
+        "oversold"
+      ],
+      "price": 136.25,
+      "close_date": "2026-11-03",
+      "rsi": 27.8,
+      "volume": 651951
     },
     {
       "symbol": "JSLL",
@@ -1889,586 +2234,378 @@
         "oversold",
         "oversold_bounce"
       ],
-      "price": 347.75,
-      "close_date": "2026-10-29",
-      "rsi": 22.1,
-      "volume": 299968
+      "price": 343.7,
+      "close_date": "2026-11-03",
+      "rsi": 25.8,
+      "volume": 254059
     },
     {
-      "symbol": "LATENTVIEW",
-      "setups": [
-        "oversold"
-      ],
-      "price": 210.39,
-      "close_date": "2026-10-30",
-      "rsi": 24.3,
-      "volume": 482398
-    },
-    {
-      "symbol": "DYCL",
-      "setups": [
-        "oversold"
-      ],
-      "price": 318.25,
-      "close_date": "2026-10-30",
-      "rsi": 20.1,
-      "volume": 312218
-    },
-    {
-      "symbol": "EMAMIPAP",
+      "symbol": "RTNINDIA",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 117.5,
-      "close_date": "2026-10-29",
-      "rsi": 53.4,
-      "volume": 836873
+      "price": 24.95,
+      "close_date": "2026-11-03",
+      "rsi": 48.6,
+      "volume": 3488558
     },
     {
-      "symbol": "RAMKY",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 309.45,
-      "close_date": "2026-10-29",
-      "rsi": 59.9,
-      "volume": 294775
-    },
-    {
-      "symbol": "LASERPOWER",
+      "symbol": "OSWALPUMPS",
       "setups": [
         "oversold"
       ],
-      "price": 201.1,
-      "close_date": "2026-10-30",
-      "rsi": 25.6,
-      "volume": 453340
+      "price": 209.54,
+      "close_date": "2026-11-03",
+      "rsi": 26.5,
+      "volume": 397633
     },
     {
-      "symbol": "CANHLIFE",
+      "symbol": "RALLIS",
       "setups": [
-        "oversold",
         "oversold_bounce"
       ],
-      "price": 124.54,
-      "close_date": "2026-10-29",
-      "rsi": 25.5,
-      "volume": 717110
+      "price": 189.98,
+      "close_date": "2026-11-03",
+      "rsi": 39.2,
+      "volume": 410370
+    },
+    {
+      "symbol": "GNRL",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 105.76,
+      "close_date": "2026-11-03",
+      "rsi": 66.6,
+      "volume": 721959
+    },
+    {
+      "symbol": "WEBELSOLAR",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 67.15,
+      "close_date": "2026-11-03",
+      "rsi": 47.6,
+      "volume": 1092497
+    },
+    {
+      "symbol": "BALMLAWRIE",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 163.4,
+      "close_date": "2026-11-03",
+      "rsi": 59.3,
+      "volume": 436351
+    },
+    {
+      "symbol": "INDOSTAR",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 196.25,
+      "close_date": "2026-11-03",
+      "rsi": 49.0,
+      "volume": 361719
+    },
+    {
+      "symbol": "IVALUE",
+      "setups": [
+        "oversold"
+      ],
+      "price": 186.92,
+      "close_date": "2026-11-03",
+      "rsi": 26.3,
+      "volume": 357775
+    },
+    {
+      "symbol": "NAVNETEDUL",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 130.72,
+      "close_date": "2026-11-03",
+      "rsi": 65.0,
+      "volume": 510201
+    },
+    {
+      "symbol": "KALAMANDIR",
+      "setups": [
+        "oversold_bounce"
+      ],
+      "price": 67.55,
+      "close_date": "2026-11-03",
+      "rsi": 33.8,
+      "volume": 970044
+    },
+    {
+      "symbol": "ORIENTHOT",
+      "setups": [
+        "breakout_20d",
+        "bull_flag"
+      ],
+      "price": 163.71,
+      "close_date": "2026-11-03",
+      "rsi": 73.4,
+      "volume": 389648
+    },
+    {
+      "symbol": "ORIENTCEM",
+      "setups": [
+        "breakout_20d"
+      ],
+      "price": 119.53,
+      "close_date": "2026-11-03",
+      "rsi": 55.0,
+      "volume": 528048
     },
     {
       "symbol": "DCW",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 45.08,
-      "close_date": "2026-10-29",
-      "rsi": 53.7,
-      "volume": 1896136
+      "price": 45.23,
+      "close_date": "2026-11-03",
+      "rsi": 53.6,
+      "volume": 1370114
     },
     {
-      "symbol": "RCF",
+      "symbol": "CRIZAC",
+      "setups": [
+        "oversold_bounce"
+      ],
+      "price": 143.79,
+      "close_date": "2026-11-03",
+      "rsi": 39.0,
+      "volume": 427683
+    },
+    {
+      "symbol": "BHAGYANGR",
       "setups": [
         "oversold"
       ],
-      "price": 93.63,
-      "close_date": "2026-10-30",
-      "rsi": 26.4,
-      "volume": 908168
+      "price": 85.29,
+      "close_date": "2026-11-03",
+      "rsi": 29.0,
+      "volume": 711479
     },
     {
       "symbol": "MUTHOOTMF",
       "setups": [
+        "oversold_bounce"
+      ],
+      "price": 148.28,
+      "close_date": "2026-11-03",
+      "rsi": 36.2,
+      "volume": 393111
+    },
+    {
+      "symbol": "GENESYS",
+      "setups": [
         "oversold",
         "oversold_bounce"
       ],
-      "price": 143.09,
-      "close_date": "2026-10-29",
-      "rsi": 21.0,
-      "volume": 567399
-    },
-    {
-      "symbol": "NITCO",
-      "setups": [
-        "oversold"
-      ],
-      "price": 68.65,
-      "close_date": "2026-10-29",
-      "rsi": 28.1,
-      "volume": 1153443
-    },
-    {
-      "symbol": "REFEX",
-      "setups": [
-        "oversold"
-      ],
-      "price": 212.05,
-      "close_date": "2026-10-30",
-      "rsi": 24.9,
-      "volume": 372028
-    },
-    {
-      "symbol": "GOKULAGRO",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 216.52,
-      "close_date": "2026-10-29",
-      "rsi": 55.1,
-      "volume": 362963
-    },
-    {
-      "symbol": "AJMERA",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 137.86,
-      "close_date": "2026-10-29",
-      "rsi": 73.5,
-      "volume": 534160
-    },
-    {
-      "symbol": "GKENERGY",
-      "setups": [
-        "oversold"
-      ],
-      "price": 95.89,
-      "close_date": "2026-10-30",
-      "rsi": 29.3,
-      "volume": 759732
-    },
-    {
-      "symbol": "MOIL",
-      "setups": [
-        "oversold"
-      ],
-      "price": 214.02,
-      "close_date": "2026-10-30",
-      "rsi": 28.7,
-      "volume": 335510
-    },
-    {
-      "symbol": "GSFC",
-      "setups": [
-        "oversold"
-      ],
-      "price": 133.28,
-      "close_date": "2026-10-30",
-      "rsi": 27.9,
-      "volume": 517350
-    },
-    {
-      "symbol": "AYE",
-      "setups": [
-        "oversold"
-      ],
-      "price": 128.95,
-      "close_date": "2026-10-30",
-      "rsi": 25.7,
-      "volume": 519937
-    },
-    {
-      "symbol": "ORICONENT",
-      "setups": [
-        "breakout_20d"
-      ],
-      "price": 54.66,
-      "close_date": "2026-10-29",
-      "rsi": 58.9,
-      "volume": 1222638
-    },
-    {
-      "symbol": "RALLIS",
-      "setups": [
-        "oversold"
-      ],
-      "price": 183.39,
-      "close_date": "2026-10-30",
-      "rsi": 24.4,
-      "volume": 355034
-    },
-    {
-      "symbol": "WANBURY",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 189.21,
-      "close_date": "2026-10-30",
-      "rsi": 44.4,
-      "volume": 332710
-    },
-    {
-      "symbol": "FINPIPE",
-      "setups": [
-        "oversold"
-      ],
-      "price": 137.16,
-      "close_date": "2026-10-30",
-      "rsi": 25.4,
-      "volume": 449775
-    },
-    {
-      "symbol": "ORIENTTECH",
-      "setups": [
-        "oversold"
-      ],
-      "price": 188.5,
-      "close_date": "2026-10-29",
-      "rsi": 22.7,
-      "volume": 304883
-    },
-    {
-      "symbol": "EXICOM",
-      "setups": [
-        "oversold"
-      ],
-      "price": 125.06,
-      "close_date": "2026-10-30",
-      "rsi": 29.7,
-      "volume": 448532
-    },
-    {
-      "symbol": "ANNAPURNA",
-      "setups": [
-        "oversold"
-      ],
-      "price": 102.7,
-      "close_date": "2026-10-29",
-      "rsi": 24.5,
-      "volume": 526222
-    },
-    {
-      "symbol": "AEROENTER",
-      "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 128.1,
-      "close_date": "2026-10-29",
-      "rsi": 51.9,
-      "volume": 414659
+      "price": 173.58,
+      "close_date": "2026-11-03",
+      "rsi": 24.8,
+      "volume": 329727
     },
     {
       "symbol": "VSTIND",
       "setups": [
-        "oversold"
+        "oversold",
+        "oversold_bounce"
       ],
-      "price": 185.5,
-      "close_date": "2026-10-30",
-      "rsi": 13.3,
-      "volume": 273799
+      "price": 187.27,
+      "close_date": "2026-11-03",
+      "rsi": 20.8,
+      "volume": 270826
     },
     {
-      "symbol": "KPEL",
+      "symbol": "VAIBHAVGBL",
       "setups": [
-        "oversold"
+        "oversold",
+        "oversold_bounce"
       ],
-      "price": 166.1,
-      "close_date": "2026-10-29",
-      "rsi": 25.5,
-      "volume": 300036
+      "price": 157.73,
+      "close_date": "2026-11-03",
+      "rsi": 20.9,
+      "volume": 318856
     },
     {
-      "symbol": "THOMASCOOK",
+      "symbol": "SOLARWORLD",
       "setups": [
-        "oversold"
+        "oversold",
+        "oversold_bounce"
       ],
-      "price": 85.52,
-      "close_date": "2026-10-30",
-      "rsi": 24.9,
-      "volume": 582432
-    },
-    {
-      "symbol": "CAPACITE",
-      "setups": [
-        "oversold"
-      ],
-      "price": 145.66,
-      "close_date": "2026-10-30",
-      "rsi": 24.2,
-      "volume": 333680
+      "price": 105.34,
+      "close_date": "2026-11-03",
+      "rsi": 26.3,
+      "volume": 459007
     },
     {
       "symbol": "RIR",
       "setups": [
         "oversold"
       ],
-      "price": 137.49,
-      "close_date": "2026-10-29",
-      "rsi": 24.8,
-      "volume": 347484
+      "price": 134.49,
+      "close_date": "2026-11-03",
+      "rsi": 26.1,
+      "volume": 351751
     },
     {
-      "symbol": "KOTYARK",
+      "symbol": "ORICONENT",
       "setups": [
         "breakout_20d"
       ],
-      "price": 37.45,
-      "close_date": "2026-10-29",
-      "rsi": 64.1,
-      "volume": 1249738
+      "price": 57.21,
+      "close_date": "2026-11-03",
+      "rsi": 65.4,
+      "volume": 823064
     },
     {
-      "symbol": "ESAFSFB",
+      "symbol": "YATRA",
       "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 42.94,
-      "close_date": "2026-10-29",
-      "rsi": 54.8,
-      "volume": 1086144
-    },
-    {
-      "symbol": "TNPL",
-      "setups": [
-        "oversold"
-      ],
-      "price": 126.99,
-      "close_date": "2026-10-29",
-      "rsi": 27.8,
-      "volume": 361018
-    },
-    {
-      "symbol": "RICOAUTO",
-      "setups": [
-        "oversold"
-      ],
-      "price": 99.18,
-      "close_date": "2026-10-30",
-      "rsi": 26.5,
-      "volume": 448690
-    },
-    {
-      "symbol": "SKYWAYS",
-      "setups": [
-        "oversold"
-      ],
-      "price": 92.45,
-      "close_date": "2026-10-30",
-      "rsi": 27.1,
-      "volume": 464525
-    },
-    {
-      "symbol": "DCXINDIA",
-      "setups": [
-        "oversold"
-      ],
-      "price": 132.66,
-      "close_date": "2026-10-30",
-      "rsi": 27.1,
-      "volume": 321574
-    },
-    {
-      "symbol": "HEXAGON",
-      "setups": [
+        "oversold",
         "oversold_bounce"
       ],
-      "price": 57.32,
-      "close_date": "2026-10-29",
-      "rsi": 31.6,
-      "volume": 718888
+      "price": 72.27,
+      "close_date": "2026-11-03",
+      "rsi": 25.4,
+      "volume": 637769
     },
     {
-      "symbol": "HMAAGRO",
+      "symbol": "ECOSMOBLTY",
+      "setups": [
+        "breakout_20d",
+        "reclaim_ma20"
+      ],
+      "price": 111.07,
+      "close_date": "2026-11-03",
+      "rsi": 62.1,
+      "volume": 365804
+    },
+    {
+      "symbol": "MANIKA",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 24.43,
-      "close_date": "2026-10-29",
-      "rsi": 55.4,
-      "volume": 1634263
+      "price": 50.32,
+      "close_date": "2026-11-03",
+      "rsi": 58.7,
+      "volume": 798602
     },
     {
-      "symbol": "NACLIND",
+      "symbol": "UGROCAP",
       "setups": [
         "oversold"
       ],
-      "price": 110.53,
-      "close_date": "2026-10-30",
-      "rsi": 24.0,
-      "volume": 321940
+      "price": 68.33,
+      "close_date": "2026-11-03",
+      "rsi": 25.2,
+      "volume": 574792
+    },
+    {
+      "symbol": "VPRPL",
+      "setups": [
+        "reclaim_ma20"
+      ],
+      "price": 26.89,
+      "close_date": "2026-11-03",
+      "rsi": 48.9,
+      "volume": 959913
     },
     {
       "symbol": "AERONEU",
       "setups": [
-        "reclaim_ma20"
-      ],
-      "price": 72.77,
-      "close_date": "2026-10-29",
-      "rsi": 54.3,
-      "volume": 457219
-    },
-    {
-      "symbol": "KNRCON",
-      "setups": [
-        "oversold"
-      ],
-      "price": 98.58,
-      "close_date": "2026-10-30",
-      "rsi": 29.6,
-      "volume": 336249
-    },
-    {
-      "symbol": "PNBGILTS",
-      "setups": [
         "breakout_20d"
       ],
-      "price": 75.89,
-      "close_date": "2026-10-29",
-      "rsi": 56.1,
-      "volume": 434988
+      "price": 81.38,
+      "close_date": "2026-11-03",
+      "rsi": 66.8,
+      "volume": 254956
     },
     {
-      "symbol": "GNRL",
-      "setups": [
-        "reclaim_ma20",
-        "oversold_bounce"
-      ],
-      "price": 97.7,
-      "close_date": "2026-10-29",
-      "rsi": 55.9,
-      "volume": 336281
-    },
-    {
-      "symbol": "TIRUMALCHM",
-      "setups": [
-        "oversold",
-        "oversold_bounce"
-      ],
-      "price": 119.82,
-      "close_date": "2026-10-29",
-      "rsi": 26.0,
-      "volume": 262202
-    },
-    {
-      "symbol": "GAUDIUMIVF",
+      "symbol": "ROTO",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 111.07,
-      "close_date": "2026-10-29",
-      "rsi": 57.6,
-      "volume": 276102
+      "price": 60.15,
+      "close_date": "2026-11-03",
+      "rsi": 47.9,
+      "volume": 318367
     },
     {
-      "symbol": "ARKADE",
+      "symbol": "SINDHUTRAD",
       "setups": [
-        "oversold_bounce"
+        "reclaim_ma20"
       ],
-      "price": 108.02,
-      "close_date": "2026-10-29",
-      "rsi": 33.1,
-      "volume": 279591
+      "price": 20.41,
+      "close_date": "2026-11-03",
+      "rsi": 46.2,
+      "volume": 880280
     },
     {
-      "symbol": "UYFINCORP",
+      "symbol": "GAYAPROJ",
       "setups": [
-        "breakout_20d"
+        "reclaim_ma20"
       ],
-      "price": 29.14,
-      "close_date": "2026-10-29",
-      "rsi": 76.4,
-      "volume": 1035459
-    },
-    {
-      "symbol": "BOMDYEING",
-      "setups": [
-        "oversold"
-      ],
-      "price": 88.21,
-      "close_date": "2026-10-30",
-      "rsi": 28.0,
-      "volume": 319739
-    },
-    {
-      "symbol": "DIGITIDE",
-      "setups": [
-        "oversold"
-      ],
-      "price": 64.74,
-      "close_date": "2026-10-30",
-      "rsi": 29.0,
-      "volume": 424135
-    },
-    {
-      "symbol": "NIITLTD",
-      "setups": [
-        "oversold"
-      ],
-      "price": 66.76,
-      "close_date": "2026-10-30",
-      "rsi": 24.0,
-      "volume": 378349
+      "price": 20.35,
+      "close_date": "2026-11-03",
+      "rsi": 48.6,
+      "volume": 825803
     },
     {
       "symbol": "TURTLEMINT",
       "setups": [
-        "oversold"
-      ],
-      "price": 53.12,
-      "close_date": "2026-10-30",
-      "rsi": 22.0,
-      "volume": 466771
-    },
-    {
-      "symbol": "ANNU",
-      "setups": [
         "oversold",
         "oversold_bounce"
       ],
-      "price": 38.27,
-      "close_date": "2026-10-29",
-      "rsi": 22.4,
-      "volume": 565944
+      "price": 54.17,
+      "close_date": "2026-11-03",
+      "rsi": 25.1,
+      "volume": 293562
     },
     {
-      "symbol": "KALAMANDIR",
+      "symbol": "LEMERITE",
       "setups": [
-        "oversold"
+        "breakout_20d"
       ],
-      "price": 64.95,
-      "close_date": "2026-10-30",
-      "rsi": 20.1,
-      "volume": 301715
+      "price": 22.73,
+      "close_date": "2026-11-03",
+      "rsi": 64.7,
+      "volume": 659282
     },
     {
-      "symbol": "ATLANTAA",
+      "symbol": "BRIGHOTEL",
       "setups": [
         "reclaim_ma20"
       ],
-      "price": 36.03,
-      "close_date": "2026-10-29",
-      "rsi": 54.6,
-      "volume": 515839
+      "price": 54.69,
+      "close_date": "2026-11-03",
+      "rsi": 50.4,
+      "volume": 250097
     },
     {
       "symbol": "DEVX",
       "setups": [
-        "reclaim_ma20"
+        "breakout_20d"
       ],
-      "price": 40.55,
-      "close_date": "2026-10-29",
-      "rsi": 54.7,
-      "volume": 379368
-    },
-    {
-      "symbol": "VERANDA",
-      "setups": [
-        "oversold",
-        "oversold_bounce"
-      ],
-      "price": 35.55,
-      "close_date": "2026-10-29",
-      "rsi": 17.7,
-      "volume": 338727
+      "price": 44.82,
+      "close_date": "2026-11-03",
+      "rsi": 66.1,
+      "volume": 296081
     },
     {
       "symbol": "INDOTHAI",
       "setups": [
         "oversold"
       ],
-      "price": 28.53,
-      "close_date": "2026-10-29",
-      "rsi": 25.7,
-      "volume": 289524
+      "price": 28.04,
+      "close_date": "2026-11-03",
+      "rsi": 26.5,
+      "volume": 340765
     }
   ]
 }

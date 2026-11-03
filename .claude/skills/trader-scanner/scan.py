@@ -504,13 +504,20 @@ def daily_closes(series, now_utc):
     today = now.date()
     s = session(today)
     today_done = s is None or now.time() >= s[1]
+    meta = series.get("meta") or {}
+    rmt, rmp = meta.get("regularMarketTime"), meta.get("regularMarketPrice")
+    last_day = None  # the session the quote's last price belongs to, when it is over by the clock
+    if isinstance(rmt, (int, float)) and isinstance(rmp, (int, float)) and ts_to_eastern(rmt) <= now:
+        last_day = ts_to_eastern(rmt).date()
     out = {}
     for ts, c in zip(series["t"], series["c"]):
-        if c is None:
-            continue
         d = ts_to_eastern(ts).date()
         if d > today or (d == today and not today_done):
             continue
+        if c is None:
+            if d != last_day:
+                continue
+            c = rmp  # Yahoo sometimes leaves the last daily close empty; the quote has it
         out[d] = float(c)  # one bar a day: a late duplicate (the live tick) wins
     return sorted(out.items())
 
