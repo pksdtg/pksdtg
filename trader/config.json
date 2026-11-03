@@ -8,5 +8,6 @@
   "cash_buffer_pct": 10,
   "max_trades_per_day": 3,
   "min_reward_risk": 1.0,
-  "paper": true
+  "paper": true,
+  "max_option_lots": 1
 }

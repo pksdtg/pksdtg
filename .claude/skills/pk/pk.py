@@ -18,7 +18,8 @@ side: both Supertrends up, RSI above 50 and SMI above its signal -> calls (CE); 
 three the other way -> puts (PE); mixed -> no side, both are listed for information.
 Each option's own 5-minute chart is built from NSE's intraday prices for that
 contract (today only, so the indicators need about 26 bars: after ~11:25 IST) and
-checked with the same four chart checkpoints. Lot size from NSE (NIFTY: 65).
+checked with the same four chart checkpoints plus the entry window. Lot size from
+NSE (NIFTY: 65); lots are capped at "max_option_lots" in trader/config.json (1).
 
 The last line is a one-line summary under 200 characters, for a phone alert.
 Nothing is ever placed. Exit code 0 when anything passes, 1 otherwise.
@@ -102,6 +103,12 @@ def ticks_to_bars(points, now):
     return [tuple(b) for _, b in sorted(bars.items())]
 
 
+def in_window(now, cfg):
+    """An NSE trading day, between no_entries_before and no_entries_after (09:30-15:00)."""
+    lo, hi = piyush.hhmm(cfg["no_entries_before"]), piyush.hhmm(cfg["no_entries_after"])
+    return now.weekday() < 5 and now.date().isoformat() not in trader_market.NSE_HOLIDAYS and lo <= now.time() <= hi
+
+
 def nifty_direction(m):
     up = m["st_fast"][1] and m["st_slow"][1] and m["rsi"] > 50 and m["smi"] > m["signal"]
     down = (not m["st_fast"][1]) and (not m["st_slow"][1]) and m["rsi"] < 50 and m["smi"] < m["signal"]
@@ -136,14 +143,16 @@ def option_scan(session, market, now, lo, hi, cfg, lot):
                     r = piyush.rsi([b[4] for b in bars])
                     s, sg = piyush.smi(bars, *piyush.SMI_ARGS)
                     checks = [("Supertrend (7, 0.8) up", fast[-1][1] is True), ("Supertrend (7, 1.6) up", slow[-1][1] is True),
-                              ("RSI (14) above 50", r[-1] > 50), ("SMI above signal", s[-1] > sg[-1])]
+                              ("RSI (14) above 50", r[-1] > 50), ("SMI above signal", s[-1] > sg[-1]),
+                              ("inside the entry window", in_window(now, cfg))]
                     item.update(checks=checks, bars=len(bars), close=bars[-1][4], stop=int(slow[-1][0] * 20) / 20.0,
                                 rsi=r[-1], smi=s[-1], signal=sg[-1], bar=bars[-1][0].strftime("%H:%M"))
                     item["pass"] = all(ok for _, ok in checks)
                     if item["pass"] and lot:
                         risk = item["close"] - item["stop"]
                         lots = int(cfg["max_loss_per_trade_usd"] // (risk * lot)) if risk > 0 else 0
-                        lots = min(lots, int(cfg["budget"] * (1 - cfg["cash_buffer_pct"] / 100.0) // (item["close"] * lot)))
+                        lots = min(lots, int(cfg["budget"] * (1 - cfg["cash_buffer_pct"] / 100.0) // (item["close"] * lot)),
+                                   int(cfg.get("max_option_lots", 1)))
                         item.update(risk=risk, target=round(item["close"] + 2 * risk, 2), lots=lots,
                                     cost=lots * lot * item["close"], max_loss=lots * lot * risk)
                 else:
@@ -248,9 +257,9 @@ def main(argv=None):
             for o in opts["options"]:
                 if o.get("checks"):
                     n = sum(ok for _, ok in o["checks"])
-                    line = "  %s %s  LTP %.2f  chart %s Rs %.2f: %d of 4 chart checkpoints%s" % (
+                    line = "  %s %s  LTP %.2f  chart %s Rs %.2f: %d of 5 checkpoints%s" % (
                         o["strike"], o["type"], o["ltp"], o["bar"], o["close"], n,
-                        " " + ", ".join(nm for nm, ok in o["checks"] if not ok) + " fail" if n < 4 else "")
+                        " " + ", ".join(nm for nm, ok in o["checks"] if not ok) + " fail" if n < 5 else "")
                     if o.get("pass") and opts["side"]:
                         line += "\n      PASS: stop %.2f (Supertrend 7, 1.6), target %.2f, %d lot(s) x %d = Rs %s, max loss Rs %s" % (
                             o["stop"], o["target"], o["lots"], st.get("lot") or 0, "{:,.0f}".format(o["cost"]),
