@@ -35,6 +35,7 @@ IST = datetime.timedelta(hours=5, minutes=30)
 NSE_OPEN = datetime.time(9, 15)
 NSE_CLOSE = datetime.time(15, 30)
 YAHOO_NSE_LAST_FULL_BAR_END = datetime.time(15, 15)
+NSE_TICKER = re.compile(r"^[A-Z0-9][A-Z0-9&\-]{0,19}(\.(NS|BO))?$")  # MARICO, M&M, BAJAJ-AUTO, 360ONE
 NSE_DEFAULTS = {"no_entries_before": "09:30", "no_entries_after": "15:00", "flat_by": "15:10"}
 NSE_CALENDAR_YEARS = (2026,)
 # CM (cash market) segment, https://www.nseindia.com/api/holiday-master?type=trading, read 2026-10-30.
@@ -226,6 +227,9 @@ def apply(g):
         g["NO_ENTRIES_AFTER"] = NSE_DEFAULTS["no_entries_after"]
     if "DAILY_MIN_PRICE" in g:
         g["DAILY_MIN_PRICE"], g["DAILY_MIN_VOLUME"] = 20.0, 250000
+
+    if "TICKER" in g and "OCC" in g:  # trader-risk's ticker check: NSE symbols run to 20 characters
+        g["TICKER"] = NSE_TICKER
 
     for name in ("to_yahoo", "yahoo_symbol"):
         if name in g:

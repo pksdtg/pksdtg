@@ -1,3 +1,12 @@
 {
-  "market": "NSE"
+  "market": "NSE",
+  "budget": 100000,
+  "max_loss_per_trade_usd": 2000,
+  "max_daily_loss_usd": 2000,
+  "max_order_usd": 90000,
+  "max_position_pct": 75,
+  "cash_buffer_pct": 10,
+  "max_trades_per_day": 3,
+  "min_reward_risk": 1.0,
+  "paper": true
 }
