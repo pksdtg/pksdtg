@@ -1,0 +1,5525 @@
+{
+ "base": {
+  "reclaim_ma20": {
+   "n": 3010,
+   "up_pct": 45.14950166112957,
+   "median_ret": -0.24371761952221016,
+   "mean_ret": 0.06905893933396047,
+   "gap_p5": -1.5340860122382116
+  },
+  "breakout_20d": {
+   "n": 5334,
+   "up_pct": 47.73153355830521,
+   "median_ret": -0.07486718742771847,
+   "mean_ret": 0.08356943660505071,
+   "gap_p5": -1.4138295670756307
+  },
+  "oversold": {
+   "n": 3779,
+   "up_pct": 49.08706006880127,
+   "median_ret": 0.0,
+   "mean_ret": 0.0355716600552681,
+   "gap_p5": -1.8172377985462118
+  },
+  "oversold_bounce": {
+   "n": 1827,
+   "up_pct": 47.07170224411604,
+   "median_ret": -0.12551769620033904,
+   "mean_ret": 0.020475123904929872,
+   "gap_p5": -1.6158249048929707
+  },
+  "bull_flag": {
+   "n": 2429,
+   "up_pct": 47.17990942774804,
+   "median_ret": -0.08575470708738209,
+   "mean_ret": 0.03431078528758183,
+   "gap_p5": -1.0702423017153406
+  }
+ },
+ "rows": [
+  {
+   "symbol": "RELIANCE",
+   "price": 1307.9,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 66.6,
+   "atr": 37.39286411830358,
+   "atr_pct": 2.859000238420642,
+   "worst_gap": -3.970189439929628,
+   "gap_p5": -1.0181012560451563,
+   "own": {
+    "breakout_20d": {
+     "n": 10,
+     "up": 5,
+     "avg": -0.051798626053184416
+    }
+   },
+   "qty_day": 53,
+   "qty_overnight": 53,
+   "turnover": 55347996014.3
+  },
+  {
+   "symbol": "BHARTIARTL",
+   "price": 2065.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 73.5,
+   "atr": 51.37145298549107,
+   "atr_pct": 2.4877216942126426,
+   "worst_gap": -2.664697217524359,
+   "gap_p5": -1.4138946167638666,
+   "own": {
+    "breakout_20d": {
+     "n": 23,
+     "up": 10,
+     "avg": -0.11058956137544426
+    }
+   },
+   "qty_day": 36,
+   "qty_overnight": 36,
+   "turnover": 38413194015.0
+  },
+  {
+   "symbol": "HDFCBANK",
+   "price": 725.5,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 58.4,
+   "atr": 15.021432931082586,
+   "atr_pct": 2.0704938567998052,
+   "worst_gap": -8.66496516822297,
+   "gap_p5": -1.5497456784078212,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 6,
+     "avg": -0.42916203420959387
+    }
+   },
+   "qty_day": 103,
+   "qty_overnight": 103,
+   "turnover": 31006688886.0
+  },
+  {
+   "symbol": "ICICIBANK",
+   "price": 1424.5,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 61.8,
+   "atr": 28.29286760602679,
+   "atr_pct": 1.9861612921043728,
+   "worst_gap": -3.4934497816593857,
+   "gap_p5": -1.3700630465840913,
+   "own": {
+    "breakout_20d": {
+     "n": 28,
+     "up": 15,
+     "avg": 0.04624007376429207
+    }
+   },
+   "qty_day": 52,
+   "qty_overnight": 52,
+   "turnover": 24923737184.5
+  },
+  {
+   "symbol": "BSE",
+   "price": 3665.7,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 67.7,
+   "atr": 105.89997558593753,
+   "atr_pct": 2.888942782713739,
+   "worst_gap": -8.28387383524759,
+   "gap_p5": -1.5222358181897322,
+   "own": {
+    "breakout_20d": {
+     "n": 37,
+     "up": 25,
+     "avg": 0.6471709899502626
+    }
+   },
+   "qty_day": 18,
+   "qty_overnight": 18,
+   "turnover": 22220381021.399998
+  },
+  {
+   "symbol": "MCX",
+   "price": 3490.1,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 64.2,
+   "atr": 112.02137974330357,
+   "atr_pct": 3.209689686350064,
+   "worst_gap": -12.472312058074564,
+   "gap_p5": -1.2621659931620455,
+   "own": {
+    "breakout_20d": {
+     "n": 40,
+     "up": 19,
+     "avg": -0.033063463788135516
+    }
+   },
+   "qty_day": 17,
+   "qty_overnight": 17,
+   "turnover": 16565700318.3
+  },
+  {
+   "symbol": "MARICO",
+   "price": 878.4,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 74.6,
+   "atr": 22.07501046316964,
+   "atr_pct": 2.513093176590351,
+   "worst_gap": -2.5679627364477597,
+   "gap_p5": -0.7869491619644564,
+   "own": {
+    "breakout_20d": {
+     "n": 30,
+     "up": 13,
+     "avg": -0.12632014536729094
+    }
+   },
+   "qty_day": 85,
+   "qty_overnight": 85,
+   "turnover": 12859709241.6
+  },
+  {
+   "symbol": "GROWW",
+   "price": 205.98,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 65.5,
+   "atr": 7.120000610351561,
+   "atr_pct": 3.4566465726534426,
+   "worst_gap": -7.2635213268724685,
+   "gap_p5": -1.5669601962605695,
+   "own": {
+    "breakout_20d": {
+     "n": 24,
+     "up": 10,
+     "avg": -0.810342710765286
+    }
+   },
+   "qty_day": 280,
+   "qty_overnight": 280,
+   "turnover": 10956819993.779999
+  },
+  {
+   "symbol": "WELSPUNLIV",
+   "price": 253.09,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 71.7,
+   "atr": 13.19214146205357,
+   "atr_pct": 5.212430938422526,
+   "worst_gap": -4.037345499132117,
+   "gap_p5": -1.77341661052558,
+   "own": {
+    "breakout_20d": {
+     "n": 43,
+     "up": 25,
+     "avg": 0.5700450990154319
+    }
+   },
+   "qty_day": 151,
+   "qty_overnight": 151,
+   "turnover": 10591951143.880001
+  },
+  {
+   "symbol": "SOLARINDS",
+   "price": 19654.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 51.6,
+   "atr": 616.7142857142857,
+   "atr_pct": 3.1378563433107036,
+   "worst_gap": -2.9991113744075815,
+   "gap_p5": -0.8822003113648114,
+   "own": {
+    "reclaim_ma20": {
+     "n": 14,
+     "up": 9,
+     "avg": 1.25385437336601
+    }
+   },
+   "qty_day": 3,
+   "qty_overnight": 3,
+   "turnover": 10307894072.0
+  },
+  {
+   "symbol": "TCS",
+   "price": 2499.1,
+   "setups": [
+    "bull_flag"
+   ],
+   "rsi": 66.1,
+   "atr": 72.90713936941964,
+   "atr_pct": 2.917335815670427,
+   "worst_gap": -6.003421395350483,
+   "gap_p5": -1.3627598074303693,
+   "own": {
+    "bull_flag": {
+     "n": 11,
+     "up": 5,
+     "avg": -0.16873910388183402
+    }
+   },
+   "qty_day": 27,
+   "qty_overnight": 27,
+   "turnover": 8711362780.0
+  },
+  {
+   "symbol": "ITC",
+   "price": 273.9,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 61.3,
+   "atr": 5.557141331263949,
+   "atr_pct": 2.0288942428857064,
+   "worst_gap": -3.9422573118328197,
+   "gap_p5": -0.7225849453895483,
+   "own": {
+    "breakout_20d": {
+     "n": 5,
+     "up": 0,
+     "avg": -0.9201400899696455
+    }
+   },
+   "qty_day": 273,
+   "qty_overnight": 273,
+   "turnover": 8633336217.0
+  },
+  {
+   "symbol": "KOTAKBANK",
+   "price": 464.65,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 68.9,
+   "atr": 10.096426827566964,
+   "atr_pct": 2.1729101103124857,
+   "worst_gap": -2.464038399145707,
+   "gap_p5": -1.542242733709298,
+   "own": {
+    "breakout_20d": {
+     "n": 31,
+     "up": 13,
+     "avg": -0.2143202863233515
+    }
+   },
+   "qty_day": 161,
+   "qty_overnight": 161,
+   "turnover": 8605727821.3
+  },
+  {
+   "symbol": "LT",
+   "price": 3948.2,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 66.4,
+   "atr": 82.78565499441963,
+   "atr_pct": 2.096794868406353,
+   "worst_gap": -5.0791158779806995,
+   "gap_p5": -1.2796081175170615,
+   "own": {
+    "breakout_20d": {
+     "n": 29,
+     "up": 15,
+     "avg": -0.07400506097111817
+    }
+   },
+   "qty_day": 18,
+   "qty_overnight": 18,
+   "turnover": 8499894214.599999
+  },
+  {
+   "symbol": "ETERNAL",
+   "price": 349.45,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 65.0,
+   "atr": 10.617860194614954,
+   "atr_pct": 3.038449046963787,
+   "worst_gap": -3.3698753345178134,
+   "gap_p5": -1.8898788223911445,
+   "own": {
+    "breakout_20d": {
+     "n": 35,
+     "up": 17,
+     "avg": 0.3903991958553272
+    }
+   },
+   "qty_day": 188,
+   "qty_overnight": 188,
+   "turnover": 7210861961.05
+  },
+  {
+   "symbol": "ITI",
+   "price": 261.95,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 63.9,
+   "atr": 11.507143903459822,
+   "atr_pct": 4.392877993303998,
+   "worst_gap": -7.103212192580266,
+   "gap_p5": -0.9934178706160202,
+   "own": {
+    "breakout_20d": {
+     "n": 8,
+     "up": 4,
+     "avg": 0.13265629926269978
+    }
+   },
+   "qty_day": 173,
+   "qty_overnight": 173,
+   "turnover": 6747633441.9
+  },
+  {
+   "symbol": "TRIDENT",
+   "price": 23.79,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 65.0,
+   "atr": 0.8557146235874722,
+   "atr_pct": 3.596950918820816,
+   "worst_gap": -6.176700267468737,
+   "gap_p5": -0.8805072891506116,
+   "own": {
+    "breakout_20d": {
+     "n": 15,
+     "up": 6,
+     "avg": -0.1295368555238241
+    }
+   },
+   "qty_day": 2337,
+   "qty_overnight": 2337,
+   "turnover": 6517919514.99
+  },
+  {
+   "symbol": "DIVISLAB",
+   "price": 10064.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 69.4,
+   "atr": 262.0,
+   "atr_pct": 2.6033386327503973,
+   "worst_gap": -2.276328298299357,
+   "gap_p5": -0.939642766443749,
+   "own": {
+    "breakout_20d": {
+     "n": 41,
+     "up": 24,
+     "avg": 0.47258669515789825
+    }
+   },
+   "qty_day": 7,
+   "qty_overnight": 7,
+   "turnover": 6152113136.0
+  },
+  {
+   "symbol": "ANGELONE",
+   "price": 310.4,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 58.9,
+   "atr": 12.17856881277902,
+   "atr_pct": 3.9235079938076742,
+   "worst_gap": -8.969260346568909,
+   "gap_p5": -1.7849873819409279,
+   "own": {
+    "reclaim_ma20": {
+     "n": 15,
+     "up": 7,
+     "avg": 0.4326303355348715
+    }
+   },
+   "qty_day": 164,
+   "qty_overnight": 164,
+   "turnover": 5630306179.2
+  },
+  {
+   "symbol": "BAJAJ-AUTO",
+   "price": 10540.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 51.4,
+   "atr": 269.64285714285717,
+   "atr_pct": 2.558281377066956,
+   "worst_gap": -2.6544599018003323,
+   "gap_p5": -1.2134940538791383,
+   "own": {
+    "breakout_20d": {
+     "n": 32,
+     "up": 15,
+     "avg": -0.07353065031435908
+    }
+   },
+   "qty_day": 7,
+   "qty_overnight": 7,
+   "turnover": 5238611880.0
+  },
+  {
+   "symbol": "PAYTM",
+   "price": 1720.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 55.5,
+   "atr": 55.321437290736604,
+   "atr_pct": 3.2163626331823605,
+   "worst_gap": -5.438621670967969,
+   "gap_p5": -1.417962642949977,
+   "own": {
+    "reclaim_ma20": {
+     "n": 13,
+     "up": 2,
+     "avg": -1.513846936496445
+    }
+   },
+   "qty_day": 36,
+   "qty_overnight": 36,
+   "turnover": 5001163160.0
+  },
+  {
+   "symbol": "ASIANPAINT",
+   "price": 2437.8,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 59.3,
+   "atr": 58.23572474888393,
+   "atr_pct": 2.388863924394287,
+   "worst_gap": -3.487606931344589,
+   "gap_p5": -1.8136607173597108,
+   "own": {
+    "breakout_20d": {
+     "n": 23,
+     "up": 8,
+     "avg": -0.15368276287957972
+    }
+   },
+   "qty_day": 30,
+   "qty_overnight": 30,
+   "turnover": 4897386618.6
+  },
+  {
+   "symbol": "VRLLOG",
+   "price": 295.45,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 60.5,
+   "atr": 13.84285430908203,
+   "atr_pct": 4.685345848394663,
+   "worst_gap": -5.213272173186856,
+   "gap_p5": -1.1470431978107265,
+   "own": {
+    "breakout_20d": {
+     "n": 17,
+     "up": 8,
+     "avg": 0.9349056055144963
+    }
+   },
+   "qty_day": 144,
+   "qty_overnight": 144,
+   "turnover": 4717605852.15
+  },
+  {
+   "symbol": "KRBL",
+   "price": 401.45,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 59.7,
+   "atr": 16.850002615792413,
+   "atr_pct": 4.197285494032236,
+   "worst_gap": -5.490944864308867,
+   "gap_p5": -1.1558405826939566,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 6,
+     "avg": -0.17067644879156846
+    }
+   },
+   "qty_day": 118,
+   "qty_overnight": 118,
+   "turnover": 4703975119.9
+  },
+  {
+   "symbol": "CDSL",
+   "price": 1320.0,
+   "setups": [
+    "breakout_20d",
+    "reclaim_ma20"
+   ],
+   "rsi": 57.9,
+   "atr": 39.521439034598224,
+   "atr_pct": 2.9940484117119865,
+   "worst_gap": -6.908040792678516,
+   "gap_p5": -1.2764589031673323,
+   "own": {
+    "breakout_20d": {
+     "n": 15,
+     "up": 7,
+     "avg": 0.3954821901570364
+    },
+    "reclaim_ma20": {
+     "n": 14,
+     "up": 5,
+     "avg": -0.2217679894121289
+    }
+   },
+   "qty_day": 50,
+   "qty_overnight": 50,
+   "turnover": 4434413280.0
+  },
+  {
+   "symbol": "MARUTI",
+   "price": 11869.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 55.8,
+   "atr": 265.14285714285717,
+   "atr_pct": 2.2339106676456075,
+   "worst_gap": -3.028875277646903,
+   "gap_p5": -1.2415186949617407,
+   "own": {
+    "breakout_20d": {
+     "n": 15,
+     "up": 8,
+     "avg": 0.13345966417321445
+    }
+   },
+   "qty_day": 6,
+   "qty_overnight": 6,
+   "turnover": 4314856260.0
+  },
+  {
+   "symbol": "CARTRADE",
+   "price": 2498.4,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 39.7,
+   "atr": 193.77858189174108,
+   "atr_pct": 7.756107184267575,
+   "worst_gap": -4.9972237645752315,
+   "gap_p5": -1.2414649457193172,
+   "own": {
+    "oversold_bounce": {
+     "n": 7,
+     "up": 3,
+     "avg": 1.9405633604664694
+    }
+   },
+   "qty_day": 10,
+   "qty_overnight": 10,
+   "turnover": 4196395087.2000003
+  },
+  {
+   "symbol": "ATHERENERG",
+   "price": 1795.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 71.9,
+   "atr": 75.76430838448661,
+   "atr_pct": 4.220852834790341,
+   "worst_gap": -4.346606182709145,
+   "gap_p5": -1.0544088319795142,
+   "own": {
+    "breakout_20d": {
+     "n": 41,
+     "up": 18,
+     "avg": -0.1400855011280302
+    }
+   },
+   "qty_day": 26,
+   "qty_overnight": 26,
+   "turnover": 4188943035.0
+  },
+  {
+   "symbol": "ULTRACEMCO",
+   "price": 11700.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 66.5,
+   "atr": 279.0,
+   "atr_pct": 2.3846153846153846,
+   "worst_gap": -3.71277029783762,
+   "gap_p5": -1.326839099764865,
+   "own": {
+    "breakout_20d": {
+     "n": 27,
+     "up": 12,
+     "avg": 0.10549119759668998
+    }
+   },
+   "qty_day": 6,
+   "qty_overnight": 6,
+   "turnover": 3992472900.0
+  },
+  {
+   "symbol": "INDHOTEL",
+   "price": 836.05,
+   "setups": [
+    "breakout_20d",
+    "bull_flag"
+   ],
+   "rsi": 74.5,
+   "atr": 23.096423339843746,
+   "atr_pct": 2.76256483940479,
+   "worst_gap": -3.794404163596221,
+   "gap_p5": -1.15571409186348,
+   "own": {
+    "breakout_20d": {
+     "n": 29,
+     "up": 17,
+     "avg": 0.09130551858320718
+    },
+    "bull_flag": {
+     "n": 7,
+     "up": 5,
+     "avg": 0.5909160464699026
+    }
+   },
+   "qty_day": 86,
+   "qty_overnight": 86,
+   "turnover": 3911618774.5
+  },
+  {
+   "symbol": "MAZDOCK",
+   "price": 1785.1,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 32.8,
+   "atr": 78.32857142857142,
+   "atr_pct": 4.387909440847651,
+   "worst_gap": -7.497372990221285,
+   "gap_p5": -1.019728585872437,
+   "own": {
+    "oversold_bounce": {
+     "n": 14,
+     "up": 8,
+     "avg": 0.45050993095183517
+    }
+   },
+   "qty_day": 25,
+   "qty_overnight": 25,
+   "turnover": 3811734740.6
+  },
+  {
+   "symbol": "POLICYBZR",
+   "price": 928.0,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 28.4,
+   "atr": 40.87143990652902,
+   "atr_pct": 4.4042499899276955,
+   "worst_gap": -9.998414503218555,
+   "gap_p5": -1.6000000000000014,
+   "own": {
+    "oversold": {
+     "n": 22,
+     "up": 11,
+     "avg": 0.08741689719198918
+    }
+   },
+   "qty_day": 48,
+   "qty_overnight": 48,
+   "turnover": 3730555360.0
+  },
+  {
+   "symbol": "INDUSTOWER",
+   "price": 390.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 55.9,
+   "atr": 10.307144165039062,
+   "atr_pct": 2.642857478215144,
+   "worst_gap": -4.501463099143599,
+   "gap_p5": -1.0470573974878272,
+   "own": {
+    "breakout_20d": {
+     "n": 18,
+     "up": 8,
+     "avg": -0.251968999472171
+    }
+   },
+   "qty_day": 192,
+   "qty_overnight": 192,
+   "turnover": 3679590720.0
+  },
+  {
+   "symbol": "JSWSTEEL",
+   "price": 1320.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 63.4,
+   "atr": 37.04999476841517,
+   "atr_pct": 2.8068177854859973,
+   "worst_gap": -2.4884455205427813,
+   "gap_p5": -0.9669388785085387,
+   "own": {
+    "breakout_20d": {
+     "n": 31,
+     "up": 11,
+     "avg": -0.27373313595991433
+    }
+   },
+   "qty_day": 53,
+   "qty_overnight": 53,
+   "turnover": 3453420960.0
+  },
+  {
+   "symbol": "HINDUNILVR",
+   "price": 1962.8,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 63.8,
+   "atr": 48.50000697544642,
+   "atr_pct": 2.470960208653272,
+   "worst_gap": -2.952142704999172,
+   "gap_p5": -0.9491982839470281,
+   "own": {
+    "breakout_20d": {
+     "n": 11,
+     "up": 6,
+     "avg": 0.40057931296534544
+    }
+   },
+   "qty_day": 38,
+   "qty_overnight": 38,
+   "turnover": 3381268452.7999997
+  },
+  {
+   "symbol": "HCLTECH",
+   "price": 1439.1,
+   "setups": [
+    "breakout_20d",
+    "bull_flag"
+   ],
+   "rsi": 71.0,
+   "atr": 39.08570731026786,
+   "atr_pct": 2.715982719079137,
+   "worst_gap": -6.674989899469008,
+   "gap_p5": -1.7359934506655739,
+   "own": {
+    "breakout_20d": {
+     "n": 28,
+     "up": 17,
+     "avg": 0.16994153588309943
+    },
+    "bull_flag": {
+     "n": 16,
+     "up": 11,
+     "avg": 0.3195021674479569
+    }
+   },
+   "qty_day": 51,
+   "qty_overnight": 51,
+   "turnover": 3372527971.7999997
+  },
+  {
+   "symbol": "TFCILTD",
+   "price": 161.89,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 65.7,
+   "atr": 6.157857404436385,
+   "atr_pct": 3.8037293251197637,
+   "worst_gap": -7.6756001984692235,
+   "gap_p5": -1.2027439603900736,
+   "own": {
+    "breakout_20d": {
+     "n": 47,
+     "up": 28,
+     "avg": 0.6016133800347246
+    }
+   },
+   "qty_day": 324,
+   "qty_overnight": 324,
+   "turnover": 3332357844.43
+  },
+  {
+   "symbol": "SWIGGY",
+   "price": 176.72,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 24.0,
+   "atr": 10.224286499023437,
+   "atr_pct": 5.785585388763828,
+   "worst_gap": -5.69204768621987,
+   "gap_p5": -1.5123079558996722,
+   "own": {
+    "oversold": {
+     "n": 33,
+     "up": 16,
+     "avg": -0.5588898984908489
+    }
+   },
+   "qty_day": 195,
+   "qty_overnight": 195,
+   "turnover": 3256703605.7599998
+  },
+  {
+   "symbol": "LICI",
+   "price": 395.5,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 51.6,
+   "atr": 8.382144165039064,
+   "atr_pct": 2.119379055635667,
+   "worst_gap": -8.51808634772462,
+   "gap_p5": -1.3544564166388162,
+   "own": {
+    "reclaim_ma20": {
+     "n": 12,
+     "up": 4,
+     "avg": -0.15516923807248062
+    }
+   },
+   "qty_day": 189,
+   "qty_overnight": 189,
+   "turnover": 3050794848.5
+  },
+  {
+   "symbol": "EICHERMOT",
+   "price": 7440.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 58.2,
+   "atr": 175.60714285714286,
+   "atr_pct": 2.360311059907834,
+   "worst_gap": -4.457704457704459,
+   "gap_p5": -1.239698040030468,
+   "own": {
+    "breakout_20d": {
+     "n": 23,
+     "up": 8,
+     "avg": -0.3799854331840974
+    }
+   },
+   "qty_day": 10,
+   "qty_overnight": 10,
+   "turnover": 3043770960.0
+  },
+  {
+   "symbol": "TECHM",
+   "price": 1789.1,
+   "setups": [
+    "bull_flag"
+   ],
+   "rsi": 65.2,
+   "atr": 58.77145124162947,
+   "atr_pct": 3.284972960797578,
+   "worst_gap": -6.748632621890294,
+   "gap_p5": -1.6791904557525217,
+   "own": {
+    "bull_flag": {
+     "n": 12,
+     "up": 7,
+     "avg": 0.02707911035906844
+    }
+   },
+   "qty_day": 34,
+   "qty_overnight": 34,
+   "turnover": 2945246834.7
+  },
+  {
+   "symbol": "BRITANNIA",
+   "price": 4930.0,
+   "setups": [
+    "breakout_20d",
+    "reclaim_ma20"
+   ],
+   "rsi": 59.2,
+   "atr": 115.64289202008929,
+   "atr_pct": 2.345697606898363,
+   "worst_gap": -3.095975232198145,
+   "gap_p5": -0.7588075880758827,
+   "own": {
+    "breakout_20d": {
+     "n": 21,
+     "up": 10,
+     "avg": -0.3221221451454553
+    },
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 5,
+     "avg": 0.06331814792836257
+    }
+   },
+   "qty_day": 15,
+   "qty_overnight": 15,
+   "turnover": 2915907660.0
+  },
+  {
+   "symbol": "TATACONSUM",
+   "price": 1073.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 69.7,
+   "atr": 29.832144601004465,
+   "atr_pct": 2.7802557876052623,
+   "worst_gap": -3.6158390614010716,
+   "gap_p5": -0.950937756505521,
+   "own": {
+    "breakout_20d": {
+     "n": 17,
+     "up": 12,
+     "avg": 0.5822075349665528
+    }
+   },
+   "qty_day": 67,
+   "qty_overnight": 67,
+   "turnover": 2884769084.0
+  },
+  {
+   "symbol": "DLF",
+   "price": 709.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 65.8,
+   "atr": 16.46071428571429,
+   "atr_pct": 2.321680435220633,
+   "worst_gap": -3.949652488235178,
+   "gap_p5": -1.3754984414246385,
+   "own": {
+    "breakout_20d": {
+     "n": 22,
+     "up": 11,
+     "avg": -0.17113085579340093
+    }
+   },
+   "qty_day": 105,
+   "qty_overnight": 105,
+   "turnover": 2884002845.0
+  },
+  {
+   "symbol": "HDFCAMC",
+   "price": 2440.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 60.3,
+   "atr": 71.69996512276784,
+   "atr_pct": 2.9385231607691735,
+   "worst_gap": -3.6777434598017855,
+   "gap_p5": -1.4980580728685022,
+   "own": {
+    "breakout_20d": {
+     "n": 23,
+     "up": 10,
+     "avg": -0.4140605650628006
+    }
+   },
+   "qty_day": 27,
+   "qty_overnight": 27,
+   "turnover": 2838312920.0
+  },
+  {
+   "symbol": "GAIL",
+   "price": 181.75,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 68.1,
+   "atr": 4.557145080566406,
+   "atr_pct": 2.5073700580833047,
+   "worst_gap": -6.300327333397149,
+   "gap_p5": -1.2227207244556837,
+   "own": {
+    "breakout_20d": {
+     "n": 19,
+     "up": 5,
+     "avg": -0.23078350167957323
+    }
+   },
+   "qty_day": 412,
+   "qty_overnight": 412,
+   "turnover": 2807289235.25
+  },
+  {
+   "symbol": "JINDALSTEL",
+   "price": 1105.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 58.9,
+   "atr": 25.935723005022332,
+   "atr_pct": 2.347124253848175,
+   "worst_gap": -2.8268551236749095,
+   "gap_p5": -1.3772262920643707,
+   "own": {
+    "breakout_20d": {
+     "n": 34,
+     "up": 23,
+     "avg": 0.36583323006247076
+    }
+   },
+   "qty_day": 67,
+   "qty_overnight": 67,
+   "turnover": 2683135585.0
+  },
+  {
+   "symbol": "DRREDDY",
+   "price": 1368.3,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 75.3,
+   "atr": 31.28571079799107,
+   "atr_pct": 2.286465745669157,
+   "worst_gap": -6.91579687616427,
+   "gap_p5": -1.3029532502210062,
+   "own": {
+    "breakout_20d": {
+     "n": 23,
+     "up": 9,
+     "avg": -0.20193915622477587
+    }
+   },
+   "qty_day": 54,
+   "qty_overnight": 54,
+   "turnover": 2674594117.2
+  },
+  {
+   "symbol": "DMART",
+   "price": 3359.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 47.1,
+   "atr": 76.16427176339286,
+   "atr_pct": 2.267468644340365,
+   "worst_gap": -3.836160045482895,
+   "gap_p5": -1.0665555047870257,
+   "own": {
+    "reclaim_ma20": {
+     "n": 10,
+     "up": 5,
+     "avg": 0.06125653775368889
+    }
+   },
+   "qty_day": 22,
+   "qty_overnight": 22,
+   "turnover": 2628000984.0
+  },
+  {
+   "symbol": "KITEX",
+   "price": 133.23,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 69.1,
+   "atr": 5.907858450753348,
+   "atr_pct": 4.434330444159235,
+   "worst_gap": -9.2780103990175,
+   "gap_p5": -2.0227572650771797,
+   "own": {
+    "breakout_20d": {
+     "n": 9,
+     "up": 2,
+     "avg": -1.788608738044713
+    }
+   },
+   "qty_day": 338,
+   "qty_overnight": 338,
+   "turnover": 2618274197.0099998
+  },
+  {
+   "symbol": "LODHA",
+   "price": 1060.8,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 49.8,
+   "atr": 38.58572823660715,
+   "atr_pct": 3.637417820192982,
+   "worst_gap": -4.6731883081896575,
+   "gap_p5": -1.4696762603630065,
+   "own": {
+    "reclaim_ma20": {
+     "n": 9,
+     "up": 6,
+     "avg": 1.0763007160403608
+    }
+   },
+   "qty_day": 51,
+   "qty_overnight": 51,
+   "turnover": 2540903476.7999997
+  },
+  {
+   "symbol": "SBILIFE",
+   "price": 1683.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 50.2,
+   "atr": 40.028559221540185,
+   "atr_pct": 2.3784051825038732,
+   "worst_gap": -3.3559665786108916,
+   "gap_p5": -1.1545165339342134,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 4,
+     "avg": -0.5627897510019091
+    }
+   },
+   "qty_day": 44,
+   "qty_overnight": 44,
+   "turnover": 2477130282.0
+  },
+  {
+   "symbol": "CIPLA",
+   "price": 1396.9,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 63.5,
+   "atr": 29.400005231584828,
+   "atr_pct": 2.1046606937923134,
+   "worst_gap": -3.8689438828860223,
+   "gap_p5": -0.8935118103489459,
+   "own": {
+    "breakout_20d": {
+     "n": 19,
+     "up": 6,
+     "avg": -0.4482871304755723
+    }
+   },
+   "qty_day": 53,
+   "qty_overnight": 53,
+   "turnover": 2407069631.9
+  },
+  {
+   "symbol": "MOTILALOFS",
+   "price": 1010.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 52.5,
+   "atr": 45.78570120675223,
+   "atr_pct": 4.533237743242795,
+   "worst_gap": -4.971391796787739,
+   "gap_p5": -1.3174870926331517,
+   "own": {
+    "reclaim_ma20": {
+     "n": 15,
+     "up": 5,
+     "avg": 0.32758650606829737
+    }
+   },
+   "qty_day": 43,
+   "qty_overnight": 43,
+   "turnover": 2399069160.0
+  },
+  {
+   "symbol": "PERSISTENT",
+   "price": 6097.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 66.8,
+   "atr": 200.32142857142858,
+   "atr_pct": 3.285573701351953,
+   "worst_gap": -7.053599091190743,
+   "gap_p5": -2.0408163265306145,
+   "own": {
+    "breakout_20d": {
+     "n": 30,
+     "up": 16,
+     "avg": 0.0789240526368329
+    }
+   },
+   "qty_day": 9,
+   "qty_overnight": 9,
+   "turnover": 2368806440.0
+  },
+  {
+   "symbol": "CHOLAFIN",
+   "price": 1650.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 55.7,
+   "atr": 55.14286586216518,
+   "atr_pct": 3.3419918704342537,
+   "worst_gap": -8.11724915445321,
+   "gap_p5": -1.6873939348452494,
+   "own": {
+    "breakout_20d": {
+     "n": 21,
+     "up": 10,
+     "avg": -0.19113202560997308
+    }
+   },
+   "qty_day": 36,
+   "qty_overnight": 36,
+   "turnover": 2367725250.0
+  },
+  {
+   "symbol": "IOC",
+   "price": 138.67,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 65.5,
+   "atr": 3.133573150634766,
+   "atr_pct": 2.2597340092556184,
+   "worst_gap": -6.331511228073861,
+   "gap_p5": -1.6785134776773902,
+   "own": {
+    "breakout_20d": {
+     "n": 19,
+     "up": 10,
+     "avg": -0.015123380023229771
+    }
+   },
+   "qty_day": 540,
+   "qty_overnight": 540,
+   "turnover": 2349414533.62
+  },
+  {
+   "symbol": "RATNAVEER",
+   "price": 379.4,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 69.9,
+   "atr": 19.02857230050223,
+   "atr_pct": 5.015438139299481,
+   "worst_gap": -3.3149191647752096,
+   "gap_p5": -1.0953600082498793,
+   "own": {
+    "breakout_20d": {
+     "n": 38,
+     "up": 18,
+     "avg": -0.12294797021696334
+    }
+   },
+   "qty_day": 105,
+   "qty_overnight": 105,
+   "turnover": 2345660228.7999997
+  },
+  {
+   "symbol": "TVSMOTOR",
+   "price": 4303.2,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 63.6,
+   "atr": 120.46430664062498,
+   "atr_pct": 2.7994122197579707,
+   "worst_gap": -2.659678345818439,
+   "gap_p5": -1.40825941833711,
+   "own": {
+    "breakout_20d": {
+     "n": 31,
+     "up": 16,
+     "avg": -0.004408196896792967
+    }
+   },
+   "qty_day": 16,
+   "qty_overnight": 16,
+   "turnover": 2338526704.7999997
+  },
+  {
+   "symbol": "GLENMARK",
+   "price": 2408.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 61.0,
+   "atr": 65.59998256138394,
+   "atr_pct": 2.7242517674993327,
+   "worst_gap": -4.008137697781422,
+   "gap_p5": -0.9107816143875347,
+   "own": {
+    "breakout_20d": {
+     "n": 33,
+     "up": 15,
+     "avg": 0.07690638781293511
+    }
+   },
+   "qty_day": 30,
+   "qty_overnight": 30,
+   "turnover": 2239505016.0
+  },
+  {
+   "symbol": "GOCOLORS",
+   "price": 264.26,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 42.1,
+   "atr": 16.706424168178014,
+   "atr_pct": 6.321964795344742,
+   "worst_gap": -7.344542104465146,
+   "gap_p5": -1.2984373767613855,
+   "own": {
+    "oversold_bounce": {
+     "n": 19,
+     "up": 8,
+     "avg": -0.47166188709195234
+    }
+   },
+   "qty_day": 119,
+   "qty_overnight": 119,
+   "turnover": 2198673061.38
+  },
+  {
+   "symbol": "FUSION",
+   "price": 144.17,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 38.7,
+   "atr": 7.7985719953264505,
+   "atr_pct": 5.409289030537873,
+   "worst_gap": -5.229906583434529,
+   "gap_p5": -1.6383672585301712,
+   "own": {
+    "oversold_bounce": {
+     "n": 8,
+     "up": 3,
+     "avg": 1.1285403710606614
+    }
+   },
+   "qty_day": 256,
+   "qty_overnight": 256,
+   "turnover": 2192476231.9199996
+  },
+  {
+   "symbol": "BAJAJFINSV",
+   "price": 1718.1,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 46.8,
+   "atr": 37.471426827566965,
+   "atr_pct": 2.18098054988458,
+   "worst_gap": -2.284132753435786,
+   "gap_p5": -1.161214614496875,
+   "own": {
+    "reclaim_ma20": {
+     "n": 6,
+     "up": 3,
+     "avg": 0.47270669005976723
+    }
+   },
+   "qty_day": 43,
+   "qty_overnight": 43,
+   "turnover": 2171130326.1
+  },
+  {
+   "symbol": "GRASIM",
+   "price": 3090.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 60.4,
+   "atr": 66.5856968470982,
+   "atr_pct": 2.1548769206180647,
+   "worst_gap": -2.9458675344812613,
+   "gap_p5": -0.9475781704765263,
+   "own": {
+    "breakout_20d": {
+     "n": 30,
+     "up": 15,
+     "avg": -0.1549584098270033
+    }
+   },
+   "qty_day": 24,
+   "qty_overnight": 24,
+   "turnover": 2149842780.0
+  },
+  {
+   "symbol": "KFINTECH",
+   "price": 861.6,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 49.0,
+   "atr": 32.73213849748884,
+   "atr_pct": 3.7989947188357522,
+   "worst_gap": -4.200346700675983,
+   "gap_p5": -1.1567000144289796,
+   "own": {
+    "reclaim_ma20": {
+     "n": 22,
+     "up": 7,
+     "avg": -0.6314660854545467
+    }
+   },
+   "qty_day": 61,
+   "qty_overnight": 61,
+   "turnover": 2075117073.6000001
+  },
+  {
+   "symbol": "EMCURE",
+   "price": 1976.6,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 64.9,
+   "atr": 67.9714320591518,
+   "atr_pct": 3.438805628814722,
+   "worst_gap": -8.299644862567712,
+   "gap_p5": -1.0126582278481067,
+   "own": {
+    "breakout_20d": {
+     "n": 30,
+     "up": 14,
+     "avg": -0.4626032973067525
+    }
+   },
+   "qty_day": 29,
+   "qty_overnight": 29,
+   "turnover": 1988119624.8
+  },
+  {
+   "symbol": "GMRAIRPORT",
+   "price": 91.1,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 50.4,
+   "atr": 2.532140982491629,
+   "atr_pct": 2.7795180927460255,
+   "worst_gap": -4.501638579884792,
+   "gap_p5": -1.09210548656139,
+   "own": {
+    "reclaim_ma20": {
+     "n": 10,
+     "up": 3,
+     "avg": -0.05487058798354427
+    }
+   },
+   "qty_day": 789,
+   "qty_overnight": 789,
+   "turnover": 1936133450.6999998
+  },
+  {
+   "symbol": "MUTHOOTFIN",
+   "price": 2528.2,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 46.0,
+   "atr": 82.52858886718751,
+   "atr_pct": 3.2643220024993083,
+   "worst_gap": -9.12889306301743,
+   "gap_p5": -2.0968290197063477,
+   "own": {
+    "reclaim_ma20": {
+     "n": 19,
+     "up": 8,
+     "avg": -0.867500542975869
+    }
+   },
+   "qty_day": 24,
+   "qty_overnight": 24,
+   "turnover": 1926541492.1999998
+  },
+  {
+   "symbol": "NELCAST",
+   "price": 164.02,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 74.7,
+   "atr": 9.769285670689174,
+   "atr_pct": 5.956155146134114,
+   "worst_gap": -3.6765339323495017,
+   "gap_p5": -1.549385246381052,
+   "own": {
+    "breakout_20d": {
+     "n": 16,
+     "up": 5,
+     "avg": 0.6507004705633312
+    }
+   },
+   "qty_day": 204,
+   "qty_overnight": 204,
+   "turnover": 1905149378.96
+  },
+  {
+   "symbol": "360ONE",
+   "price": 1065.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 54.2,
+   "atr": 35.30000523158482,
+   "atr_pct": 3.3145544818389503,
+   "worst_gap": -4.403767366897071,
+   "gap_p5": -1.075092924510268,
+   "own": {
+    "reclaim_ma20": {
+     "n": 13,
+     "up": 6,
+     "avg": 0.45637457924214525
+    }
+   },
+   "qty_day": 56,
+   "qty_overnight": 56,
+   "turnover": 1891972500.0
+  },
+  {
+   "symbol": "AFFLE",
+   "price": 1582.9,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 62.9,
+   "atr": 63.299996512276785,
+   "atr_pct": 3.9989889767058426,
+   "worst_gap": -3.0423978964054466,
+   "gap_p5": -1.0229642866800837,
+   "own": {
+    "breakout_20d": {
+     "n": 23,
+     "up": 9,
+     "avg": -0.006475499225666631
+    }
+   },
+   "qty_day": 31,
+   "qty_overnight": 31,
+   "turnover": 1882606286.0
+  },
+  {
+   "symbol": "PETRONET",
+   "price": 303.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 60.8,
+   "atr": 7.899999999999998,
+   "atr_pct": 2.607260726072606,
+   "worst_gap": -3.8424196122674337,
+   "gap_p5": -1.7767789505048759,
+   "own": {
+    "breakout_20d": {
+     "n": 39,
+     "up": 20,
+     "avg": -0.2349574192236618
+    }
+   },
+   "qty_day": 247,
+   "qty_overnight": 247,
+   "turnover": 1834561071.0
+  },
+  {
+   "symbol": "CUMMINSIND",
+   "price": 4650.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 48.2,
+   "atr": 137.62859235491072,
+   "atr_pct": 2.9597546742991554,
+   "worst_gap": -4.8713235294117645,
+   "gap_p5": -1.709894332372719,
+   "own": {
+    "reclaim_ma20": {
+     "n": 14,
+     "up": 7,
+     "avg": 0.04566450961543162
+    }
+   },
+   "qty_day": 14,
+   "qty_overnight": 14,
+   "turnover": 1828207950.0
+  },
+  {
+   "symbol": "IZMO",
+   "price": 802.8,
+   "setups": [
+    "reclaim_ma20",
+    "oversold_bounce"
+   ],
+   "rsi": 51.9,
+   "atr": 44.65714111328125,
+   "atr_pct": 5.562673282670809,
+   "worst_gap": -4.794010974064477,
+   "gap_p5": -2.6586707455483083,
+   "own": {
+    "reclaim_ma20": {
+     "n": 8,
+     "up": 7,
+     "avg": 2.780368084994371
+    },
+    "oversold_bounce": {
+     "n": 9,
+     "up": 4,
+     "avg": 2.11510316150353
+    }
+   },
+   "qty_day": 44,
+   "qty_overnight": 44,
+   "turnover": 1818887101.1999998
+  },
+  {
+   "symbol": "ZYDUSWELL",
+   "price": 493.35,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 49.3,
+   "atr": 23.046429007393975,
+   "atr_pct": 4.671415629349139,
+   "worst_gap": -4.494670841076043,
+   "gap_p5": -1.319563970166382,
+   "own": {
+    "reclaim_ma20": {
+     "n": 13,
+     "up": 5,
+     "avg": -0.42326155343549016
+    }
+   },
+   "qty_day": 86,
+   "qty_overnight": 86,
+   "turnover": 1790382937.2
+  },
+  {
+   "symbol": "TMPV",
+   "price": 276.7,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 46.1,
+   "atr": 6.617857578822545,
+   "atr_pct": 2.391708557579525,
+   "worst_gap": -6.441916709700191,
+   "gap_p5": -1.5748031496062964,
+   "own": {
+    "reclaim_ma20": {
+     "n": 8,
+     "up": 5,
+     "avg": 0.39618413950185255
+    }
+   },
+   "qty_day": 271,
+   "qty_overnight": 271,
+   "turnover": 1787400650.1999998
+  },
+  {
+   "symbol": "GLAND",
+   "price": 3158.9,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 63.1,
+   "atr": 108.72139718191966,
+   "atr_pct": 3.441748620783173,
+   "worst_gap": -2.636309167165962,
+   "gap_p5": -1.0251265486433514,
+   "own": {
+    "breakout_20d": {
+     "n": 31,
+     "up": 11,
+     "avg": 0.11941551293614527
+    }
+   },
+   "qty_day": 18,
+   "qty_overnight": 18,
+   "turnover": 1781546945.3
+  },
+  {
+   "symbol": "PVRINOX",
+   "price": 1524.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 71.9,
+   "atr": 52.04999476841517,
+   "atr_pct": 3.4153539874288166,
+   "worst_gap": -2.525050100200399,
+   "gap_p5": -1.1216080421322716,
+   "own": {
+    "breakout_20d": {
+     "n": 34,
+     "up": 17,
+     "avg": 0.4674087888263701
+    }
+   },
+   "qty_day": 38,
+   "qty_overnight": 38,
+   "turnover": 1754628444.0
+  },
+  {
+   "symbol": "AIAENG",
+   "price": 3389.7,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 24.3,
+   "atr": 118.17853655133929,
+   "atr_pct": 3.4864010547051154,
+   "worst_gap": -4.922631967208235,
+   "gap_p5": -0.9520577365518146,
+   "own": {
+    "oversold": {
+     "n": 8,
+     "up": 6,
+     "avg": 1.2091825898289665
+    }
+   },
+   "qty_day": 16,
+   "qty_overnight": 16,
+   "turnover": 1745746345.5
+  },
+  {
+   "symbol": "CGCL",
+   "price": 240.29,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 48.4,
+   "atr": 7.89642844063895,
+   "atr_pct": 3.286207682649694,
+   "worst_gap": -5.593491250594651,
+   "gap_p5": -1.4459560118880943,
+   "own": {
+    "reclaim_ma20": {
+     "n": 8,
+     "up": 4,
+     "avg": 0.5459743505583536
+    }
+   },
+   "qty_day": 253,
+   "qty_overnight": 253,
+   "turnover": 1742478073.27
+  },
+  {
+   "symbol": "MARSONS",
+   "price": 154.05,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 71.9,
+   "atr": 9.38000056675502,
+   "atr_pct": 6.088932532784823,
+   "worst_gap": -0.7911857411987633,
+   "gap_p5": -0.538853904694836,
+   "own": {
+    "breakout_20d": {
+     "n": 10,
+     "up": 7,
+     "avg": 0.015632394354816403
+    }
+   },
+   "qty_day": 213,
+   "qty_overnight": 213,
+   "turnover": 1733617542.15
+  },
+  {
+   "symbol": "MFSL",
+   "price": 1185.1,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 28.6,
+   "atr": 41.95001046316965,
+   "atr_pct": 3.539786554988579,
+   "worst_gap": -9.994246004362795,
+   "gap_p5": -1.4184397163120588,
+   "own": {
+    "oversold": {
+     "n": 8,
+     "up": 3,
+     "avg": -0.030480142299439683
+    },
+    "oversold_bounce": {
+     "n": 2,
+     "up": 0,
+     "avg": -0.608346561687173
+    }
+   },
+   "qty_day": 47,
+   "qty_overnight": 47,
+   "turnover": 1691099776.8
+  },
+  {
+   "symbol": "NYKAA",
+   "price": 353.9,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 60.5,
+   "atr": 10.374996948242186,
+   "atr_pct": 2.931618239119013,
+   "worst_gap": -3.1188784227236144,
+   "gap_p5": -1.2580968153049987,
+   "own": {
+    "breakout_20d": {
+     "n": 34,
+     "up": 14,
+     "avg": -0.08918992156622756
+    }
+   },
+   "qty_day": 192,
+   "qty_overnight": 192,
+   "turnover": 1609161358.1999998
+  },
+  {
+   "symbol": "UNOMINDA",
+   "price": 1124.5,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 51.5,
+   "atr": 31.921421595982142,
+   "atr_pct": 2.8387213513545704,
+   "worst_gap": -4.922170803533865,
+   "gap_p5": -1.1875476893774994,
+   "own": {
+    "breakout_20d": {
+     "n": 25,
+     "up": 15,
+     "avg": -0.0038421498061689263
+    }
+   },
+   "qty_day": 62,
+   "qty_overnight": 62,
+   "turnover": 1493078489.5
+  },
+  {
+   "symbol": "TRIVENI",
+   "price": 242.18,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 51.9,
+   "atr": 11.136429094587053,
+   "atr_pct": 4.598409899490896,
+   "worst_gap": -38.50476941526379,
+   "gap_p5": -1.7083358764648393,
+   "own": {
+    "reclaim_ma20": {
+     "n": 8,
+     "up": 4,
+     "avg": 1.0647434886511542
+    }
+   },
+   "qty_day": 179,
+   "qty_overnight": 179,
+   "turnover": 1479506923.78
+  },
+  {
+   "symbol": "MPHASIS",
+   "price": 2535.3,
+   "setups": [
+    "bull_flag"
+   ],
+   "rsi": 57.1,
+   "atr": 90.8214146205357,
+   "atr_pct": 3.5822748637453437,
+   "worst_gap": -6.928876988696975,
+   "gap_p5": -1.8798304218079376,
+   "own": {
+    "bull_flag": {
+     "n": 6,
+     "up": 4,
+     "avg": 0.7541396006064368
+    }
+   },
+   "qty_day": 22,
+   "qty_overnight": 22,
+   "turnover": 1447070645.7
+  },
+  {
+   "symbol": "HYUNDAI",
+   "price": 2030.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 56.8,
+   "atr": 59.62143729073661,
+   "atr_pct": 2.937016615307222,
+   "worst_gap": -2.8702286444072134,
+   "gap_p5": -1.2463537523203394,
+   "own": {
+    "breakout_20d": {
+     "n": 18,
+     "up": 7,
+     "avg": -0.3387889616128786
+    }
+   },
+   "qty_day": 33,
+   "qty_overnight": 33,
+   "turnover": 1415413440.0
+  },
+  {
+   "symbol": "AKUMS",
+   "price": 761.15,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 54.6,
+   "atr": 31.060716029575897,
+   "atr_pct": 4.080761483226158,
+   "worst_gap": -3.308408091450088,
+   "gap_p5": -1.07774101693916,
+   "own": {
+    "reclaim_ma20": {
+     "n": 13,
+     "up": 5,
+     "avg": -0.09333130271714273
+    }
+   },
+   "qty_day": 64,
+   "qty_overnight": 64,
+   "turnover": 1414728953.95
+  },
+  {
+   "symbol": "UPL",
+   "price": 517.85,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 46.1,
+   "atr": 19.457156372070312,
+   "atr_pct": 3.757295813859286,
+   "worst_gap": -4.997670872077087,
+   "gap_p5": -1.168721007822593,
+   "own": {
+    "reclaim_ma20": {
+     "n": 19,
+     "up": 10,
+     "avg": -0.11781893410611168
+    }
+   },
+   "qty_day": 102,
+   "qty_overnight": 102,
+   "turnover": 1411239641.5
+  },
+  {
+   "symbol": "RRKABEL",
+   "price": 2000.5,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 28.4,
+   "atr": 120.96428745814731,
+   "atr_pct": 6.046702697233057,
+   "worst_gap": -2.5862380117922856,
+   "gap_p5": -1.331771847635721,
+   "own": {
+    "oversold": {
+     "n": 5,
+     "up": 4,
+     "avg": 0.9989873111083835
+    },
+    "oversold_bounce": {
+     "n": 3,
+     "up": 1,
+     "avg": -1.016296885172437
+    }
+   },
+   "qty_day": 16,
+   "qty_overnight": 16,
+   "turnover": 1393220218.0
+  },
+  {
+   "symbol": "AMBUJACEM",
+   "price": 368.9,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 52.7,
+   "atr": 14.010718209402901,
+   "atr_pct": 3.7979718648422067,
+   "worst_gap": -2.751572251598089,
+   "gap_p5": -0.9678824983302969,
+   "own": {
+    "breakout_20d": {
+     "n": 13,
+     "up": 5,
+     "avg": -0.6126489933736631
+    }
+   },
+   "qty_day": 142,
+   "qty_overnight": 142,
+   "turnover": 1368162670.6999998
+  },
+  {
+   "symbol": "COCHINSHIP",
+   "price": 1201.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 45.7,
+   "atr": 41.98573695591517,
+   "atr_pct": 3.4958981645224956,
+   "worst_gap": -8.03571428571429,
+   "gap_p5": -1.204051257599137,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 5,
+     "avg": -0.0217726036371753
+    }
+   },
+   "qty_day": 47,
+   "qty_overnight": 47,
+   "turnover": 1352157860.0
+  },
+  {
+   "symbol": "TATAPOWER",
+   "price": 356.55,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 54.9,
+   "atr": 8.57143075125558,
+   "atr_pct": 2.4039912358029953,
+   "worst_gap": -6.5487558069284635,
+   "gap_p5": -1.2185667768422115,
+   "own": {
+    "breakout_20d": {
+     "n": 16,
+     "up": 9,
+     "avg": 0.14771251954288564
+    }
+   },
+   "qty_day": 210,
+   "qty_overnight": 210,
+   "turnover": 1330570081.05
+  },
+  {
+   "symbol": "FLUOROCHEM",
+   "price": 4463.9,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 53.6,
+   "atr": 158.2357177734375,
+   "atr_pct": 3.5447863476654384,
+   "worst_gap": -3.252664061088917,
+   "gap_p5": -1.1546823601510492,
+   "own": {
+    "reclaim_ma20": {
+     "n": 9,
+     "up": 4,
+     "avg": 0.16747397318895857
+    }
+   },
+   "qty_day": 12,
+   "qty_overnight": 12,
+   "turnover": 1312734784.1999998
+  },
+  {
+   "symbol": "TANLA",
+   "price": 662.05,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 78.5,
+   "atr": 33.10714634486607,
+   "atr_pct": 5.000701811776462,
+   "worst_gap": -5.252745911315248,
+   "gap_p5": -1.3678032476002189,
+   "own": {
+    "breakout_20d": {
+     "n": 25,
+     "up": 14,
+     "avg": -0.12598783269994174
+    }
+   },
+   "qty_day": 60,
+   "qty_overnight": 60,
+   "turnover": 1265625095.8
+  },
+  {
+   "symbol": "CAMS",
+   "price": 687.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 50.1,
+   "atr": 22.15358625139509,
+   "atr_pct": 3.224685043871192,
+   "worst_gap": -3.7479301130105336,
+   "gap_p5": -1.4684844435307043,
+   "own": {
+    "reclaim_ma20": {
+     "n": 10,
+     "up": 6,
+     "avg": -0.5248094245172796
+    }
+   },
+   "qty_day": 90,
+   "qty_overnight": 90,
+   "turnover": 1264826769.0
+  },
+  {
+   "symbol": "GODREJPROP",
+   "price": 1669.5,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 55.3,
+   "atr": 56.278590611049104,
+   "atr_pct": 3.370984762566583,
+   "worst_gap": -4.369610748380481,
+   "gap_p5": -1.4155712841253831,
+   "own": {
+    "breakout_20d": {
+     "n": 27,
+     "up": 14,
+     "avg": -0.10615463302183399
+    }
+   },
+   "qty_day": 35,
+   "qty_overnight": 35,
+   "turnover": 1261550997.0
+  },
+  {
+   "symbol": "ASAHIINDIA",
+   "price": 991.45,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 65.0,
+   "atr": 31.014285714285716,
+   "atr_pct": 3.1281744630879738,
+   "worst_gap": -4.311471126208522,
+   "gap_p5": -1.0483512966347197,
+   "own": {
+    "breakout_20d": {
+     "n": 11,
+     "up": 4,
+     "avg": -0.18187419268213698
+    }
+   },
+   "qty_day": 64,
+   "qty_overnight": 64,
+   "turnover": 1261107545.3500001
+  },
+  {
+   "symbol": "PFOCUS",
+   "price": 289.55,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 49.4,
+   "atr": 13.735712541852678,
+   "atr_pct": 4.743813690848793,
+   "worst_gap": -4.992564136510758,
+   "gap_p5": -2.402643348008038,
+   "own": {
+    "reclaim_ma20": {
+     "n": 9,
+     "up": 7,
+     "avg": 2.7137545889124968
+    }
+   },
+   "qty_day": 145,
+   "qty_overnight": 145,
+   "turnover": 1258322625.8500001
+  },
+  {
+   "symbol": "YATHARTH",
+   "price": 981.85,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 51.5,
+   "atr": 38.996432931082595,
+   "atr_pct": 3.971730196168722,
+   "worst_gap": -3.1780689424165454,
+   "gap_p5": -1.429701326160271,
+   "own": {
+    "reclaim_ma20": {
+     "n": 13,
+     "up": 4,
+     "avg": -0.05198379979871689
+    }
+   },
+   "qty_day": 51,
+   "qty_overnight": 51,
+   "turnover": 1234323890.8500001
+  },
+  {
+   "symbol": "E2E",
+   "price": 494.65,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 29.4,
+   "atr": 36.02141767229353,
+   "atr_pct": 7.282203107711216,
+   "worst_gap": -9.998525275791781,
+   "gap_p5": -4.992468766899738,
+   "own": {
+    "oversold": {
+     "n": 7,
+     "up": 4,
+     "avg": 0.49728352722471225
+    }
+   },
+   "qty_day": 55,
+   "qty_overnight": 55,
+   "turnover": 1206992991.75
+  },
+  {
+   "symbol": "MINDACORP",
+   "price": 684.6,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 60.4,
+   "atr": 29.128572300502235,
+   "atr_pct": 4.254830894026035,
+   "worst_gap": -5.463050356010035,
+   "gap_p5": -1.428983364403691,
+   "own": {
+    "breakout_20d": {
+     "n": 23,
+     "up": 10,
+     "avg": 0.029817441953946967
+    }
+   },
+   "qty_day": 68,
+   "qty_overnight": 68,
+   "turnover": 1197029946.0
+  },
+  {
+   "symbol": "PFIZER",
+   "price": 3821.6,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 47.8,
+   "atr": 107.44281529017859,
+   "atr_pct": 2.8114615681960067,
+   "worst_gap": -2.9670931515427323,
+   "gap_p5": -0.8929663393307252,
+   "own": {
+    "reclaim_ma20": {
+     "n": 9,
+     "up": 5,
+     "avg": -0.1154194493156001
+    }
+   },
+   "qty_day": 18,
+   "qty_overnight": 18,
+   "turnover": 1196351880.0
+  },
+  {
+   "symbol": "GNFC",
+   "price": 465.05,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 27.7,
+   "atr": 21.746427699497765,
+   "atr_pct": 4.6761483065256995,
+   "worst_gap": -4.260732749304951,
+   "gap_p5": -1.09505037231713,
+   "own": {
+    "oversold": {
+     "n": 8,
+     "up": 6,
+     "avg": 1.952504780529131
+    }
+   },
+   "qty_day": 91,
+   "qty_overnight": 91,
+   "turnover": 1153110077.0
+  },
+  {
+   "symbol": "MAHABANK",
+   "price": 80.6,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 50.2,
+   "atr": 2.7192859540666845,
+   "atr_pct": 3.3738039132341004,
+   "worst_gap": -7.338742679924614,
+   "gap_p5": -2.000301727477183,
+   "own": {
+    "reclaim_ma20": {
+     "n": 14,
+     "up": 5,
+     "avg": -0.2429235107842788
+    }
+   },
+   "qty_day": 735,
+   "qty_overnight": 735,
+   "turnover": 1124388215.6
+  },
+  {
+   "symbol": "MSUMI",
+   "price": 38.93,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 70.5,
+   "atr": 1.3321434565952848,
+   "atr_pct": 3.421894314398368,
+   "worst_gap": -6.828705349167974,
+   "gap_p5": -0.858540851728673,
+   "own": {
+    "breakout_20d": {
+     "n": 17,
+     "up": 8,
+     "avg": 0.09371556090118834
+    }
+   },
+   "qty_day": 1501,
+   "qty_overnight": 1501,
+   "turnover": 1100557328.8
+  },
+  {
+   "symbol": "DIACABS",
+   "price": 367.5,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 57.4,
+   "atr": 17.346426827566965,
+   "atr_pct": 4.720116143555637,
+   "worst_gap": -5.512963285870831,
+   "gap_p5": -1.851408299437085,
+   "own": {
+    "reclaim_ma20": {
+     "n": 12,
+     "up": 5,
+     "avg": 0.7956752996555979
+    }
+   },
+   "qty_day": 115,
+   "qty_overnight": 115,
+   "turnover": 1059936885.0
+  },
+  {
+   "symbol": "PASHUPATI",
+   "price": 148.72,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 88.9,
+   "atr": 6.354285191127232,
+   "atr_pct": 4.272650074722454,
+   "worst_gap": -7.431547816212558,
+   "gap_p5": -0.6317327533506445,
+   "own": {
+    "breakout_20d": {
+     "n": 31,
+     "up": 24,
+     "avg": 1.3017997089227824
+    }
+   },
+   "qty_day": 314,
+   "qty_overnight": 314,
+   "turnover": 980944924.96
+  },
+  {
+   "symbol": "PHOENIXLTD",
+   "price": 2048.7,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 66.5,
+   "atr": 59.228567940848215,
+   "atr_pct": 2.8910317733610693,
+   "worst_gap": -3.5330987850301754,
+   "gap_p5": -1.6249012255780793,
+   "own": {
+    "breakout_20d": {
+     "n": 32,
+     "up": 15,
+     "avg": 0.17180962799543328
+    }
+   },
+   "qty_day": 33,
+   "qty_overnight": 33,
+   "turnover": 977365114.1999999
+  },
+  {
+   "symbol": "EQUITASBNK",
+   "price": 52.65,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 20.5,
+   "atr": 3.822142671857562,
+   "atr_pct": 7.259530240945038,
+   "worst_gap": -13.940873992077819,
+   "gap_p5": -1.5317289391879263,
+   "own": {
+    "oversold": {
+     "n": 13,
+     "up": 6,
+     "avg": 0.012631600482515548
+    }
+   },
+   "qty_day": 523,
+   "qty_overnight": 523,
+   "turnover": 926838753.75
+  },
+  {
+   "symbol": "RAYMOND",
+   "price": 1172.3,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 61.5,
+   "atr": 68.37143380301339,
+   "atr_pct": 5.832247189543068,
+   "worst_gap": -6.187621893286844,
+   "gap_p5": -0.8332625847183195,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 6,
+     "avg": 0.7928135372390516
+    }
+   },
+   "qty_day": 29,
+   "qty_overnight": 29,
+   "turnover": 924085404.0999999
+  },
+  {
+   "symbol": "MGL",
+   "price": 1055.9,
+   "setups": [
+    "breakout_20d",
+    "reclaim_ma20"
+   ],
+   "rsi": 52.1,
+   "atr": 26.785723005022323,
+   "atr_pct": 2.53676702386801,
+   "worst_gap": -3.3734571267103886,
+   "gap_p5": -0.9401732586953981,
+   "own": {
+    "breakout_20d": {
+     "n": 20,
+     "up": 11,
+     "avg": 0.5192152942253758
+    },
+    "reclaim_ma20": {
+     "n": 16,
+     "up": 6,
+     "avg": -0.2663700654046766
+    }
+   },
+   "qty_day": 71,
+   "qty_overnight": 71,
+   "turnover": 844278633.8000001
+  },
+  {
+   "symbol": "SBC",
+   "price": 66.71,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 69.6,
+   "atr": 2.173570414951869,
+   "atr_pct": 3.2582377678786827,
+   "worst_gap": -2.0185969302978113,
+   "gap_p5": -0.5202913714245749,
+   "own": {
+    "breakout_20d": {
+     "n": 51,
+     "up": 25,
+     "avg": 0.3426173670755033
+    }
+   },
+   "qty_day": 920,
+   "qty_overnight": 920,
+   "turnover": 817835647.8599999
+  },
+  {
+   "symbol": "INDOMIM",
+   "price": 1203.8,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 56.8,
+   "atr": 51.67142333984374,
+   "atr_pct": 4.292359473321461,
+   "worst_gap": -1.6281182231427938,
+   "gap_p5": -1.147482781088105,
+   "own": {
+    "reclaim_ma20": {
+     "n": 0,
+     "up": 0,
+     "avg": null
+    }
+   },
+   "qty_day": 38,
+   "qty_overnight": 38,
+   "turnover": 810297040.8
+  },
+  {
+   "symbol": "ALIVUS",
+   "price": 1481.3,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 70.2,
+   "atr": 65.22145298549107,
+   "atr_pct": 4.402987442482352,
+   "worst_gap": -4.781230195169606,
+   "gap_p5": -1.1370802202329444,
+   "own": {
+    "breakout_20d": {
+     "n": 38,
+     "up": 16,
+     "avg": 0.4001257599842977
+    }
+   },
+   "qty_day": 30,
+   "qty_overnight": 30,
+   "turnover": 778317977.6999999
+  },
+  {
+   "symbol": "TIINDIA",
+   "price": 2190.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 42.7,
+   "atr": 69.40716378348215,
+   "atr_pct": 3.1692768850905093,
+   "worst_gap": -6.755284615274116,
+   "gap_p5": -1.201723163331414,
+   "own": {
+    "reclaim_ma20": {
+     "n": 9,
+     "up": 6,
+     "avg": 0.5701827133753458
+    }
+   },
+   "qty_day": 28,
+   "qty_overnight": 28,
+   "turnover": 751231320.0
+  },
+  {
+   "symbol": "MTNL",
+   "price": 23.65,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 51.0,
+   "atr": 1.2535712923322404,
+   "atr_pct": 5.300512863984103,
+   "worst_gap": -5.884330912804858,
+   "gap_p5": -1.476977175616101,
+   "own": {
+    "reclaim_ma20": {
+     "n": 14,
+     "up": 7,
+     "avg": -1.4858296866149114
+    }
+   },
+   "qty_day": 1595,
+   "qty_overnight": 1595,
+   "turnover": 732930717.1999999
+  },
+  {
+   "symbol": "KIRLOSENG",
+   "price": 1717.9,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 29.3,
+   "atr": 82.23569859095983,
+   "atr_pct": 4.786989847544084,
+   "worst_gap": -9.81813047916006,
+   "gap_p5": -1.4608024943747355,
+   "own": {
+    "oversold": {
+     "n": 2,
+     "up": 1,
+     "avg": 0.7548126501127739
+    }
+   },
+   "qty_day": 24,
+   "qty_overnight": 24,
+   "turnover": 712627867.5
+  },
+  {
+   "symbol": "EXIDEIND",
+   "price": 346.25,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 35.6,
+   "atr": 12.700000435965402,
+   "atr_pct": 3.6678701620116683,
+   "worst_gap": -5.6685559023079595,
+   "gap_p5": -0.9857307763281975,
+   "own": {
+    "oversold_bounce": {
+     "n": 8,
+     "up": 5,
+     "avg": 1.0414655340238776
+    }
+   },
+   "qty_day": 157,
+   "qty_overnight": 157,
+   "turnover": 708651870.0
+  },
+  {
+   "symbol": "NH",
+   "price": 1870.6,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 64.8,
+   "atr": 56.55715157645089,
+   "atr_pct": 3.023476508951721,
+   "worst_gap": -2.244796277125538,
+   "gap_p5": -0.8935340744150366,
+   "own": {
+    "breakout_20d": {
+     "n": 23,
+     "up": 8,
+     "avg": -0.6000490002955347
+    }
+   },
+   "qty_day": 35,
+   "qty_overnight": 35,
+   "turnover": 706115958.6
+  },
+  {
+   "symbol": "PRESTIGE",
+   "price": 1537.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 59.9,
+   "atr": 45.66429617745536,
+   "atr_pct": 2.9710017031525937,
+   "worst_gap": -4.379038047379757,
+   "gap_p5": -1.2814745788701343,
+   "own": {
+    "breakout_20d": {
+     "n": 27,
+     "up": 14,
+     "avg": 0.050802042432947274
+    }
+   },
+   "qty_day": 43,
+   "qty_overnight": 43,
+   "turnover": 689739509.0
+  },
+  {
+   "symbol": "SHREEPUSHK",
+   "price": 623.1,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 70.5,
+   "atr": 42.29643031529018,
+   "atr_pct": 6.788064566729286,
+   "worst_gap": -4.058082236268657,
+   "gap_p5": -1.3642565008725294,
+   "own": {
+    "breakout_20d": {
+     "n": 29,
+     "up": 14,
+     "avg": 0.06201179742861221
+    }
+   },
+   "qty_day": 47,
+   "qty_overnight": 47,
+   "turnover": 686740941.6
+  },
+  {
+   "symbol": "M&MFIN",
+   "price": 264.1,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 23.1,
+   "atr": 12.353575134277346,
+   "atr_pct": 4.677612697568097,
+   "worst_gap": -4.24709950949218,
+   "gap_p5": -1.4318010550113058,
+   "own": {
+    "oversold": {
+     "n": 19,
+     "up": 9,
+     "avg": -0.3836243040218661
+    },
+    "oversold_bounce": {
+     "n": 8,
+     "up": 5,
+     "avg": -0.23074496675344341
+    }
+   },
+   "qty_day": 161,
+   "qty_overnight": 161,
+   "turnover": 649456497.1
+  },
+  {
+   "symbol": "TATACAP",
+   "price": 333.8,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 56.4,
+   "atr": 10.246435546875002,
+   "atr_pct": 3.069633177613841,
+   "worst_gap": -4.061756013979901,
+   "gap_p5": -1.0037106992289324,
+   "own": {
+    "breakout_20d": {
+     "n": 19,
+     "up": 8,
+     "avg": 0.49493403724553425
+    }
+   },
+   "qty_day": 195,
+   "qty_overnight": 195,
+   "turnover": 640137940.2
+  },
+  {
+   "symbol": "ANANTRAJ",
+   "price": 443.65,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 19.8,
+   "atr": 21.064286586216518,
+   "atr_pct": 4.747951445106845,
+   "worst_gap": -4.6243866675161005,
+   "gap_p5": -1.183685926602307,
+   "own": {
+    "oversold": {
+     "n": 16,
+     "up": 6,
+     "avg": -0.5729287972066024
+    }
+   },
+   "qty_day": 94,
+   "qty_overnight": 94,
+   "turnover": 628327741.85
+  },
+  {
+   "symbol": "ESCORTS",
+   "price": 2439.7,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 30.7,
+   "atr": 83.8856515066964,
+   "atr_pct": 3.4383592862522607,
+   "worst_gap": -3.0836127149621806,
+   "gap_p5": -0.7631578947368434,
+   "own": {
+    "oversold_bounce": {
+     "n": 7,
+     "up": 1,
+     "avg": -1.0314299071222799
+    }
+   },
+   "qty_day": 23,
+   "qty_overnight": 23,
+   "turnover": 627964141.8
+  },
+  {
+   "symbol": "MOIL",
+   "price": 203.22,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 28.6,
+   "atr": 7.097855704171317,
+   "atr_pct": 3.4926954552560363,
+   "worst_gap": -4.20937368855121,
+   "gap_p5": -1.4503263876148642,
+   "own": {
+    "oversold": {
+     "n": 11,
+     "up": 8,
+     "avg": 1.5826043401649614
+    }
+   },
+   "qty_day": 281,
+   "qty_overnight": 281,
+   "turnover": 588876487.38
+  },
+  {
+   "symbol": "ATLANTAELE",
+   "price": 1413.0,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 27.9,
+   "atr": 90.79999825613838,
+   "atr_pct": 6.426043754857636,
+   "worst_gap": -6.8524984702804215,
+   "gap_p5": -1.3149243918474718,
+   "own": {
+    "oversold": {
+     "n": 6,
+     "up": 2,
+     "avg": -0.11095687051590104
+    }
+   },
+   "qty_day": 22,
+   "qty_overnight": 22,
+   "turnover": 577905696.0
+  },
+  {
+   "symbol": "NHPC",
+   "price": 79.4,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 67.3,
+   "atr": 1.8928569248744418,
+   "atr_pct": 2.3839507869955185,
+   "worst_gap": -3.4116548949355563,
+   "gap_p5": -1.108318470907932,
+   "own": {
+    "breakout_20d": {
+     "n": 19,
+     "up": 11,
+     "avg": 0.49356176827982307
+    }
+   },
+   "qty_day": 944,
+   "qty_overnight": 944,
+   "turnover": 568956580.0
+  },
+  {
+   "symbol": "DABUR",
+   "price": 381.65,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 53.9,
+   "atr": 9.210716465541294,
+   "atr_pct": 2.4133935452748054,
+   "worst_gap": -3.413695700488184,
+   "gap_p5": -0.9629320707109312,
+   "own": {
+    "reclaim_ma20": {
+     "n": 15,
+     "up": 5,
+     "avg": -0.533566743298246
+    }
+   },
+   "qty_day": 196,
+   "qty_overnight": 196,
+   "turnover": 557102138.0
+  },
+  {
+   "symbol": "BHARTIHEXA",
+   "price": 1704.7,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 68.4,
+   "atr": 58.43572998046875,
+   "atr_pct": 3.42791869422589,
+   "worst_gap": -4.9225200313741,
+   "gap_p5": -1.3257171240531496,
+   "own": {
+    "breakout_20d": {
+     "n": 20,
+     "up": 11,
+     "avg": 0.5237785252584343
+    }
+   },
+   "qty_day": 34,
+   "qty_overnight": 34,
+   "turnover": 538441427.9
+  },
+  {
+   "symbol": "MOLDTKPAC",
+   "price": 316.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 53.0,
+   "atr": 16.214290073939733,
+   "atr_pct": 5.131104453778397,
+   "worst_gap": -5.643584033846749,
+   "gap_p5": -1.3992942778141781,
+   "own": {
+    "reclaim_ma20": {
+     "n": 16,
+     "up": 7,
+     "avg": 0.6195746744601938
+    }
+   },
+   "qty_day": 123,
+   "qty_overnight": 123,
+   "turnover": 530051764.0
+  },
+  {
+   "symbol": "SOUTHBANK",
+   "price": 53.96,
+   "setups": [
+    "bull_flag"
+   ],
+   "rsi": 58.5,
+   "atr": 2.3128571537562777,
+   "atr_pct": 4.28624379865878,
+   "worst_gap": -13.80478316168775,
+   "gap_p5": -1.2435950802402673,
+   "own": {
+    "bull_flag": {
+     "n": 11,
+     "up": 5,
+     "avg": -0.04445638246787837
+    }
+   },
+   "qty_day": 864,
+   "qty_overnight": 864,
+   "turnover": 491096435.2
+  },
+  {
+   "symbol": "SKIPPER",
+   "price": 519.15,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 50.5,
+   "atr": 25.057141549246655,
+   "atr_pct": 4.826570653808467,
+   "worst_gap": -4.4629468625955955,
+   "gap_p5": -1.5999267890643432,
+   "own": {
+    "reclaim_ma20": {
+     "n": 16,
+     "up": 7,
+     "avg": 0.6170049892534031
+    }
+   },
+   "qty_day": 79,
+   "qty_overnight": 79,
+   "turnover": 484309324.34999996
+  },
+  {
+   "symbol": "OBEROIRLTY",
+   "price": 1677.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 47.9,
+   "atr": 44.878569684709824,
+   "atr_pct": 2.6761222232981408,
+   "worst_gap": -3.0627476621018834,
+   "gap_p5": -1.4469528491294903,
+   "own": {
+    "reclaim_ma20": {
+     "n": 12,
+     "up": 6,
+     "avg": -0.34830703962164067
+    }
+   },
+   "qty_day": 44,
+   "qty_overnight": 44,
+   "turnover": 481022295.0
+  },
+  {
+   "symbol": "IEX",
+   "price": 109.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 54.0,
+   "atr": 3.3171435546875006,
+   "atr_pct": 3.0432509676032113,
+   "worst_gap": -2.7857370399576475,
+   "gap_p5": -1.1857677711748504,
+   "own": {
+    "breakout_20d": {
+     "n": 14,
+     "up": 9,
+     "avg": 0.029587857944796157
+    }
+   },
+   "qty_day": 602,
+   "qty_overnight": 602,
+   "turnover": 475029085.0
+  },
+  {
+   "symbol": "SGMART",
+   "price": 886.3,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 71.0,
+   "atr": 47.76071341378348,
+   "atr_pct": 5.388775066431624,
+   "worst_gap": -4.036384309266627,
+   "gap_p5": -1.4992504170254772,
+   "own": {
+    "breakout_20d": {
+     "n": 45,
+     "up": 21,
+     "avg": 0.2478555166546053
+    }
+   },
+   "qty_day": 41,
+   "qty_overnight": 41,
+   "turnover": 447091376.09999996
+  },
+  {
+   "symbol": "SAREGAMA",
+   "price": 562.2,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 69.0,
+   "atr": 19.542861938476562,
+   "atr_pct": 3.4761405084447814,
+   "worst_gap": -3.9039039039039047,
+   "gap_p5": -1.230812321292929,
+   "own": {
+    "breakout_20d": {
+     "n": 27,
+     "up": 10,
+     "avg": -0.29670595754811113
+    }
+   },
+   "qty_day": 102,
+   "qty_overnight": 102,
+   "turnover": 428001173.40000004
+  },
+  {
+   "symbol": "DIAMONDYD",
+   "price": 1067.5,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 51.5,
+   "atr": 35.58571254185267,
+   "atr_pct": 3.333556210009618,
+   "worst_gap": -3.6408647492986113,
+   "gap_p5": -1.4083067010059458,
+   "own": {
+    "reclaim_ma20": {
+     "n": 9,
+     "up": 3,
+     "avg": -0.7486098357176002
+    }
+   },
+   "qty_day": 56,
+   "qty_overnight": 56,
+   "turnover": 426480127.5
+  },
+  {
+   "symbol": "AEQUS",
+   "price": 209.39,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 32.0,
+   "atr": 13.138571602957589,
+   "atr_pct": 6.274689146070772,
+   "worst_gap": -12.128710658730245,
+   "gap_p5": -1.7921521412129326,
+   "own": {
+    "oversold_bounce": {
+     "n": 3,
+     "up": 1,
+     "avg": -0.03478467409715469
+    }
+   },
+   "qty_day": 152,
+   "qty_overnight": 152,
+   "turnover": 420785956.2
+  },
+  {
+   "symbol": "TENNIND",
+   "price": 458.5,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 46.1,
+   "atr": 14.949999128069196,
+   "atr_pct": 3.2606323071034233,
+   "worst_gap": -5.160846487181514,
+   "gap_p5": -1.6488845780795347,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 6,
+     "avg": -0.24243742138354057
+    }
+   },
+   "qty_day": 133,
+   "qty_overnight": 133,
+   "turnover": 418078181.5
+  },
+  {
+   "symbol": "ACC",
+   "price": 1170.1,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 48.4,
+   "atr": 39.814296177455354,
+   "atr_pct": 3.4026404732463345,
+   "worst_gap": -1.6786538763342795,
+   "gap_p5": -0.7369565700317993,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 3,
+     "avg": -0.3613635646561132
+    }
+   },
+   "qty_day": 50,
+   "qty_overnight": 50,
+   "turnover": 417962060.2
+  },
+  {
+   "symbol": "DALBHARAT",
+   "price": 1381.4,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 30.2,
+   "atr": 67.37144252232143,
+   "atr_pct": 4.8770408659563795,
+   "worst_gap": -4.969863845579637,
+   "gap_p5": -1.217069314327579,
+   "own": {
+    "oversold_bounce": {
+     "n": 7,
+     "up": 5,
+     "avg": 0.9864598173452215
+    }
+   },
+   "qty_day": 29,
+   "qty_overnight": 29,
+   "turnover": 415678455.40000004
+  },
+  {
+   "symbol": "SFL",
+   "price": 509.1,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 21.5,
+   "atr": 23.607141113281248,
+   "atr_pct": 4.637034200212383,
+   "worst_gap": -3.1303172708246563,
+   "gap_p5": -1.1124799576949784,
+   "own": {
+    "oversold": {
+     "n": 17,
+     "up": 12,
+     "avg": 0.16453995316711528
+    }
+   },
+   "qty_day": 84,
+   "qty_overnight": 84,
+   "turnover": 414683841.3
+  },
+  {
+   "symbol": "CREDITACC",
+   "price": 1058.8,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 32.8,
+   "atr": 49.4857177734375,
+   "atr_pct": 4.673754984268748,
+   "worst_gap": -4.010550408735392,
+   "gap_p5": -1.1633156421713586,
+   "own": {
+    "oversold_bounce": {
+     "n": 6,
+     "up": 4,
+     "avg": 0.24206003737328174
+    }
+   },
+   "qty_day": 40,
+   "qty_overnight": 40,
+   "turnover": 409947242.8
+  },
+  {
+   "symbol": "ICICILIFE",
+   "price": 409.7,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 27.0,
+   "atr": 11.396432059151786,
+   "atr_pct": 2.7816529312061964,
+   "worst_gap": -6.707946336429305,
+   "gap_p5": -1.0678160931839376,
+   "own": {
+    "oversold": {
+     "n": 27,
+     "up": 14,
+     "avg": -0.13968049155659343
+    },
+    "oversold_bounce": {
+     "n": 13,
+     "up": 8,
+     "avg": 0.5209453660238343
+    }
+   },
+   "qty_day": 175,
+   "qty_overnight": 175,
+   "turnover": 387859712.4
+  },
+  {
+   "symbol": "GUJENERGY",
+   "price": 219.38,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 44.5,
+   "atr": 6.197855791364398,
+   "atr_pct": 2.82516901785231,
+   "worst_gap": -11.328539726600562,
+   "gap_p5": -0.6903693185110082,
+   "own": {
+    "reclaim_ma20": {
+     "n": 10,
+     "up": 5,
+     "avg": 0.4182425797145407
+    }
+   },
+   "qty_day": 322,
+   "qty_overnight": 322,
+   "turnover": 377313855.8
+  },
+  {
+   "symbol": "PREMIERENE",
+   "price": 890.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 49.4,
+   "atr": 27.70357404436384,
+   "atr_pct": 3.112761128580207,
+   "worst_gap": -9.999358268793001,
+   "gap_p5": -1.4754098360655776,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 7,
+     "avg": 0.783113432699241
+    }
+   },
+   "qty_day": 72,
+   "qty_overnight": 72,
+   "turnover": 374362480.0
+  },
+  {
+   "symbol": "EMMVEE",
+   "price": 231.26,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 25.2,
+   "atr": 13.49356972830636,
+   "atr_pct": 5.834804863922149,
+   "worst_gap": -3.053438515969231,
+   "gap_p5": -1.5222719783536731,
+   "own": {
+    "oversold": {
+     "n": 11,
+     "up": 4,
+     "avg": -1.5878252329577371
+    }
+   },
+   "qty_day": 148,
+   "qty_overnight": 148,
+   "turnover": 371266885.34
+  },
+  {
+   "symbol": "CONFIPET",
+   "price": 56.18,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 20.1,
+   "atr": 4.553570861816406,
+   "atr_pct": 8.105323712738352,
+   "worst_gap": -5.459607632341667,
+   "gap_p5": -1.078589462525037,
+   "own": {
+    "oversold": {
+     "n": 7,
+     "up": 4,
+     "avg": -1.5646694124678895
+    }
+   },
+   "qty_day": 439,
+   "qty_overnight": 439,
+   "turnover": 350691739.84
+  },
+  {
+   "symbol": "CHAMBLFERT",
+   "price": 381.7,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 49.2,
+   "atr": 12.507146780831473,
+   "atr_pct": 3.276695515020035,
+   "worst_gap": -4.162604272527104,
+   "gap_p5": -1.0072955984798404,
+   "own": {
+    "reclaim_ma20": {
+     "n": 12,
+     "up": 7,
+     "avg": 0.061383241518519115
+    }
+   },
+   "qty_day": 159,
+   "qty_overnight": 159,
+   "turnover": 346269460.9
+  },
+  {
+   "symbol": "DIGITIDE",
+   "price": 60.55,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 24.1,
+   "atr": 4.34428484235491,
+   "atr_pct": 7.174706593484576,
+   "worst_gap": -4.470044676609309,
+   "gap_p5": -1.5036728077407746,
+   "own": {
+    "oversold": {
+     "n": 42,
+     "up": 14,
+     "avg": -0.34159825258735665
+    }
+   },
+   "qty_day": 460,
+   "qty_overnight": 460,
+   "turnover": 345684370.15
+  },
+  {
+   "symbol": "SMSPHARMA",
+   "price": 514.15,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 68.3,
+   "atr": 24.899996948242187,
+   "atr_pct": 4.842944072399531,
+   "worst_gap": -3.4267943376742993,
+   "gap_p5": -1.5849379590297197,
+   "own": {
+    "breakout_20d": {
+     "n": 30,
+     "up": 16,
+     "avg": -0.32494012913156795
+    }
+   },
+   "qty_day": 80,
+   "qty_overnight": 80,
+   "turnover": 343815189.9
+  },
+  {
+   "symbol": "AARTIDRUGS",
+   "price": 466.3,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 67.6,
+   "atr": 19.685712541852677,
+   "atr_pct": 4.221684010691116,
+   "worst_gap": -8.781366557750847,
+   "gap_p5": -1.106222568040205,
+   "own": {
+    "breakout_20d": {
+     "n": 22,
+     "up": 7,
+     "avg": -0.5538366499171958
+    }
+   },
+   "qty_day": 101,
+   "qty_overnight": 101,
+   "turnover": 317472894.2
+  },
+  {
+   "symbol": "TI",
+   "price": 465.1,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 28.9,
+   "atr": 21.914291381835938,
+   "atr_pct": 4.711737557909253,
+   "worst_gap": -6.3670399394354815,
+   "gap_p5": -1.3649970176695114,
+   "own": {
+    "oversold": {
+     "n": 9,
+     "up": 4,
+     "avg": -0.2679101573530401
+    }
+   },
+   "qty_day": 91,
+   "qty_overnight": 91,
+   "turnover": 303234037.6
+  },
+  {
+   "symbol": "ITCHOTELS",
+   "price": 171.03,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 62.0,
+   "atr": 6.306429879324777,
+   "atr_pct": 3.687323790752954,
+   "worst_gap": -1.9900805561556378,
+   "gap_p5": -0.896223476920821,
+   "own": {
+    "breakout_20d": {
+     "n": 19,
+     "up": 7,
+     "avg": -0.2684061801638785
+    }
+   },
+   "qty_day": 317,
+   "qty_overnight": 317,
+   "turnover": 294147826.83
+  },
+  {
+   "symbol": "IGIL",
+   "price": 407.85,
+   "setups": [
+    "breakout_20d",
+    "bull_flag"
+   ],
+   "rsi": 76.9,
+   "atr": 19.639289637974333,
+   "atr_pct": 4.815321720724367,
+   "worst_gap": -4.151518850615532,
+   "gap_p5": -1.4006049070139248,
+   "own": {
+    "breakout_20d": {
+     "n": 18,
+     "up": 8,
+     "avg": 0.26940702480852863
+    },
+    "bull_flag": {
+     "n": 13,
+     "up": 8,
+     "avg": 0.14961606335654337
+    }
+   },
+   "qty_day": 101,
+   "qty_overnight": 101,
+   "turnover": 288929912.7
+  },
+  {
+   "symbol": "V2RETAIL",
+   "price": 164.62,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 44.1,
+   "atr": 9.891428963797432,
+   "atr_pct": 6.008643520712813,
+   "worst_gap": -8.639949326788043,
+   "gap_p5": -1.3245063999464568,
+   "own": {
+    "reclaim_ma20": {
+     "n": 15,
+     "up": 4,
+     "avg": -0.8091397405202905
+    }
+   },
+   "qty_day": 202,
+   "qty_overnight": 202,
+   "turnover": 288782659.56
+  },
+  {
+   "symbol": "INDIGOPNTS",
+   "price": 865.55,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 19.3,
+   "atr": 37.30357055664063,
+   "atr_pct": 4.309811167077654,
+   "worst_gap": -5.7455117311065,
+   "gap_p5": -1.580907007757193,
+   "own": {
+    "oversold": {
+     "n": 29,
+     "up": 8,
+     "avg": -0.5529260230613283
+    }
+   },
+   "qty_day": 53,
+   "qty_overnight": 53,
+   "turnover": 281453490.15
+  },
+  {
+   "symbol": "SUMICHEM",
+   "price": 313.9,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 14.2,
+   "atr": 15.389281354631695,
+   "atr_pct": 4.902606357002771,
+   "worst_gap": -5.010596138436529,
+   "gap_p5": -1.3356337880202518,
+   "own": {
+    "oversold": {
+     "n": 35,
+     "up": 12,
+     "avg": -0.9136998745156277
+    }
+   },
+   "qty_day": 129,
+   "qty_overnight": 129,
+   "turnover": 278836114.4
+  },
+  {
+   "symbol": "HAPPSTMNDS",
+   "price": 311.25,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 47.4,
+   "atr": 13.489285278320315,
+   "atr_pct": 4.333906916729418,
+   "worst_gap": -4.947189660053841,
+   "gap_p5": -1.1787146239183643,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 6,
+     "avg": 0.6239127529414004
+    }
+   },
+   "qty_day": 148,
+   "qty_overnight": 148,
+   "turnover": 275980395.0
+  },
+  {
+   "symbol": "PGEL",
+   "price": 541.0,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 57.9,
+   "atr": 19.75357448032924,
+   "atr_pct": 3.6513076673436675,
+   "worst_gap": -5.231730425834657,
+   "gap_p5": -1.4724551800442853,
+   "own": {
+    "breakout_20d": {
+     "n": 26,
+     "up": 12,
+     "avg": 0.1835894690576071
+    }
+   },
+   "qty_day": 101,
+   "qty_overnight": 101,
+   "turnover": 273852036.0
+  },
+  {
+   "symbol": "ANTHEM",
+   "price": 854.45,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 52.2,
+   "atr": 23.764297921316963,
+   "atr_pct": 2.7812391504847516,
+   "worst_gap": -6.873442025958109,
+   "gap_p5": -1.5101772816808912,
+   "own": {
+    "reclaim_ma20": {
+     "n": 9,
+     "up": 4,
+     "avg": -0.11014880015814225
+    }
+   },
+   "qty_day": 84,
+   "qty_overnight": 84,
+   "turnover": 264923931.4
+  },
+  {
+   "symbol": "FIVESTAR",
+   "price": 397.1,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 22.4,
+   "atr": 18.978570120675222,
+   "atr_pct": 4.779292400069308,
+   "worst_gap": -3.631785716924607,
+   "gap_p5": -1.4193007005780078,
+   "own": {
+    "oversold": {
+     "n": 37,
+     "up": 16,
+     "avg": -0.3839637172672133
+    }
+   },
+   "qty_day": 105,
+   "qty_overnight": 105,
+   "turnover": 260181508.4
+  },
+  {
+   "symbol": "HONASA",
+   "price": 457.2,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 51.8,
+   "atr": 15.407142421177456,
+   "atr_pct": 3.3698911682365393,
+   "worst_gap": -5.346538682188529,
+   "gap_p5": -1.668230675350102,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 7,
+     "avg": 0.9468838967371395
+    }
+   },
+   "qty_day": 129,
+   "qty_overnight": 129,
+   "turnover": 257422345.2
+  },
+  {
+   "symbol": "JSWCEMENT",
+   "price": 121.97,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 65.5,
+   "atr": 3.4092864554268973,
+   "atr_pct": 2.7951844350470587,
+   "worst_gap": -2.8621696343514524,
+   "gap_p5": -0.9150353392224919,
+   "own": {
+    "breakout_20d": {
+     "n": 20,
+     "up": 5,
+     "avg": -0.6361691620296855
+    }
+   },
+   "qty_day": 586,
+   "qty_overnight": 586,
+   "turnover": 256688670.31
+  },
+  {
+   "symbol": "EMAMILTD",
+   "price": 382.0,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 55.0,
+   "atr": 10.753573608398435,
+   "atr_pct": 2.815071625235192,
+   "worst_gap": -2.7237366920172756,
+   "gap_p5": -1.2214090017024226,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 5,
+     "avg": 0.01929330924145671
+    }
+   },
+   "qty_day": 185,
+   "qty_overnight": 185,
+   "turnover": 254290906.0
+  },
+  {
+   "symbol": "CLEAN",
+   "price": 658.8,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 26.0,
+   "atr": 31.185712541852677,
+   "atr_pct": 4.733714714913885,
+   "worst_gap": -6.428568593024098,
+   "gap_p5": -1.0189201472060594,
+   "own": {
+    "oversold": {
+     "n": 9,
+     "up": 6,
+     "avg": 0.603485727365622
+    }
+   },
+   "qty_day": 64,
+   "qty_overnight": 64,
+   "turnover": 246550629.6
+  },
+  {
+   "symbol": "ROLEXRINGS",
+   "price": 168.76,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 49.8,
+   "atr": 8.698570556640624,
+   "atr_pct": 5.154403031903664,
+   "worst_gap": -5.826589719322639,
+   "gap_p5": -1.4602769620960743,
+   "own": {
+    "reclaim_ma20": {
+     "n": 8,
+     "up": 5,
+     "avg": 1.4843032244095624
+    }
+   },
+   "qty_day": 229,
+   "qty_overnight": 229,
+   "turnover": 245073778.28
+  },
+  {
+   "symbol": "MARKOLINES",
+   "price": 179.33,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 58.7,
+   "atr": 7.2857146780831465,
+   "atr_pct": 4.062741693014636,
+   "worst_gap": -1.4921879196923005,
+   "gap_p5": -0.1942735076780222,
+   "own": {
+    "breakout_20d": {
+     "n": 20,
+     "up": 12,
+     "avg": 0.2016088122591758
+    }
+   },
+   "qty_day": 274,
+   "qty_overnight": 274,
+   "turnover": 225943067.57000002
+  },
+  {
+   "symbol": "LEMONTREE",
+   "price": 114.26,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 59.8,
+   "atr": 3.962142181396484,
+   "atr_pct": 3.4676546310139016,
+   "worst_gap": -3.888447470876144,
+   "gap_p5": -1.1058197606868325,
+   "own": {
+    "breakout_20d": {
+     "n": 12,
+     "up": 3,
+     "avg": -0.8703325526693497
+    }
+   },
+   "qty_day": 504,
+   "qty_overnight": 504,
+   "turnover": 217072176.34
+  },
+  {
+   "symbol": "CEIGALL",
+   "price": 397.2,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 61.0,
+   "atr": 13.542860194614954,
+   "atr_pct": 3.409582123518367,
+   "worst_gap": -4.5896330310503775,
+   "gap_p5": -1.5139547616663807,
+   "own": {
+    "breakout_20d": {
+     "n": 55,
+     "up": 37,
+     "avg": 0.5441163036095948
+    }
+   },
+   "qty_day": 147,
+   "qty_overnight": 147,
+   "turnover": 204835245.6
+  },
+  {
+   "symbol": "JKTYRE",
+   "price": 325.1,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 47.7,
+   "atr": 10.082142421177455,
+   "atr_pct": 3.1012434393040462,
+   "worst_gap": -11.474755398051585,
+   "gap_p5": -1.485864698520023,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 6,
+     "avg": 0.789723007400924
+    }
+   },
+   "qty_day": 198,
+   "qty_overnight": 198,
+   "turnover": 203467411.10000002
+  },
+  {
+   "symbol": "MSTCLTD",
+   "price": 565.5,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 35.4,
+   "atr": 30.139291817801336,
+   "atr_pct": 5.329671408983437,
+   "worst_gap": -3.094930891571157,
+   "gap_p5": -1.3127065221271383,
+   "own": {
+    "oversold_bounce": {
+     "n": 6,
+     "up": 3,
+     "avg": -0.014406068510477063
+    }
+   },
+   "qty_day": 66,
+   "qty_overnight": 66,
+   "turnover": 201608667.0
+  },
+  {
+   "symbol": "MOSCHIP",
+   "price": 158.41,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 30.7,
+   "atr": 7.854285801478795,
+   "atr_pct": 4.958200745835993,
+   "worst_gap": -9.228180684764753,
+   "gap_p5": -1.5945485268381132,
+   "own": {
+    "oversold_bounce": {
+     "n": 6,
+     "up": 4,
+     "avg": 3.49403843807895
+    }
+   },
+   "qty_day": 254,
+   "qty_overnight": 254,
+   "turnover": 201515737.15
+  },
+  {
+   "symbol": "VGUARD",
+   "price": 287.1,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 48.8,
+   "atr": 11.492860412597654,
+   "atr_pct": 4.00308617645338,
+   "worst_gap": -6.36973545002415,
+   "gap_p5": -0.8548508981244485,
+   "own": {
+    "reclaim_ma20": {
+     "n": 12,
+     "up": 9,
+     "avg": 1.2229542343828281
+    }
+   },
+   "qty_day": 174,
+   "qty_overnight": 174,
+   "turnover": 199983237.3
+  },
+  {
+   "symbol": "LTFOODS",
+   "price": 410.55,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 54.4,
+   "atr": 14.714281790597097,
+   "atr_pct": 3.584041356862038,
+   "worst_gap": -8.277402138551782,
+   "gap_p5": -1.1401235324008274,
+   "own": {
+    "reclaim_ma20": {
+     "n": 14,
+     "up": 6,
+     "avg": -0.39510268301186724
+    }
+   },
+   "qty_day": 135,
+   "qty_overnight": 135,
+   "turnover": 196769635.65
+  },
+  {
+   "symbol": "GCSL",
+   "price": 773.35,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 78.7,
+   "atr": 18.546430315290177,
+   "atr_pct": 2.3981936141837688,
+   "worst_gap": -4.985783442265712,
+   "gap_p5": -2.4364678687423202,
+   "own": {
+    "breakout_20d": {
+     "n": 63,
+     "up": 39,
+     "avg": 0.4676059882960586
+    }
+   },
+   "qty_day": 96,
+   "qty_overnight": 96,
+   "turnover": 196159454.15
+  },
+  {
+   "symbol": "MENONBE",
+   "price": 321.5,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 63.3,
+   "atr": 23.77499673025949,
+   "atr_pct": 7.395022311122703,
+   "worst_gap": -4.294794888942432,
+   "gap_p5": -1.7955773256358443,
+   "own": {
+    "breakout_20d": {
+     "n": 46,
+     "up": 27,
+     "avg": 0.5808766924257796
+    }
+   },
+   "qty_day": 84,
+   "qty_overnight": 84,
+   "turnover": 188405430.0
+  },
+  {
+   "symbol": "BORORENEW",
+   "price": 378.65,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 23.6,
+   "atr": 15.70714329310826,
+   "atr_pct": 4.148195772641823,
+   "worst_gap": -3.706951990072116,
+   "gap_p5": -1.418196477674083,
+   "own": {
+    "oversold": {
+     "n": 32,
+     "up": 15,
+     "avg": 0.18623164115269297
+    }
+   },
+   "qty_day": 127,
+   "qty_overnight": 127,
+   "turnover": 188120135.7
+  },
+  {
+   "symbol": "HDBFS",
+   "price": 503.1,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 24.8,
+   "atr": 15.98929181780134,
+   "atr_pct": 3.178153809938648,
+   "worst_gap": -2.864234272531907,
+   "gap_p5": -1.033719003272382,
+   "own": {
+    "oversold": {
+     "n": 36,
+     "up": 15,
+     "avg": -0.4312919426082513
+    }
+   },
+   "qty_day": 125,
+   "qty_overnight": 125,
+   "turnover": 186923786.4
+  },
+  {
+   "symbol": "AEGISVOPAK",
+   "price": 234.43,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 32.9,
+   "atr": 11.5664255632673,
+   "atr_pct": 4.93385043009312,
+   "worst_gap": -3.5120837937441585,
+   "gap_p5": -1.67201634878259,
+   "own": {
+    "oversold_bounce": {
+     "n": 6,
+     "up": 2,
+     "avg": -1.7004644775103643
+    }
+   },
+   "qty_day": 172,
+   "qty_overnight": 172,
+   "turnover": 186813281.69
+  },
+  {
+   "symbol": "LATENTVIEW",
+   "price": 195.95,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 18.6,
+   "atr": 12.062858232770648,
+   "atr_pct": 6.156089937622173,
+   "worst_gap": -13.018679342700768,
+   "gap_p5": -1.4999126657361361,
+   "own": {
+    "oversold": {
+     "n": 49,
+     "up": 20,
+     "avg": -0.6261776711176648
+    }
+   },
+   "qty_day": 165,
+   "qty_overnight": 165,
+   "turnover": 185720038.35
+  },
+  {
+   "symbol": "BUILDPRO",
+   "price": 176.43,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 24.0,
+   "atr": 16.892142857142858,
+   "atr_pct": 9.574416401486628,
+   "worst_gap": -8.67009286871946,
+   "gap_p5": -3.3811963309185233,
+   "own": {
+    "oversold": {
+     "n": 2,
+     "up": 1,
+     "avg": 0.40249724432760425
+    },
+    "oversold_bounce": {
+     "n": 0,
+     "up": 0,
+     "avg": null
+    }
+   },
+   "qty_day": 118,
+   "qty_overnight": 118,
+   "turnover": 183158510.91
+  },
+  {
+   "symbol": "BAJAJCON",
+   "price": 385.25,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 33.0,
+   "atr": 24.175003923688617,
+   "atr_pct": 6.27514702756356,
+   "worst_gap": -8.515024872186283,
+   "gap_p5": -1.2778767290203552,
+   "own": {
+    "oversold_bounce": {
+     "n": 3,
+     "up": 1,
+     "avg": -1.761791662834881
+    }
+   },
+   "qty_day": 82,
+   "qty_overnight": 82,
+   "turnover": 179685608.25
+  },
+  {
+   "symbol": "ROUTE",
+   "price": 455.7,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 53.7,
+   "atr": 20.410716465541295,
+   "atr_pct": 4.47898101065203,
+   "worst_gap": -4.518163530957297,
+   "gap_p5": -0.9577215709088871,
+   "own": {
+    "breakout_20d": {
+     "n": 18,
+     "up": 5,
+     "avg": -1.0042153529150093
+    }
+   },
+   "qty_day": 97,
+   "qty_overnight": 97,
+   "turnover": 176480306.1
+  },
+  {
+   "symbol": "ALGOQUANT",
+   "price": 77.34,
+   "setups": [
+    "bull_flag"
+   ],
+   "rsi": 65.0,
+   "atr": 4.139284973144531,
+   "atr_pct": 5.352062287489696,
+   "worst_gap": -3.2252741349833247,
+   "gap_p5": -1.0633417289202862,
+   "own": {
+    "bull_flag": {
+     "n": 11,
+     "up": 5,
+     "avg": 0.08800047655835863
+    }
+   },
+   "qty_day": 483,
+   "qty_overnight": 483,
+   "turnover": 174840140.46
+  },
+  {
+   "symbol": "BHAGCHEM",
+   "price": 187.19,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 29.4,
+   "atr": 10.162856488909041,
+   "atr_pct": 5.429166349115359,
+   "worst_gap": -4.0576939274912345,
+   "gap_p5": -1.499878514980324,
+   "own": {
+    "oversold": {
+     "n": 21,
+     "up": 10,
+     "avg": 0.5812930098838041
+    }
+   },
+   "qty_day": 196,
+   "qty_overnight": 196,
+   "turnover": 169649361.05
+  },
+  {
+   "symbol": "AFCONS",
+   "price": 211.4,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 29.5,
+   "atr": 9.375000479561942,
+   "atr_pct": 4.434721135081335,
+   "worst_gap": -6.628873752844411,
+   "gap_p5": -1.664726285784901,
+   "own": {
+    "oversold": {
+     "n": 45,
+     "up": 18,
+     "avg": -0.13442887286782668
+    }
+   },
+   "qty_day": 213,
+   "qty_overnight": 213,
+   "turnover": 165501889.0
+  },
+  {
+   "symbol": "ABFRL",
+   "price": 39.24,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 27.1,
+   "atr": 1.6164288439069476,
+   "atr_pct": 4.119339561434627,
+   "worst_gap": -5.271944564897401,
+   "gap_p5": -1.8139459973706584,
+   "own": {
+    "oversold": {
+     "n": 32,
+     "up": 15,
+     "avg": 0.11438848263452782
+    }
+   },
+   "qty_day": 1237,
+   "qty_overnight": 1237,
+   "turnover": 158530855.68
+  },
+  {
+   "symbol": "METROPOLIS",
+   "price": 568.7,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 58.7,
+   "atr": 21.76786150251116,
+   "atr_pct": 3.8276528050837277,
+   "worst_gap": -3.418073016743728,
+   "gap_p5": -1.2555994206207455,
+   "own": {
+    "breakout_20d": {
+     "n": 22,
+     "up": 9,
+     "avg": -0.07879260333679138
+    }
+   },
+   "qty_day": 91,
+   "qty_overnight": 91,
+   "turnover": 150988143.9
+  },
+  {
+   "symbol": "PICCADIL",
+   "price": 586.3,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 51.8,
+   "atr": 24.06071341378348,
+   "atr_pct": 4.103822857544513,
+   "worst_gap": -8.64118213941536,
+   "gap_p5": -1.4628782829068432,
+   "own": {
+    "reclaim_ma20": {
+     "n": 16,
+     "up": 5,
+     "avg": 0.3529071377993784
+    }
+   },
+   "qty_day": 83,
+   "qty_overnight": 83,
+   "turnover": 150388295.2
+  },
+  {
+   "symbol": "EMBDL",
+   "price": 53.26,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 49.0,
+   "atr": 2.6192860194614953,
+   "atr_pct": 4.917923431208216,
+   "worst_gap": -4.999000930691944,
+   "gap_p5": -1.6508103731016854,
+   "own": {
+    "reclaim_ma20": {
+     "n": 18,
+     "up": 5,
+     "avg": 0.09777855181315462
+    }
+   },
+   "qty_day": 763,
+   "qty_overnight": 763,
+   "turnover": 149750023.54
+  },
+  {
+   "symbol": "NETWORK18",
+   "price": 25.44,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 51.4,
+   "atr": 1.2542859813145228,
+   "atr_pct": 4.930369423406143,
+   "worst_gap": -3.488977055676068,
+   "gap_p5": -1.0695191657632885,
+   "own": {
+    "reclaim_ma20": {
+     "n": 12,
+     "up": 4,
+     "avg": -0.6155513300141469
+    }
+   },
+   "qty_day": 1594,
+   "qty_overnight": 1594,
+   "turnover": 146249344.8
+  },
+  {
+   "symbol": "KRSNAA",
+   "price": 485.8,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 29.5,
+   "atr": 21.77500305175781,
+   "atr_pct": 4.482297869855457,
+   "worst_gap": -4.953519023498487,
+   "gap_p5": -1.28976460375817,
+   "own": {
+    "oversold": {
+     "n": 14,
+     "up": 8,
+     "avg": 0.3849438446431438
+    }
+   },
+   "qty_day": 91,
+   "qty_overnight": 91,
+   "turnover": 145181330.0
+  },
+  {
+   "symbol": "GREENPANEL",
+   "price": 133.15,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 38.2,
+   "atr": 8.178570404052733,
+   "atr_pct": 6.142373566693753,
+   "worst_gap": -6.3432670601134555,
+   "gap_p5": -1.175884929569826,
+   "own": {
+    "oversold_bounce": {
+     "n": 24,
+     "up": 11,
+     "avg": -0.07345462687263077
+    }
+   },
+   "qty_day": 244,
+   "qty_overnight": 244,
+   "turnover": 142286886.15
+  },
+  {
+   "symbol": "BERGEPAINT",
+   "price": 479.7,
+   "setups": [
+    "breakout_20d",
+    "reclaim_ma20"
+   ],
+   "rsi": 58.3,
+   "atr": 9.600005667550224,
+   "atr_pct": 2.0012519632166406,
+   "worst_gap": -5.47029420590901,
+   "gap_p5": -1.3490261181431151,
+   "own": {
+    "breakout_20d": {
+     "n": 13,
+     "up": 5,
+     "avg": 0.31296841563071937
+    },
+    "reclaim_ma20": {
+     "n": 9,
+     "up": 2,
+     "avg": -0.5107939589079673
+    }
+   },
+   "qty_day": 156,
+   "qty_overnight": 156,
+   "turnover": 132962286.6
+  },
+  {
+   "symbol": "CMSINFO",
+   "price": 212.25,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 44.7,
+   "atr": 7.075714198521205,
+   "atr_pct": 3.333669822624832,
+   "worst_gap": -3.6561284190919863,
+   "gap_p5": -1.1375099082609585,
+   "own": {
+    "reclaim_ma20": {
+     "n": 12,
+     "up": 3,
+     "avg": -0.47947178448913275
+    }
+   },
+   "qty_day": 282,
+   "qty_overnight": 282,
+   "turnover": 128090328.0
+  },
+  {
+   "symbol": "HLEGLAS",
+   "price": 424.15,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 54.2,
+   "atr": 22.232142857142858,
+   "atr_pct": 5.241575588151093,
+   "worst_gap": -19.999998713695334,
+   "gap_p5": -1.784552818703966,
+   "own": {
+    "reclaim_ma20": {
+     "n": 9,
+     "up": 4,
+     "avg": -0.3257208752914896
+    }
+   },
+   "qty_day": 89,
+   "qty_overnight": 89,
+   "turnover": 128016104.69999999
+  },
+  {
+   "symbol": "COMSYN",
+   "price": 205.43,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 25.2,
+   "atr": 16.34785627092634,
+   "atr_pct": 7.957871913024553,
+   "worst_gap": -5.000329014164562,
+   "gap_p5": -1.554731098771156,
+   "own": {
+    "oversold": {
+     "n": 10,
+     "up": 3,
+     "avg": -1.5163446274064785
+    }
+   },
+   "qty_day": 122,
+   "qty_overnight": 122,
+   "turnover": 114689720.13000001
+  },
+  {
+   "symbol": "ABLBL",
+   "price": 73.16,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 46.5,
+   "atr": 2.6628562709263397,
+   "atr_pct": 3.6397707366407053,
+   "worst_gap": -9.474661225772184,
+   "gap_p5": -1.3628135909814154,
+   "own": {
+    "reclaim_ma20": {
+     "n": 10,
+     "up": 3,
+     "avg": -0.46014665392525406
+    }
+   },
+   "qty_day": 751,
+   "qty_overnight": 751,
+   "turnover": 114272408.32
+  },
+  {
+   "symbol": "SHAKTIPUMP",
+   "price": 357.0,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 22.5,
+   "atr": 14.753576660156252,
+   "atr_pct": 4.132654526654413,
+   "worst_gap": -12.849555247164268,
+   "gap_p5": -1.8104279945286406,
+   "own": {
+    "oversold": {
+     "n": 31,
+     "up": 13,
+     "avg": -0.07390157800757395
+    }
+   },
+   "qty_day": 135,
+   "qty_overnight": 135,
+   "turnover": 113307516.0
+  },
+  {
+   "symbol": "JSWDULUX",
+   "price": 260.25,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 23.4,
+   "atr": 12.474288504464283,
+   "atr_pct": 4.793194430149581,
+   "worst_gap": -10.264895782553163,
+   "gap_p5": -1.1026293469041604,
+   "own": {
+    "oversold": {
+     "n": 15,
+     "up": 6,
+     "avg": -0.1344414816890153
+    }
+   },
+   "qty_day": 160,
+   "qty_overnight": 160,
+   "turnover": 110405857.5
+  },
+  {
+   "symbol": "LLOYDSENT",
+   "price": 60.59,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 29.5,
+   "atr": 2.6592855181012838,
+   "atr_pct": 4.388984185676322,
+   "worst_gap": -4.58433176042865,
+   "gap_p5": -1.764174011535069,
+   "own": {
+    "oversold": {
+     "n": 8,
+     "up": 5,
+     "avg": 0.4983322293418094
+    },
+    "oversold_bounce": {
+     "n": 4,
+     "up": 2,
+     "avg": -0.7811304817012144
+    }
+   },
+   "qty_day": 752,
+   "qty_overnight": 752,
+   "turnover": 108444466.72
+  },
+  {
+   "symbol": "KANSAINER",
+   "price": 187.12,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 55.3,
+   "atr": 5.854284798758371,
+   "atr_pct": 3.1286259078443623,
+   "worst_gap": -4.338854144462223,
+   "gap_p5": -1.1065147141596343,
+   "own": {
+    "reclaim_ma20": {
+     "n": 15,
+     "up": 6,
+     "avg": -0.46410574370184365
+    }
+   },
+   "qty_day": 341,
+   "qty_overnight": 341,
+   "turnover": 92185603.60000001
+  },
+  {
+   "symbol": "LAXMIINDIA",
+   "price": 104.41,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 47.8,
+   "atr": 5.577143511090959,
+   "atr_pct": 5.341579840140753,
+   "worst_gap": -6.4191013811753965,
+   "gap_p5": -2.0492308067767917,
+   "own": {
+    "reclaim_ma20": {
+     "n": 9,
+     "up": 4,
+     "avg": 1.3025480518751162
+    }
+   },
+   "qty_day": 358,
+   "qty_overnight": 358,
+   "turnover": 91811262.94
+  },
+  {
+   "symbol": "AYE",
+   "price": 132.81,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 31.6,
+   "atr": 7.408570665631976,
+   "atr_pct": 5.57832291667192,
+   "worst_gap": -5.921883973990971,
+   "gap_p5": -1.6979459338429925,
+   "own": {
+    "oversold_bounce": {
+     "n": 4,
+     "up": 1,
+     "avg": -0.952050691728512
+    }
+   },
+   "qty_day": 269,
+   "qty_overnight": 269,
+   "turnover": 90243598.14
+  },
+  {
+   "symbol": "NOCIL",
+   "price": 136.25,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 27.8,
+   "atr": 6.72357177734375,
+   "atr_pct": 4.934731579701835,
+   "worst_gap": -3.120887605197853,
+   "gap_p5": -0.9267306237361161,
+   "own": {
+    "oversold": {
+     "n": 22,
+     "up": 11,
+     "avg": 0.13478367318990275
+    }
+   },
+   "qty_day": 297,
+   "qty_overnight": 297,
+   "turnover": 88828323.75
+  },
+  {
+   "symbol": "JSLL",
+   "price": 343.7,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 25.8,
+   "atr": 14.521429443359372,
+   "atr_pct": 4.225030387942791,
+   "worst_gap": -10.048483203340652,
+   "gap_p5": -1.5688422344438346,
+   "own": {
+    "oversold": {
+     "n": 21,
+     "up": 10,
+     "avg": -0.2853562741306136
+    },
+    "oversold_bounce": {
+     "n": 9,
+     "up": 5,
+     "avg": 1.6205337753633027
+    }
+   },
+   "qty_day": 137,
+   "qty_overnight": 137,
+   "turnover": 87320078.3
+  },
+  {
+   "symbol": "RTNINDIA",
+   "price": 24.95,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 48.6,
+   "atr": 1.0171428244454521,
+   "atr_pct": 4.076724747276361,
+   "worst_gap": -9.201816827654463,
+   "gap_p5": -1.5273278681046887,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 5,
+     "avg": -0.20441378794870957
+    }
+   },
+   "qty_day": 1966,
+   "qty_overnight": 1966,
+   "turnover": 87039522.1
+  },
+  {
+   "symbol": "OSWALPUMPS",
+   "price": 209.54,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 26.5,
+   "atr": 9.187143249511719,
+   "atr_pct": 4.3844341173578885,
+   "worst_gap": -5.555555555555558,
+   "gap_p5": -1.417734245312241,
+   "own": {
+    "oversold": {
+     "n": 72,
+     "up": 28,
+     "avg": -0.6860595768165265
+    }
+   },
+   "qty_day": 217,
+   "qty_overnight": 217,
+   "turnover": 83320018.82
+  },
+  {
+   "symbol": "RALLIS",
+   "price": 189.98,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 39.2,
+   "atr": 6.307141026088169,
+   "atr_pct": 3.319897371348652,
+   "worst_gap": -4.623229575053578,
+   "gap_p5": -1.3911595668551602,
+   "own": {
+    "oversold_bounce": {
+     "n": 11,
+     "up": 6,
+     "avg": 1.2785466153273188
+    }
+   },
+   "qty_day": 317,
+   "qty_overnight": 317,
+   "turnover": 77962092.6
+  },
+  {
+   "symbol": "WEBELSOLAR",
+   "price": 67.15,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 47.6,
+   "atr": 3.4792849949428017,
+   "atr_pct": 5.18136261346657,
+   "worst_gap": -8.42751901935851,
+   "gap_p5": -2.7252126700846646,
+   "own": {
+    "reclaim_ma20": {
+     "n": 9,
+     "up": 3,
+     "avg": -1.7608416526250583
+    }
+   },
+   "qty_day": 574,
+   "qty_overnight": 574,
+   "turnover": 73361173.55000001
+  },
+  {
+   "symbol": "BALMLAWRIE",
+   "price": 163.4,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 59.3,
+   "atr": 4.695713588169643,
+   "atr_pct": 2.873753725930014,
+   "worst_gap": -3.4502069545494396,
+   "gap_p5": -0.997350285594667,
+   "own": {
+    "breakout_20d": {
+     "n": 20,
+     "up": 12,
+     "avg": 0.14135767191801818
+    }
+   },
+   "qty_day": 425,
+   "qty_overnight": 425,
+   "turnover": 71299753.4
+  },
+  {
+   "symbol": "INDOSTAR",
+   "price": 196.25,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 49.0,
+   "atr": 12.458568246023995,
+   "atr_pct": 6.348315029821144,
+   "worst_gap": -5.676392814393061,
+   "gap_p5": -1.5067804661142215,
+   "own": {
+    "reclaim_ma20": {
+     "n": 12,
+     "up": 4,
+     "avg": -0.8872433244512812
+    }
+   },
+   "qty_day": 160,
+   "qty_overnight": 160,
+   "turnover": 70987353.75
+  },
+  {
+   "symbol": "IVALUE",
+   "price": 186.92,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 26.3,
+   "atr": 10.179998517717634,
+   "atr_pct": 5.446179391032332,
+   "worst_gap": -12.759255479184517,
+   "gap_p5": -1.4980895741389721,
+   "own": {
+    "oversold": {
+     "n": 15,
+     "up": 8,
+     "avg": 0.2533438298567455
+    }
+   },
+   "qty_day": 196,
+   "qty_overnight": 196,
+   "turnover": 66875302.99999999
+  },
+  {
+   "symbol": "NAVNETEDUL",
+   "price": 130.72,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 65.0,
+   "atr": 4.455714394705637,
+   "atr_pct": 3.4085942431958665,
+   "worst_gap": -3.177419572991136,
+   "gap_p5": -1.001416689893142,
+   "own": {
+    "breakout_20d": {
+     "n": 11,
+     "up": 4,
+     "avg": -0.2974685595812477
+    }
+   },
+   "qty_day": 448,
+   "qty_overnight": 448,
+   "turnover": 66693474.72
+  },
+  {
+   "symbol": "KALAMANDIR",
+   "price": 67.55,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 33.8,
+   "atr": 2.1892851039341514,
+   "atr_pct": 3.240984609821098,
+   "worst_gap": -8.130454386293584,
+   "gap_p5": -1.3708639515091159,
+   "own": {
+    "oversold_bounce": {
+     "n": 24,
+     "up": 9,
+     "avg": -0.5553458106825033
+    }
+   },
+   "qty_day": 913,
+   "qty_overnight": 913,
+   "turnover": 65526472.199999996
+  },
+  {
+   "symbol": "ORIENTHOT",
+   "price": 163.71,
+   "setups": [
+    "breakout_20d",
+    "bull_flag"
+   ],
+   "rsi": 73.4,
+   "atr": 5.214998692103795,
+   "atr_pct": 3.1855101656000215,
+   "worst_gap": -3.4387604071626554,
+   "gap_p5": -1.3896812472876663,
+   "own": {
+    "breakout_20d": {
+     "n": 32,
+     "up": 16,
+     "avg": 0.24130565554342265
+    },
+    "bull_flag": {
+     "n": 22,
+     "up": 6,
+     "avg": -0.9032939872981427
+    }
+   },
+   "qty_day": 383,
+   "qty_overnight": 383,
+   "turnover": 63789274.080000006
+  },
+  {
+   "symbol": "ORIENTCEM",
+   "price": 119.53,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 55.0,
+   "atr": 4.915000152587891,
+   "atr_pct": 4.111938553156438,
+   "worst_gap": -4.3972961044464025,
+   "gap_p5": -1.4838253497810983,
+   "own": {
+    "breakout_20d": {
+     "n": 11,
+     "up": 5,
+     "avg": -0.26555487841853603
+    }
+   },
+   "qty_day": 406,
+   "qty_overnight": 406,
+   "turnover": 63117577.44
+  },
+  {
+   "symbol": "DCW",
+   "price": 45.23,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 53.6,
+   "atr": 1.8528571319580078,
+   "atr_pct": 4.096522511514499,
+   "worst_gap": -3.7800720920952657,
+   "gap_p5": -1.3643133483909886,
+   "own": {
+    "reclaim_ma20": {
+     "n": 19,
+     "up": 7,
+     "avg": -0.28485166640386367
+    }
+   },
+   "qty_day": 1079,
+   "qty_overnight": 1079,
+   "turnover": 61970256.22
+  },
+  {
+   "symbol": "CRIZAC",
+   "price": 143.79,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 39.0,
+   "atr": 7.169999084472656,
+   "atr_pct": 4.986437919516417,
+   "worst_gap": -7.14748556840158,
+   "gap_p5": -1.563078838033971,
+   "own": {
+    "oversold_bounce": {
+     "n": 10,
+     "up": 8,
+     "avg": 2.662115705451197
+    }
+   },
+   "qty_day": 278,
+   "qty_overnight": 278,
+   "turnover": 61496538.57
+  },
+  {
+   "symbol": "BHAGYANGR",
+   "price": 85.29,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 29.0,
+   "atr": 3.7842854745047427,
+   "atr_pct": 4.436962685549001,
+   "worst_gap": -91.42008556872669,
+   "gap_p5": -3.8013994680613505,
+   "own": {
+    "oversold": {
+     "n": 17,
+     "up": 16,
+     "avg": 4.371119659375411
+    }
+   },
+   "qty_day": 528,
+   "qty_overnight": 528,
+   "turnover": 60682043.910000004
+  },
+  {
+   "symbol": "MUTHOOTMF",
+   "price": 148.28,
+   "setups": [
+    "oversold_bounce"
+   ],
+   "rsi": 36.2,
+   "atr": 7.4342860630580345,
+   "atr_pct": 5.013680916548445,
+   "worst_gap": -4.3314825819244955,
+   "gap_p5": -1.5045343551499557,
+   "own": {
+    "oversold_bounce": {
+     "n": 9,
+     "up": 5,
+     "avg": -0.3046000406244488
+    }
+   },
+   "qty_day": 269,
+   "qty_overnight": 269,
+   "turnover": 58290499.08
+  },
+  {
+   "symbol": "GENESYS",
+   "price": 173.58,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 24.8,
+   "atr": 13.253571864536829,
+   "atr_pct": 7.635425662251888,
+   "worst_gap": -30.123252261345268,
+   "gap_p5": -2.6560007816763487,
+   "own": {
+    "oversold": {
+     "n": 29,
+     "up": 11,
+     "avg": -0.2572680623279713
+    },
+    "oversold_bounce": {
+     "n": 10,
+     "up": 6,
+     "avg": 0.5861920666161891
+    }
+   },
+   "qty_day": 150,
+   "qty_overnight": 150,
+   "turnover": 57234012.660000004
+  },
+  {
+   "symbol": "VSTIND",
+   "price": 187.27,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 20.8,
+   "atr": 3.530000566755023,
+   "atr_pct": 1.8849792101004021,
+   "worst_gap": -5.756889524866993,
+   "gap_p5": -1.0686248057619085,
+   "own": {
+    "oversold": {
+     "n": 62,
+     "up": 24,
+     "avg": -0.06812986680330271
+    },
+    "oversold_bounce": {
+     "n": 23,
+     "up": 12,
+     "avg": 0.21504652297655374
+    }
+   },
+   "qty_day": 400,
+   "qty_overnight": 400,
+   "turnover": 50717585.02
+  },
+  {
+   "symbol": "VAIBHAVGBL",
+   "price": 157.73,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 20.9,
+   "atr": 9.362142377580914,
+   "atr_pct": 5.935549595879614,
+   "worst_gap": -6.298249329569449,
+   "gap_p5": -1.507727170768458,
+   "own": {
+    "oversold": {
+     "n": 11,
+     "up": 6,
+     "avg": 0.7553701143544064
+    },
+    "oversold_bounce": {
+     "n": 5,
+     "up": 3,
+     "avg": -2.9146955997492197
+    }
+   },
+   "qty_day": 213,
+   "qty_overnight": 213,
+   "turnover": 50293156.879999995
+  },
+  {
+   "symbol": "SOLARWORLD",
+   "price": 105.34,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 26.3,
+   "atr": 5.447142791748047,
+   "atr_pct": 5.17101081426623,
+   "worst_gap": -5.131751580089638,
+   "gap_p5": -1.3836092828093949,
+   "own": {
+    "oversold": {
+     "n": 76,
+     "up": 34,
+     "avg": -0.10893561563934481
+    },
+    "oversold_bounce": {
+     "n": 33,
+     "up": 11,
+     "avg": -0.7226533121512813
+    }
+   },
+   "qty_day": 367,
+   "qty_overnight": 367,
+   "turnover": 48351797.38
+  },
+  {
+   "symbol": "RIR",
+   "price": 134.49,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 26.1,
+   "atr": 8.615714983258927,
+   "atr_pct": 6.406212345348298,
+   "worst_gap": -0.9275333369359373,
+   "gap_p5": -0.5656108499654589,
+   "own": {
+    "oversold": {
+     "n": 7,
+     "up": 2,
+     "avg": -1.0960944501304646
+    }
+   },
+   "qty_day": 232,
+   "qty_overnight": 232,
+   "turnover": 47306991.99
+  },
+  {
+   "symbol": "ORICONENT",
+   "price": 57.21,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 65.4,
+   "atr": 3.6007138933454246,
+   "atr_pct": 6.293854034863529,
+   "worst_gap": -6.864615982275312,
+   "gap_p5": -2.364743285633897,
+   "own": {
+    "breakout_20d": {
+     "n": 24,
+     "up": 15,
+     "avg": 0.3084579661429022
+    }
+   },
+   "qty_day": 555,
+   "qty_overnight": 555,
+   "turnover": 47087491.44
+  },
+  {
+   "symbol": "YATRA",
+   "price": 72.27,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 25.4,
+   "atr": 4.739999825613839,
+   "atr_pct": 6.558737824289247,
+   "worst_gap": -7.251263562197807,
+   "gap_p5": -1.7391273127797313,
+   "own": {
+    "oversold": {
+     "n": 16,
+     "up": 10,
+     "avg": 1.2904501891578308
+    },
+    "oversold_bounce": {
+     "n": 9,
+     "up": 4,
+     "avg": -0.647487277537769
+    }
+   },
+   "qty_day": 421,
+   "qty_overnight": 421,
+   "turnover": 46091565.629999995
+  },
+  {
+   "symbol": "ECOSMOBLTY",
+   "price": 111.07,
+   "setups": [
+    "breakout_20d",
+    "reclaim_ma20"
+   ],
+   "rsi": 62.1,
+   "atr": 4.945715789794922,
+   "atr_pct": 4.4527917437606215,
+   "worst_gap": -4.306224689533611,
+   "gap_p5": -1.7142857142857126,
+   "own": {
+    "breakout_20d": {
+     "n": 12,
+     "up": 6,
+     "avg": -1.603531833471868
+    },
+    "reclaim_ma20": {
+     "n": 12,
+     "up": 8,
+     "avg": 0.4705926443884465
+    }
+   },
+   "qty_day": 404,
+   "qty_overnight": 404,
+   "turnover": 40629850.28
+  },
+  {
+   "symbol": "UGROCAP",
+   "price": 68.33,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 25.2,
+   "atr": 3.4278570992606032,
+   "atr_pct": 5.016620956037763,
+   "worst_gap": -4.4208982787929845,
+   "gap_p5": -1.1111111111111072,
+   "own": {
+    "oversold": {
+     "n": 33,
+     "up": 15,
+     "avg": -0.4339392288050601
+    }
+   },
+   "qty_day": 583,
+   "qty_overnight": 583,
+   "turnover": 39275537.36
+  },
+  {
+   "symbol": "VPRPL",
+   "price": 26.89,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 48.9,
+   "atr": 1.3421429770333426,
+   "atr_pct": 4.991234574315145,
+   "worst_gap": -5.817173501989615,
+   "gap_p5": -4.922587315715409,
+   "own": {
+    "reclaim_ma20": {
+     "n": 8,
+     "up": 4,
+     "avg": -0.16540947703592157
+    }
+   },
+   "qty_day": 1490,
+   "qty_overnight": 1490,
+   "turnover": 25812060.57
+  },
+  {
+   "symbol": "AERONEU",
+   "price": 81.38,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 66.8,
+   "atr": 4.002143859863281,
+   "atr_pct": 4.91784696468823,
+   "worst_gap": -4.315659760606339,
+   "gap_p5": -2.1568167168593777,
+   "own": {
+    "breakout_20d": {
+     "n": 20,
+     "up": 9,
+     "avg": -0.563144587288178
+    }
+   },
+   "qty_day": 499,
+   "qty_overnight": 499,
+   "turnover": 20748319.279999997
+  },
+  {
+   "symbol": "ROTO",
+   "price": 60.15,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 47.9,
+   "atr": 2.1228574262346536,
+   "atr_pct": 3.529272529068418,
+   "worst_gap": -5.263157894736848,
+   "gap_p5": -1.5023812762527289,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 4,
+     "avg": -0.8996936847703064
+    }
+   },
+   "qty_day": 942,
+   "qty_overnight": 942,
+   "turnover": 19149775.05
+  },
+  {
+   "symbol": "SINDHUTRAD",
+   "price": 20.41,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 46.2,
+   "atr": 1.2007144383021764,
+   "atr_pct": 5.88297128026544,
+   "worst_gap": -4.17494732797895,
+   "gap_p5": -1.3862099057423083,
+   "own": {
+    "reclaim_ma20": {
+     "n": 15,
+     "up": 4,
+     "avg": -0.6782877422366421
+    }
+   },
+   "qty_day": 1665,
+   "qty_overnight": 1665,
+   "turnover": 17966514.8
+  },
+  {
+   "symbol": "GAYAPROJ",
+   "price": 20.35,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 48.6,
+   "atr": 1.243571630205427,
+   "atr_pct": 6.110917101746569,
+   "worst_gap": -4.999995364083065,
+   "gap_p5": -2.5498945037489285,
+   "own": {
+    "reclaim_ma20": {
+     "n": 5,
+     "up": 4,
+     "avg": 1.82602454729895
+    }
+   },
+   "qty_day": 1608,
+   "qty_overnight": 1608,
+   "turnover": 16805091.05
+  },
+  {
+   "symbol": "TURTLEMINT",
+   "price": 54.17,
+   "setups": [
+    "oversold",
+    "oversold_bounce"
+   ],
+   "rsi": 25.1,
+   "atr": 2.9042855725969585,
+   "atr_pct": 5.361428046145391,
+   "worst_gap": -20.000001119500276,
+   "gap_p5": -2.2169964301763656,
+   "own": {
+    "oversold": {
+     "n": 25,
+     "up": 7,
+     "avg": -1.8354420398446343
+    },
+    "oversold_bounce": {
+     "n": 6,
+     "up": 2,
+     "avg": -0.6497759837405822
+    }
+   },
+   "qty_day": 688,
+   "qty_overnight": 688,
+   "turnover": 15902253.540000001
+  },
+  {
+   "symbol": "LEMERITE",
+   "price": 22.73,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 64.7,
+   "atr": 1.6242858723231723,
+   "atr_pct": 7.146000318183776,
+   "worst_gap": -13.24735841709288,
+   "gap_p5": -4.978163494711508,
+   "own": {
+    "breakout_20d": {
+     "n": 9,
+     "up": 1,
+     "avg": -1.196243010523632
+    }
+   },
+   "qty_day": 1231,
+   "qty_overnight": 1231,
+   "turnover": 14985479.86
+  },
+  {
+   "symbol": "BRIGHOTEL",
+   "price": 54.69,
+   "setups": [
+    "reclaim_ma20"
+   ],
+   "rsi": 50.4,
+   "atr": 2.7085708400181363,
+   "atr_pct": 4.952588846257335,
+   "worst_gap": -2.8806584362139898,
+   "gap_p5": -1.0052822736298261,
+   "own": {
+    "reclaim_ma20": {
+     "n": 11,
+     "up": 3,
+     "avg": -0.8015909962862984
+    }
+   },
+   "qty_day": 738,
+   "qty_overnight": 738,
+   "turnover": 13677804.93
+  },
+  {
+   "symbol": "DEVX",
+   "price": 44.82,
+   "setups": [
+    "breakout_20d"
+   ],
+   "rsi": 66.1,
+   "atr": 2.484285703386579,
+   "atr_pct": 5.542806120898213,
+   "worst_gap": -3.4234216689701835,
+   "gap_p5": -2.057495917854557,
+   "own": {
+    "breakout_20d": {
+     "n": 22,
+     "up": 10,
+     "avg": 0.12059901129152886
+    }
+   },
+   "qty_day": 805,
+   "qty_overnight": 805,
+   "turnover": 13270350.42
+  },
+  {
+   "symbol": "INDOTHAI",
+   "price": 28.04,
+   "setups": [
+    "oversold"
+   ],
+   "rsi": 26.5,
+   "atr": 1.754285828726632,
+   "atr_pct": 6.256368861364595,
+   "worst_gap": -19.999996425466694,
+   "gap_p5": -4.995355065797691,
+   "own": {
+    "oversold": {
+     "n": 69,
+     "up": 20,
+     "avg": -2.199446842334184
+    }
+   },
+   "qty_day": 1140,
+   "qty_overnight": 1140,
+   "turnover": 9555050.6
+  }
+ ]
+}
