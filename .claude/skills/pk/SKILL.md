@@ -38,9 +38,10 @@ A full scan takes about 2 minutes (200 stocks, one request each, a polite pause)
    warnings, then the tightest stop): entry, stop at the Supertrend (7, 1.6) line,
    2R target, shares for `trader/config.json` (max loss, position cap, cash buffer)
    and the warnings (SMI above +40, RSI above 75, a 1-2 bar old Supertrend flip).
-3. NIFTY options: the nearest weekly expiry, strikes with premium inside the band,
-   on NIFTY's side only. Each one's own 5-minute chart is built from NSE's intraday
-   prices for the contract and gets the four chart checkpoints plus the entry window. The chart starts
+3. NIFTY options: the nearest weekly expiry, calls (CE) and puts (PE) with premium
+   inside the band (`--sides auto` lists only NIFTY's side). An option can pass only
+   on NIFTY's side: "NIFTY agrees" is one of its checkpoints. Each one's own 5-minute chart is built from NSE's intraday
+   prices for the contract and gets the four chart checkpoints, NIFTY agreeing and the entry window. The chart starts
    at 9:15 each day, so the indicators are ready from about 11:25 IST; before that
    the option is listed with "indicators not ready". A passing option gets a stop
    at its Supertrend (7, 1.6) line, a 2R target and the lots (NIFTY lot: 65, from

@@ -15,7 +15,9 @@ Stocks: every NIFTY 200 stock (NSE's index list), Yahoo 5-minute bars.
 NIFTY options: the nearest weekly expiry from NSE's option chain, the strikes whose
 premium is between Rs 100 and Rs 150 (--premium 100-150). NIFTY's direction picks the
 side: both Supertrends up, RSI above 50 and SMI above its signal -> calls (CE); all
-three the other way -> puts (PE); mixed -> no side, both are listed for information.
+three the other way -> puts (PE); mixed -> no side. Calls and puts are both listed
+(--sides auto lists only NIFTY's side); an option passes only on NIFTY's side, so
+"NIFTY agrees" is one of its checkpoints.
 Each option's own 5-minute chart is built from NSE's intraday prices for that
 contract (today only, so the indicators need about 26 bars: after ~11:25 IST) and
 checked with the same four chart checkpoints plus the entry window. Lot size from
@@ -115,7 +117,7 @@ def nifty_direction(m):
     return "CE" if up else "PE" if down else None
 
 
-def option_scan(session, market, now, lo, hi, cfg, lot):
+def option_scan(session, market, now, lo, hi, cfg, lot, sides="both"):
     info = session.api("option-chain-contract-info?symbol=NIFTY")
     expiries = [datetime.datetime.strptime(e, "%d-%b-%Y").date() for e in info.get("expiryDates", [])]
     live = [e for e in expiries if e > now.date() or (e == now.date() and now.time() < datetime.time(15, 30))]
@@ -130,7 +132,7 @@ def option_scan(session, market, now, lo, hi, cfg, lot):
         for typ in ("CE", "PE"):
             leg = row.get(typ) or {}
             ltp = leg.get("lastPrice")
-            if not ltp or not lo <= ltp <= hi or (side and typ != side):
+            if not ltp or not lo <= ltp <= hi or (sides == "auto" and side and typ != side):
                 continue
             item = {"strike": row["strikePrice"], "type": typ, "ltp": ltp, "id": leg.get("identifier"),
                     "oi": leg.get("openInterest"), "volume": leg.get("totalTradedVolume"), "checks": None}
@@ -144,7 +146,7 @@ def option_scan(session, market, now, lo, hi, cfg, lot):
                     s, sg = piyush.smi(bars, *piyush.SMI_ARGS)
                     checks = [("Supertrend (7, 0.8) up", fast[-1][1] is True), ("Supertrend (7, 1.6) up", slow[-1][1] is True),
                               ("RSI (14) above 50", r[-1] > 50), ("SMI above signal", s[-1] > sg[-1]),
-                              ("inside the entry window", in_window(now, cfg))]
+                              ("NIFTY agrees", side == typ), ("inside the entry window", in_window(now, cfg))]
                     item.update(checks=checks, bars=len(bars), close=bars[-1][4], stop=int(slow[-1][0] * 20) / 20.0,
                                 rsi=r[-1], smi=s[-1], signal=sg[-1], bar=bars[-1][0].strftime("%H:%M"))
                     item["pass"] = all(ok for _, ok in checks)
@@ -160,7 +162,7 @@ def option_scan(session, market, now, lo, hi, cfg, lot):
             except Exception as e:  # one contract's chart failing must not stop the scan
                 item["error"] = str(e)
             out.append(item)
-    out.sort(key=lambda x: abs(x["ltp"] - (lo + hi) / 2))
+    out.sort(key=lambda x: (x["type"] != side, x["type"], abs(x["ltp"] - (lo + hi) / 2)))
     return {"expiry": expiry.isoformat(), "spot": rec.get("underlyingValue"), "side": side, "options": out}
 
 
@@ -174,6 +176,8 @@ def main(argv=None):
     p.add_argument("--now", help='India time "YYYY-MM-DD HH:MM" (default: now)')
     p.add_argument("--premium", default="100-150", help="option premium band in rupees (100-150)")
     p.add_argument("--no-options", action="store_true")
+    p.add_argument("--sides", default="both", choices=["both", "auto"],
+                   help="options to list: calls and puts (both, default) or only NIFTY's side (auto)")
     p.add_argument("--new-only", action="store_true", help="only signals not reported earlier today")
     p.add_argument("--config", default="trader/config.json")
     p.add_argument("--state", default=STATE)
@@ -213,7 +217,7 @@ def main(argv=None):
     if not a.no_options:
         lo, hi = (float(x) for x in a.premium.split("-"))
         try:
-            opts = option_scan(session, market, now, lo, hi, cfg, nifty_lot(session, st, today))
+            opts = option_scan(session, market, now, lo, hi, cfg, nifty_lot(session, st, today), a.sides)
         except Exception as e:
             opts = {"error": str(e)}
     opt_pass = [o for o in (opts or {}).get("options", []) if o.get("pass")]
@@ -253,14 +257,14 @@ def main(argv=None):
             print("\nNIFTY options: %s" % opts["error"])
         else:
             print("\nNIFTY options, expiry %s, spot %s, premium Rs %s, side %s:"
-                  % (opts["expiry"], opts["spot"], a.premium, opts["side"] or "none (NIFTY mixed): both listed, none can pass"))
+                  % (opts["expiry"], opts["spot"], a.premium, opts["side"] or "none (NIFTY mixed): none can pass"))
             for o in opts["options"]:
                 if o.get("checks"):
                     n = sum(ok for _, ok in o["checks"])
-                    line = "  %s %s  LTP %.2f  chart %s Rs %.2f: %d of 5 checkpoints%s" % (
+                    line = "  %s %s  LTP %.2f  chart %s Rs %.2f: %d of 6 checkpoints%s" % (
                         o["strike"], o["type"], o["ltp"], o["bar"], o["close"], n,
-                        " " + ", ".join(nm for nm, ok in o["checks"] if not ok) + " fail" if n < 5 else "")
-                    if o.get("pass") and opts["side"]:
+                        " " + ", ".join(nm for nm, ok in o["checks"] if not ok) + " fail" if n < 6 else "")
+                    if o.get("pass"):
                         line += "\n      PASS: stop %.2f (Supertrend 7, 1.6), target %.2f, %d lot(s) x %d = Rs %s, max loss Rs %s" % (
                             o["stop"], o["target"], o["lots"], st.get("lot") or 0, "{:,.0f}".format(o["cost"]),
                             "{:,.0f}".format(o["max_loss"]))
@@ -268,7 +272,7 @@ def main(argv=None):
                 else:
                     print("  %s %s  LTP %.2f  %s" % (o["strike"], o["type"], o["ltp"], o.get("error") or
                           "only %d five-minute bars today: indicators not ready" % o.get("bars", 0)))
-    bits = ["NIFTY %s %s %.1f SL %.1f" % (o["strike"], o["type"], o["close"], o["stop"]) for o in opt_pass_new if opts.get("side")]
+    bits = ["NIFTY %s %s %.1f SL %.1f" % (o["strike"], o["type"], o["close"], o["stop"]) for o in opt_pass_new]
     bits += ["%s %.2f SL %.2f T %.2f" % (p["symbol"], p["plan"]["entry"], p["plan"]["stop"], p["plan"]["target"]) for p in passes]
     more = len(bits) - 3
     summary = ("PK buy: " + " | ".join(bits[:3]) + (" | +%d more" % more if more > 0 else "")) if bits else "PK: no new signal"
