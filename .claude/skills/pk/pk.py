@@ -117,7 +117,7 @@ def nifty_direction(m):
     return "CE" if up else "PE" if down else None
 
 
-def option_scan(session, market, now, lo, hi, cfg, lot, sides="both"):
+def option_scan(session, market, now, lo, hi, cfg, lot, sides="both", min_bars=OPT_MIN_BARS):
     info = session.api("option-chain-contract-info?symbol=NIFTY")
     expiries = [datetime.datetime.strptime(e, "%d-%b-%Y").date() for e in info.get("expiryDates", [])]
     live = [e for e in expiries if e > now.date() or (e == now.date() and now.time() < datetime.time(15, 30))]
@@ -140,7 +140,7 @@ def option_scan(session, market, now, lo, hi, cfg, lot, sides="both"):
                 time.sleep(0.3)
                 g = session.api("chart-databyindex?index=%s" % leg["identifier"])
                 bars = ticks_to_bars(g.get("grapthData") or [], now)
-                if len(bars) >= OPT_MIN_BARS:
+                if len(bars) >= min_bars:
                     fast, slow = piyush.supertrend(bars, *piyush.ST_FAST), piyush.supertrend(bars, *piyush.ST_SLOW)
                     r = piyush.rsi([b[4] for b in bars])
                     s, sg = piyush.smi(bars, *piyush.SMI_ARGS)
@@ -176,6 +176,8 @@ def main(argv=None):
     p.add_argument("--now", help='India time "YYYY-MM-DD HH:MM" (default: now)')
     p.add_argument("--premium", default="100-150", help="option premium band in rupees (100-150)")
     p.add_argument("--no-options", action="store_true")
+    p.add_argument("--min-option-bars", type=int, default=OPT_MIN_BARS,
+                   help="5-minute bars an option needs before its indicators are read (%d; 15 = earlier, rougher)" % OPT_MIN_BARS)
     p.add_argument("--sides", default="both", choices=["both", "auto"],
                    help="options to list: calls and puts (both, default) or only NIFTY's side (auto)")
     p.add_argument("--new-only", action="store_true", help="only signals not reported earlier today")
@@ -217,7 +219,7 @@ def main(argv=None):
     if not a.no_options:
         lo, hi = (float(x) for x in a.premium.split("-"))
         try:
-            opts = option_scan(session, market, now, lo, hi, cfg, nifty_lot(session, st, today), a.sides)
+            opts = option_scan(session, market, now, lo, hi, cfg, nifty_lot(session, st, today), a.sides, a.min_option_bars)
         except Exception as e:
             opts = {"error": str(e)}
     opt_pass = [o for o in (opts or {}).get("options", []) if o.get("pass")]
