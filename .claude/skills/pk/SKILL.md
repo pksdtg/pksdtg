@@ -47,7 +47,15 @@ A full scan takes about 2 minutes (200 stocks, one request each, a polite pause)
    at its Supertrend (7, 1.6) line, a 2R target and the lots (NIFTY lot: 65, from
    NSE) that fit the max loss, capped at `max_option_lots` in `trader/config.json`
    (1: Piyush trades one lot).
-4. `SUMMARY ...`: one line under 200 characters, options first, then the top three
+   The option chain line gives the put-call ratio of open interest and the strikes
+   with the most call OI (resistance) and put OI (support); each option shows its
+   implied volatility, OI and change in OI, and the confirmations its chart has.
+4. Confirmations (VWAP, EMA 9/21, MACD, ADX, volume; see trader-piyush) for every
+   stock and option, as "confirm 4/5 [VWAP+ EMA+ MACD+ ADX- VOL+]". Stocks are
+   sorted by them. `--min-confirm N` (or `"pk_min_confirm"` in trader/config.json)
+   drops stocks with fewer; the default 0 keeps Piyush's seven checkpoints as the
+   only rule.
+5. `SUMMARY ...`: one line under 200 characters, options first, then the top three
    stocks and "+N more".
 
 `trader/state/pk.json` keeps what was already reported today, for `--new-only`.

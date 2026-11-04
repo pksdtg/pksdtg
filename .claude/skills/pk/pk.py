@@ -127,15 +127,21 @@ def option_scan(session, market, now, lo, hi, cfg, lot, sides="both", min_bars=O
     chain = session.api("option-chain-v3?type=Indices&symbol=NIFTY&expiry=%s" % expiry.strftime("%d-%b-%Y"))
     rec = chain.get("records") or {}
     side = nifty_direction(market) if market else None
+    rows = rec.get("data") or []
+    ce_oi = sum((r.get("CE") or {}).get("openInterest") or 0 for r in rows)
+    pe_oi = sum((r.get("PE") or {}).get("openInterest") or 0 for r in rows)
+    wall = lambda t: max(rows, key=lambda r: (r.get(t) or {}).get("openInterest") or 0)["strikePrice"] if rows else None
+    chain_stats = {"pcr": pe_oi / ce_oi if ce_oi else None, "ce_wall": wall("CE"), "pe_wall": wall("PE")}
     out = []
-    for row in rec.get("data") or []:
+    for row in rows:
         for typ in ("CE", "PE"):
             leg = row.get(typ) or {}
             ltp = leg.get("lastPrice")
             if not ltp or not lo <= ltp <= hi or (sides == "auto" and side and typ != side):
                 continue
             item = {"strike": row["strikePrice"], "type": typ, "ltp": ltp, "id": leg.get("identifier"),
-                    "oi": leg.get("openInterest"), "volume": leg.get("totalTradedVolume"), "checks": None}
+                    "oi": leg.get("openInterest"), "oi_change": leg.get("changeinOpenInterest"),
+                    "iv": leg.get("impliedVolatility"), "volume": leg.get("totalTradedVolume"), "checks": None}
             try:
                 time.sleep(0.3)
                 g = session.api("chart-databyindex?index=%s" % leg["identifier"])
@@ -148,7 +154,9 @@ def option_scan(session, market, now, lo, hi, cfg, lot, sides="both", min_bars=O
                               ("RSI (14) above 50", r[-1] > 50), ("SMI above signal", s[-1] > sg[-1]),
                               ("NIFTY agrees", side == typ), ("inside the entry window", in_window(now, cfg))]
                     item.update(checks=checks, bars=len(bars), close=bars[-1][4], stop=int(slow[-1][0] * 20) / 20.0,
-                                rsi=r[-1], smi=s[-1], signal=sg[-1], bar=bars[-1][0].strftime("%H:%M"))
+                                rsi=r[-1], smi=s[-1], signal=sg[-1], bar=bars[-1][0].strftime("%H:%M"),
+                                studies=piyush.studies(bars)[0])
+                    item["confirm"] = piyush.confirm_score(item)
                     item["pass"] = all(ok for _, ok in checks)
                     if item["pass"] and lot:
                         risk = item["close"] - item["stop"]
@@ -163,10 +171,18 @@ def option_scan(session, market, now, lo, hi, cfg, lot, sides="both", min_bars=O
                 item["error"] = str(e)
             out.append(item)
     out.sort(key=lambda x: (x["type"] != side, x["type"], abs(x["ltp"] - (lo + hi) / 2)))
-    return {"expiry": expiry.isoformat(), "spot": rec.get("underlyingValue"), "side": side, "options": out}
+    return dict(chain_stats, expiry=expiry.isoformat(), spot=rec.get("underlyingValue"), side=side, options=out)
 
 
 # ---------------------------------------------------------------- the scan
+
+SHORT = {"above VWAP": "VWAP", "EMA 9 above EMA 21": "EMA", "MACD histogram above 0": "MACD",
+         "ADX above 20, +DI above -DI": "ADX", "volume 1.5x the 20-bar average": "VOL"}
+
+
+def short_studies(studies):
+    return " ".join("%s%s" % (SHORT.get(n, n), "+" if ok else "-" if ok is not None else "?") for n, ok, _ in studies)
+
 
 def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
@@ -181,6 +197,8 @@ def main(argv=None):
     p.add_argument("--sides", default="both", choices=["both", "auto"],
                    help="options to list: calls and puts (both, default) or only NIFTY's side (auto)")
     p.add_argument("--new-only", action="store_true", help="only signals not reported earlier today")
+    p.add_argument("--min-confirm", type=int, default=None,
+                   help="stocks also need this many of the 5 confirmations (default: config pk_min_confirm, 0)")
     p.add_argument("--config", default="trader/config.json")
     p.add_argument("--state", default=STATE)
     p.add_argument("--json", action="store_true")
@@ -190,6 +208,8 @@ def main(argv=None):
         return 1
     t0 = time.time()
     now, cfg = piyush.parse_now(a.now), piyush.read_config(a.config)
+    if a.min_confirm is None:
+        a.min_confirm = int(cfg.get("pk_min_confirm", 0))
     today = now.date().isoformat()
     st = load_state(a.state)
     seen = st.get("alerted", {}).get(today, [])
@@ -212,9 +232,11 @@ def main(argv=None):
         scanned += 1
         cps, warn = piyush.checkpoints(ev, market, cfg, now)
         if all(c[1] for c in cps):
-            passes.append({"symbol": sym, "ev": ev, "warnings": warn, "plan": piyush.plan(ev, cfg)})
-    # clean signals first: fewest warnings, then the tightest stop as a share of the price
-    passes.sort(key=lambda p: (len(p["warnings"]), p["plan"]["risk"] / p["plan"]["entry"]))
+            sc = piyush.confirm_score(ev)
+            if sc[0] >= a.min_confirm:
+                passes.append({"symbol": sym, "ev": ev, "warnings": warn, "plan": piyush.plan(ev, cfg), "confirm": sc})
+    # most confirmations first, then fewest warnings, then the tightest stop as a share of the price
+    passes.sort(key=lambda p: (-p["confirm"][0], len(p["warnings"]), p["plan"]["risk"] / p["plan"]["entry"]))
     opts = None
     if not a.no_options:
         lo, hi = (float(x) for x in a.premium.split("-"))
@@ -251,21 +273,28 @@ def main(argv=None):
     print("\n%s: %d" % (label, len(passes)))
     for p in passes:
         pl, ev = p["plan"], p["ev"]
-        print("  %-11s Rs %9.2f  stop %.2f  target %.2f  risk %.2f  %d sh = Rs %s, max loss Rs %s  (RSI %.1f, SMI %.1f)%s"
+        print("  %-11s Rs %9.2f  stop %.2f  target %.2f  risk %.2f  %d sh = Rs %s, max loss Rs %s  (RSI %.1f, SMI %.1f)"
+              "  confirm %d/%d [%s]%s"
               % (p["symbol"], pl["entry"], pl["stop"], pl["target"], pl["risk"], pl["qty"], "{:,.0f}".format(pl["cost"]),
-                 "{:,.0f}".format(pl["max_loss"]), ev["rsi"], ev["smi"], ("  note: " + "; ".join(p["warnings"])) if p["warnings"] else ""))
+                 "{:,.0f}".format(pl["max_loss"]), ev["rsi"], ev["smi"], p["confirm"][0], p["confirm"][1], short_studies(ev["studies"]),
+                 ("  note: " + "; ".join(p["warnings"])) if p["warnings"] else ""))
     if opts is not None:
         if "error" in opts:
             print("\nNIFTY options: %s" % opts["error"])
         else:
             print("\nNIFTY options, expiry %s, spot %s, premium Rs %s, side %s:"
                   % (opts["expiry"], opts["spot"], a.premium, opts["side"] or "none (NIFTY mixed): none can pass"))
+            print("  chain: put-call ratio (OI) %s, most call OI (resistance) at %s, most put OI (support) at %s"
+                  % ("%.2f" % opts["pcr"] if opts.get("pcr") else "n/a", opts.get("ce_wall"), opts.get("pe_wall")))
             for o in opts["options"]:
                 if o.get("checks"):
                     n = sum(ok for _, ok in o["checks"])
-                    line = "  %s %s  LTP %.2f  chart %s Rs %.2f: %d of 6 checkpoints%s" % (
+                    line = "  %s %s  LTP %.2f  chart %s Rs %.2f: %d of 6 checkpoints%s\n      confirm %d/%d [%s]  IV %s  OI %s (change %s)" % (
                         o["strike"], o["type"], o["ltp"], o["bar"], o["close"], n,
-                        " " + ", ".join(nm for nm, ok in o["checks"] if not ok) + " fail" if n < 6 else "")
+                        " " + ", ".join(nm for nm, ok in o["checks"] if not ok) + " fail" if n < 6 else "",
+                        o["confirm"][0], o["confirm"][1], short_studies(o["studies"]), o.get("iv"),
+                        "{:,}".format(o["oi"]) if o.get("oi") is not None else "n/a",
+                        "{:+,}".format(o["oi_change"]) if o.get("oi_change") is not None else "n/a")
                     if o.get("pass"):
                         line += "\n      PASS: stop %.2f (Supertrend 7, 1.6), target %.2f, %d lot(s) x %d = Rs %s, max loss Rs %s" % (
                             o["stop"], o["target"], o["lots"], st.get("lot") or 0, "{:,.0f}".format(o["cost"]),

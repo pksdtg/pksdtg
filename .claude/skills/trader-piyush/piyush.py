@@ -25,8 +25,12 @@ Checkpoints for a long (buy) setup, each PASS or FAIL:
   6  inside the entry window (config no_entries_before / no_entries_after; NSE 09:30-15:00)
   7  the stop (the Supertrend (7, 1.6) line) is close enough that at least one share
      fits the max loss per trade
-Warnings, not failures: SMI above +40 (stretched), RSI above 75, a fresh flip of the
-fast Supertrend (1-2 bars old, can flip back), the last bar older than 15 minutes.
+Confirmations (extra studies, a score, not checkpoints): price above the session
+VWAP, EMA 9 above EMA 21, MACD (12, 26, 9) histogram above 0, ADX (14) above 20 with
++DI above -DI, last bar's volume at least 1.5x its 20-bar average. Studies that need
+volume are n/a for NIFTY 50 (Yahoo has no index volume).
+Warnings, not failures: SMI above +40 (stretched), RSI above 75, price above the upper
+Bollinger band (20, 2), a fresh flip of the fast Supertrend (1-2 bars old, can flip back), the last bar older than 15 minutes.
 
 When every checkpoint passes it prints a plan to hand on: entry = last close,
 stop = the Supertrend (7, 1.6) line, target 2R, the shares that fit the max loss and
@@ -111,7 +115,10 @@ def fetch_bars(sym, rng="5d", offline=None):
         row = [q.get(k, [None] * (i + 1))[i] for k in ("open", "high", "low", "close")]
         if ts is None or ts % 300 or None in row:
             continue
-        out.append((datetime.datetime(1970, 1, 1) + datetime.timedelta(seconds=ts) + IST,) + tuple(float(x) for x in row))
+        vols = q.get("volume") or []
+        vol = vols[i] if i < len(vols) and vols[i] is not None else 0
+        out.append((datetime.datetime(1970, 1, 1) + datetime.timedelta(seconds=ts) + IST,) + tuple(float(x) for x in row)
+                   + (float(vol),))
     return out
 
 
@@ -193,6 +200,83 @@ def smi(bars, k=10, d1=3, d2=3, sig=10):
     return s, ema(s, sig)
 
 
+# ---------------------------------------------------------------- extra studies
+
+def macd(closes, fast=12, slow=26, sig=9):
+    f, s = ema(closes, fast), ema(closes, slow)
+    line = [a - b for a, b in zip(f, s)]
+    signal = ema(line, sig)
+    return line, signal, [a - b for a, b in zip(line, signal)]
+
+
+def adx(bars, n=14):
+    """(adx, +DI, -DI) per bar, Wilder."""
+    tr, pdm, mdm = [0.0], [0.0], [0.0]
+    for p, b in zip(bars, bars[1:]):
+        up, dn = b[2] - p[2], p[3] - b[3]
+        tr.append(max(b[2] - b[3], abs(b[2] - p[4]), abs(b[3] - p[4])))
+        pdm.append(up if up > dn and up > 0 else 0.0)
+        mdm.append(dn if dn > up and dn > 0 else 0.0)
+    atr, ap, am = rma(tr[1:], n), rma(pdm[1:], n), rma(mdm[1:], n)
+    pdi = [None] + [None if a is None or not a else 100 * x / a for a, x in zip(atr, ap)]
+    mdi = [None] + [None if a is None or not a else 100 * x / a for a, x in zip(atr, am)]
+    dx = [None if p is None or m is None or p + m == 0 else 100 * abs(p - m) / (p + m) for p, m in zip(pdi, mdi)]
+    first = next((i for i, v in enumerate(dx) if v is not None), None)
+    out = [None] * len(bars)
+    if first is not None:
+        vals = rma(dx[first:], n)
+        out[first:] = vals
+    return out, pdi, mdi
+
+
+def session_vwap(bars):
+    """VWAP from the first bar of the last bar's day; None without volume."""
+    day = bars[-1][0].date()
+    today = [b for b in bars if b[0].date() == day]
+    vol = sum(b[5] for b in today if len(b) > 5)
+    if not vol:
+        return None
+    return sum((b[2] + b[3] + b[4]) / 3 * b[5] for b in today) / vol
+
+
+def bollinger(closes, n=20, k=2.0):
+    w = closes[-n:]
+    if len(w) < n:
+        return None, None, None
+    m = sum(w) / n
+    sd = (sum((x - m) ** 2 for x in w) / n) ** 0.5
+    return m - k * sd, m, m + k * sd
+
+
+def studies(bars):
+    """Extra studies on the last completed bar, long side: [(name, ok or None, detail)].
+    None = not available (no volume for an index or an option chart)."""
+    closes = [b[4] for b in bars]
+    c = closes[-1]
+    out = []
+    vw = session_vwap(bars)
+    out.append(("above VWAP", None if vw is None else c > vw, "VWAP %.2f" % vw if vw else "no volume"))
+    e9, e21 = ema(closes, 9)[-1], ema(closes, 21)[-1]
+    out.append(("EMA 9 above EMA 21", e9 > e21, "EMA 9 %.2f, EMA 21 %.2f" % (e9, e21)))
+    _, _, hist = macd(closes)
+    out.append(("MACD histogram above 0", hist[-1] > 0, "histogram %.2f" % hist[-1]))
+    a, pdi, mdi = adx(bars)
+    ok = None if a[-1] is None else (a[-1] > 20 and pdi[-1] > mdi[-1])
+    out.append(("ADX above 20, +DI above -DI", ok, "ADX %.1f, +DI %.1f, -DI %.1f" % (a[-1], pdi[-1], mdi[-1])
+                if a[-1] is not None else "not enough bars"))
+    vols = [b[5] for b in bars if len(b) > 5]
+    if len(vols) >= 21 and sum(vols[-21:-1]) > 0:
+        avg = sum(vols[-21:-1]) / 20
+        out.append(("volume 1.5x the 20-bar average", vols[-1] >= 1.5 * avg, "%.1fx" % (vols[-1] / avg)))
+    else:
+        out.append(("volume 1.5x the 20-bar average", None, "no volume"))
+    lo, mid, hi = bollinger(closes)
+    info = None
+    if hi is not None:
+        info = "above the upper Bollinger band %.2f: stretched" % hi if c > hi else None
+    return out, info
+
+
 # ---------------------------------------------------------------- the check
 
 def read_config(path):
@@ -224,8 +308,10 @@ def evaluate(sym, bars, now):
             break
         flip += 1
     last = bars[-1]
+    extra, band = studies(bars)
     return {"symbol": sym, "bar": last[0], "close": last[4], "st_fast": fast[-1], "st_slow": slow[-1],
-            "rsi": r[-1], "smi": s[-1], "signal": sg[-1], "bars_since_fast_flip": flip + 1}
+            "rsi": r[-1], "smi": s[-1], "signal": sg[-1], "bars_since_fast_flip": flip + 1,
+            "studies": extra, "band_note": band}
 
 
 def checkpoints(ev, market, cfg, now):
@@ -257,9 +343,17 @@ def checkpoints(ev, market, cfg, now):
         warn.append("RSI %.1f is above 75" % ev["rsi"])
     if ev["st_fast"][1] and ev["bars_since_fast_flip"] <= 2:
         warn.append("Supertrend (7, 0.8) turned up %d bar(s) ago: it can flip back" % ev["bars_since_fast_flip"])
+    if ev.get("band_note"):
+        warn.append(ev["band_note"])
     if now - (ev["bar"] + BAR) > datetime.timedelta(minutes=15):
         warn.append("the last bar ended at %s: the data is not live" % (ev["bar"] + BAR).strftime("%Y-%m-%d %H:%M"))
     return c, warn
+
+
+def confirm_score(ev):
+    """(confirmed, available) among the extra studies."""
+    got = [ok for _, ok, _ in ev.get("studies") or [] if ok is not None]
+    return sum(1 for ok in got if ok), len(got)
 
 
 def plan(ev, cfg):
@@ -355,6 +449,9 @@ def main(argv=None):
             len(r["checkpoints"])))
         for k, (name, ok, detail) in enumerate(r["checkpoints"], 1):
             print("  %d %-4s %-26s %s" % (k, "PASS" if ok else "FAIL", name, detail))
+        sc = confirm_score(ev)
+        print("  confirmations %d of %d: %s" % (sc[0], sc[1], "; ".join(
+            "%s %s (%s)" % ("yes" if ok else "no" if ok is not None else "n/a", n, d) for n, ok, d in ev["studies"])))
         for w in r["warnings"]:
             print("  note: " + w)
         if r["plan"]:

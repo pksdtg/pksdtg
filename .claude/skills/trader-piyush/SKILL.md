@@ -41,7 +41,17 @@ python3 "${CLAUDE_SKILL_DIR}/piyush.py" check SBIN --json
 | 6 | inside the entry window | an NSE trading day, between `no_entries_before` and `no_entries_after` (09:30-15:00) |
 | 7 | stop fits the max loss | the Supertrend (7, 1.6) line is close enough for at least one share within `max_loss_per_trade_usd` (rupees) |
 
-Warnings print as notes and do not fail a stock: SMI above +40 (stretched),
+Confirmations, a score next to the checkpoints (not checkpoints): price above the
+session VWAP, EMA 9 above EMA 21, MACD (12, 26, 9) histogram above 0, ADX (14)
+above 20 with +DI above -DI, and the last bar's volume at least 1.5x its 20-bar
+average. Studies that need volume are n/a for NIFTY 50 and for option charts. In
+the 60-session backtest (`tools/piyush_backtest_confirm.py`, 20 large stocks, 964
+trades) passes with 1-2 confirmations averaged -0.19R and -0.07R before costs,
+3 of 5 +0.12R, 4 of 5 +0.06R, 5 of 5 +0.20R (87 trades); after about 0.05% round-trip
+costs only 5 of 5 stayed positive (+0.08R).
+
+Warnings print as notes and do not fail a stock (price above the upper Bollinger
+band (20, 2) is one of them): SMI above +40 (stretched),
 RSI above 75, the fast Supertrend turned up only 1-2 bars ago (it can flip
 back), and data more than 15 minutes old.
 
