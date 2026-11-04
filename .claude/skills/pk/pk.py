@@ -44,6 +44,26 @@ import importlib.util  # noqa: E402
 _spec = importlib.util.spec_from_file_location("piyush", os.path.join(SKILLS, "trader-piyush", "piyush.py"))
 piyush = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(piyush)
+from concurrent.futures import ThreadPoolExecutor  # noqa: E402
+WORKERS = 4  # parallel chart requests in --all mode: polite to Yahoo, ~4x faster
+
+
+def liquid_universe(path, min_price=20.0, min_volume=250000):
+    """--all: every stock in trader/universe.txt (scan.py universe) that traded at least
+    min_volume shares at min_price or more last session, from Yahoo's batch quotes."""
+    spec = importlib.util.spec_from_file_location("scan", os.path.join(SKILLS, "trader-scanner", "scan.py"))
+    scan = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(scan)
+    with open(path, encoding="utf-8") as fh:
+        syms = [ln.split("|")[0].strip() for ln in fh if ln.strip()]
+    data, _ = scan.fetch_spark(syms, "5d", "1d", 0.2)
+    keep = []
+    for sym in syms:
+        meta = (data.get(sym) or {}).get("meta") or {}
+        price, vol = meta.get("regularMarketPrice"), meta.get("regularMarketVolume")
+        if price and vol and price >= min_price and vol >= min_volume:
+            keep.append((price * vol, sym))
+    return [sym for _, sym in sorted(keep, reverse=True)], len(syms)
 
 NIFTY200 = trader_market.NSE_ARCHIVES + "/content/indices/ind_nifty200list.csv"
 LOTS = trader_market.NSE_ARCHIVES + "/content/fo/fo_mktlots.csv"
@@ -189,6 +209,9 @@ def main(argv=None):
     sub = ap.add_subparsers(dest="cmd")
     p = sub.add_parser("scan")
     p.add_argument("--stocks", help="comma-separated NSE symbols instead of NIFTY 200")
+    p.add_argument("--all", action="store_true",
+                   help="every liquid NSE stock (Rs 20+, 250,000+ shares) from trader/universe.txt instead of NIFTY 200")
+    p.add_argument("--universe", default="trader/universe.txt")
     p.add_argument("--now", help='India time "YYYY-MM-DD HH:MM" (default: now)')
     p.add_argument("--premium", default="100-150", help="option premium band in rupees (100-150)")
     p.add_argument("--no-options", action="store_true")
@@ -215,18 +238,36 @@ def main(argv=None):
     seen = st.get("alerted", {}).get(today, [])
     session = trader_market.NSESession()
     try:
-        syms = [s.strip().upper() for s in a.stocks.split(",")] if a.stocks else nifty200(session, st, today)
+        universe_note = "NIFTY 200"
+        if a.stocks:
+            syms, universe_note = [s.strip().upper() for s in a.stocks.split(",")], "your list"
+        elif a.all:
+            syms, total = liquid_universe(a.universe)
+            universe_note = "all NSE: %d liquid of %d listed (Rs 20+, 250,000+ shares)" % (len(syms), total)
+        else:
+            syms = nifty200(session, st, today)
         market = piyush.evaluate("NIFTY 50", piyush.fetch_bars(piyush.INDEX), now)
     except Exception as e:
         print("pk.py: %s" % e, file=sys.stderr)
         return 1
     passes, failed, scanned = [], 0, 0
-    for k, sym in enumerate(syms):
-        if k:
-            time.sleep(piyush.PAUSE)
+
+    def one(sym):
         try:
-            ev = piyush.evaluate(sym, piyush.fetch_bars(sym), now)
+            return sym, piyush.evaluate(sym, piyush.fetch_bars(sym), now)
         except Exception:
+            return sym, None
+    if a.all:
+        with ThreadPoolExecutor(WORKERS) as pool:
+            evs = list(pool.map(one, syms))
+    else:
+        evs = []
+        for k, sym in enumerate(syms):
+            if k:
+                time.sleep(piyush.PAUSE)
+            evs.append(one(sym))
+    for sym, ev in evs:
+        if ev is None:
             failed += 1
             continue
         scanned += 1
@@ -263,8 +304,8 @@ def main(argv=None):
         return 0 if (passes or opt_pass_new) else 1
 
     m = market
-    print("pk scan, %s IST (%d s). Stocks: %d of %d checked (Yahoo 5-minute bars, free, can lag)."
-          % (now.strftime("%a %Y-%m-%d %H:%M"), time.time() - t0, scanned, len(syms)))
+    print("pk scan, %s IST (%d s). Stocks (%s): %d of %d checked (Yahoo 5-minute bars, free, can lag)."
+          % (now.strftime("%a %Y-%m-%d %H:%M"), time.time() - t0, universe_note, scanned, len(syms)))
     print("NIFTY 50 %.2f (bar %s): Supertrends %s/%s, RSI %.2f, SMI %.2f vs signal %.2f -> %s"
           % (m["close"], m["bar"].strftime("%H:%M"), "up" if m["st_fast"][1] else "down", "up" if m["st_slow"][1] else "down",
              m["rsi"], m["smi"], m["signal"],

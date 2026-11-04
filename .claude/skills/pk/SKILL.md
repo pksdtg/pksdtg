@@ -22,6 +22,7 @@ report the data.
 
 ```bash
 python3 "${CLAUDE_SKILL_DIR}/pk.py" scan                        # NIFTY 200 + NIFTY options, now
+python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --all                  # every liquid NSE stock, not just NIFTY 200
 python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --stocks SBIN,MARICO   # your own list
 python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --premium 80-120       # another premium band
 python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --new-only             # only signals not reported yet today
@@ -29,6 +30,11 @@ python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --now "2026-11-03 13:00" --no-options  
 ```
 
 A full scan takes about 2 minutes (200 stocks, one request each, a polite pause).
+`--all` ("scan with pk in all") reads every stock in `trader/universe.txt`
+(`scan.py universe`, about 2,600), keeps the ones with a price of Rs 20 or more and
+250,000+ shares traded in the latest session (Yahoo's batch quotes; during market
+hours that is today's volume so far), and checks those with four requests at a time:
+about 650 stocks in 1.5 minutes.
 
 ## What it reports
 
