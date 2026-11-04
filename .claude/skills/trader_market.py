@@ -230,6 +230,8 @@ def apply(g):
 
     if "TICKER" in g and "OCC" in g:  # trader-risk's ticker check: NSE symbols run to 20 characters
         g["TICKER"] = NSE_TICKER
+    if "SYMBOL_RE" in g:  # the Time Machine's ticker check
+        g["SYMBOL_RE"] = NSE_TICKER
 
     for name in ("to_yahoo", "yahoo_symbol"):
         if name in g:
