@@ -48,19 +48,41 @@ from concurrent.futures import ThreadPoolExecutor  # noqa: E402
 WORKERS = 4  # parallel chart requests in --all mode: polite to Yahoo, ~4x faster
 
 
-def liquid_universe(path, min_price=20.0, min_volume=250000):
-    """--all: every stock in trader/universe.txt (scan.py universe) that traded at least
-    min_volume shares at min_price or more last session, from Yahoo's batch quotes."""
+def prev_session_volumes(today):
+    """{SYMBOL: shares traded} from NSE's bhavcopy of the last session before `today`."""
+    import zipfile
+    session = trader_market.NSESession()
+    d = today - datetime.timedelta(days=1)
+    for _ in range(7):
+        if d.weekday() < 5 and d.isoformat() not in trader_market.NSE_HOLIDAYS:
+            try:
+                raw = session.get(trader_market.NSE_BHAVCOPY % d.strftime("%Y%m%d"))
+                z = zipfile.ZipFile(io.BytesIO(raw))
+                rows = csv.DictReader(io.StringIO(z.read(z.namelist()[0]).decode("utf-8", "replace")))
+                return {r["TckrSymb"]: float(r["TtlTradgVol"] or 0) for r in rows if r.get("SctySrs") in ("EQ", "BE")}
+            except Exception:
+                pass
+        d -= datetime.timedelta(days=1)
+    return {}
+
+
+def liquid_universe(path, min_price=20.0, min_volume=250000, today=None):
+    """--all: every stock in trader/universe.txt (scan.py universe) priced min_price or more that
+    traded at least min_volume shares today or in the last session, from Yahoo's batch quotes."""
+    today = today or (piyush.utc_now() + piyush.IST).date()
     spec = importlib.util.spec_from_file_location("scan", os.path.join(SKILLS, "trader-scanner", "scan.py"))
     scan = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(scan)
     with open(path, encoding="utf-8") as fh:
         syms = [ln.split("|")[0].strip() for ln in fh if ln.strip()]
     data, _ = scan.fetch_spark(syms, "5d", "1d", 0.2)
+    prev = prev_session_volumes(today)
     keep = []
     for sym in syms:
         meta = (data.get(sym) or {}).get("meta") or {}
-        price, vol = meta.get("regularMarketPrice"), meta.get("regularMarketVolume")
+        price = meta.get("regularMarketPrice")
+        # early in the session today's volume is tiny: take the bigger of today's and the last session's
+        vol = max(meta.get("regularMarketVolume") or 0, prev.get(sym, 0))
         if price and vol and price >= min_price and vol >= min_volume:
             keep.append((price * vol, sym))
     return [sym for _, sym in sorted(keep, reverse=True)], len(syms)
@@ -242,7 +264,7 @@ def main(argv=None):
         if a.stocks:
             syms, universe_note = [s.strip().upper() for s in a.stocks.split(",")], "your list"
         elif a.all:
-            syms, total = liquid_universe(a.universe)
+            syms, total = liquid_universe(a.universe, today=now.date())
             universe_note = "all NSE: %d liquid of %d listed (Rs 20+, 250,000+ shares)" % (len(syms), total)
         else:
             syms = nifty200(session, st, today)

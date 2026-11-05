@@ -32,8 +32,8 @@ python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --now "2026-11-03 13:00" --no-options  
 A full scan takes about 2 minutes (200 stocks, one request each, a polite pause).
 `--all` ("scan with pk in all") reads every stock in `trader/universe.txt`
 (`scan.py universe`, about 2,600), keeps the ones with a price of Rs 20 or more and
-250,000+ shares traded in the latest session (Yahoo's batch quotes; during market
-hours that is today's volume so far), and checks those with four requests at a time:
+250,000+ shares traded today or in the previous session (Yahoo's batch quotes; the
+previous session keeps the list full in the first minutes after the open), and checks those with four requests at a time:
 about 650 stocks in 1.5 minutes.
 
 ## What it reports
