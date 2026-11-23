@@ -25,6 +25,7 @@ python3 "${CLAUDE_SKILL_DIR}/pk.py" scan                        # NIFTY 200 + NI
 python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --all                  # every liquid NSE stock, not just NIFTY 200
 python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --stocks SBIN,MARICO   # your own list
 python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --premium 80-120       # another premium band
+python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --next-expiry          # options of the following expiry (use on expiry day)
 python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --new-only             # only signals not reported yet today
 python3 "${CLAUDE_SKILL_DIR}/pk.py" scan --now "2026-11-03 13:00" --no-options   # replay stocks
 ```

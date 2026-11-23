@@ -159,13 +159,14 @@ def nifty_direction(m):
     return "CE" if up else "PE" if down else None
 
 
-def option_scan(session, market, now, lo, hi, cfg, lot, sides="both", min_bars=OPT_MIN_BARS):
+def option_scan(session, market, now, lo, hi, cfg, lot, sides="both", min_bars=OPT_MIN_BARS, skip=0):
     info = session.api("option-chain-contract-info?symbol=NIFTY")
     expiries = [datetime.datetime.strptime(e, "%d-%b-%Y").date() for e in info.get("expiryDates", [])]
     live = [e for e in expiries if e > now.date() or (e == now.date() and now.time() < datetime.time(15, 30))]
     if not live:
         raise piyush.PiyushError("no live NIFTY expiry in NSE's list")
-    expiry = min(live)
+    live = sorted(live)
+    expiry = live[min(skip, len(live) - 1)]  # skip=1: the expiry after the nearest
     chain = session.api("option-chain-v3?type=Indices&symbol=NIFTY&expiry=%s" % expiry.strftime("%d-%b-%Y"))
     rec = chain.get("records") or {}
     side = nifty_direction(market) if market else None
@@ -239,6 +240,8 @@ def main(argv=None):
     p.add_argument("--no-options", action="store_true")
     p.add_argument("--min-option-bars", type=int, default=OPT_MIN_BARS,
                    help="5-minute bars an option needs before its indicators are read (%d; 15 = earlier, rougher)" % OPT_MIN_BARS)
+    p.add_argument("--next-expiry", action="store_true",
+                   help="use the expiry after the nearest one (e.g. on expiry day, when premiums decay fastest)")
     p.add_argument("--sides", default="both", choices=["both", "auto"],
                    help="options to list: calls and puts (both, default) or only NIFTY's side (auto)")
     p.add_argument("--new-only", action="store_true", help="only signals not reported earlier today")
@@ -304,7 +307,7 @@ def main(argv=None):
     if not a.no_options:
         lo, hi = (float(x) for x in a.premium.split("-"))
         try:
-            opts = option_scan(session, market, now, lo, hi, cfg, nifty_lot(session, st, today), a.sides, a.min_option_bars)
+            opts = option_scan(session, market, now, lo, hi, cfg, nifty_lot(session, st, today), a.sides, a.min_option_bars, 1 if a.next_expiry else 0)
         except Exception as e:
             opts = {"error": str(e)}
     opt_pass = [o for o in (opts or {}).get("options", []) if o.get("pass")]
