@@ -45,7 +45,7 @@ _spec = importlib.util.spec_from_file_location("piyush", os.path.join(SKILLS, "t
 piyush = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(piyush)
 from concurrent.futures import ThreadPoolExecutor  # noqa: E402
-WORKERS = 4  # parallel chart requests in --all mode: polite to Yahoo, ~4x faster
+WORKERS = 8  # parallel chart requests in --all mode: about 750 charts in 75 s
 
 
 def prev_session_volumes(today):

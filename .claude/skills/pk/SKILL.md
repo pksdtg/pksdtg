@@ -34,8 +34,8 @@ A full scan takes about 2 minutes (200 stocks, one request each, a polite pause)
 `--all` ("scan with pk in all") reads every stock in `trader/universe.txt`
 (`scan.py universe`, about 2,600), keeps the ones with a price of Rs 20 or more and
 250,000+ shares traded today or in the previous session (Yahoo's batch quotes; the
-previous session keeps the list full in the first minutes after the open), and checks those with four requests at a time:
-about 650 stocks in 1.5 minutes.
+previous session keeps the list full in the first minutes after the open), and checks those with eight requests at a time:
+about 750 stocks in 1.5 minutes including the liquidity step.
 
 ## What it reports
 
