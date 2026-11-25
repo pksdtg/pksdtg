@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 trader/state/pk.json
 trader/state/track.json
+trader/state/track_option.json
