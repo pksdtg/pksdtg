@@ -1,2 +1,3 @@
 date,symbol,side,qty,entry,exit,pnl_rs,setup,note
 2026-11-11,GOODLUCK,buy,400,560.70,557.55,-1260,pk 7/7 clean 4/5 (9:30 scan),exit by choice ~11:00 after fast Supertrend red and NIFTY turned; plan size was 134
+2026-11-25,NIFTY 29-Dec-2026 25900 CE,buy,130 (2 lots),475.00,478.00,390,option greeks scan (delta 0.50 theta 1.9%/day),exit same day; Rs 2,000 max-loss level was only Rs 12 under entry with 2 lots
